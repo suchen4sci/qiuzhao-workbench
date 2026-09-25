@@ -1,0 +1,42 @@
+{
+  "status": "fictional-demo",
+  "confirmed_on": "2026-09-25",
+  "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+  "recruitment_type": "校园招聘",
+  "graduate_type": "2027-06-30",
+  "industry": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+  "occupation": "AI Agent 开发工程师",
+  "expected_city": "浙江省杭州市",
+  "monthly_salary_before_tax": {
+    "currency": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+    "minimum": 1,
+    "maximum": 1
+  },
+  "native_place_path": [
+    "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+    "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+    "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+  ],
+  "portal_mapping": {
+    "origin": "https://example.invalid/demo",
+    "industry": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+    "occupation": "AI Agent 开发工程师",
+    "monthly_salary_before_tax": "20000",
+    "expected_city": "浙江省杭州市",
+    "native_place": "浙江省杭州市",
+    "graduate_type": "2027-06-30"
+  },
+  "verification": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+  "scope_note": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+  "marital_status": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+  "overseas_study": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+  "additional_confirmation": "2026-09-25",
+  "no_publications": true,
+  "publications_confirmation": "2026-09-25",
+  "current_salary_application": {
+    "amount": 1,
+    "portal_option": "2026-09-25",
+    "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+    "confirmed_on": "2026-09-25"
+  }
+}

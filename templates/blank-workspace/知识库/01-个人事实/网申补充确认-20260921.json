@@ -1,0 +1,136 @@
+{
+  "confirmed_on": "",
+  "source": "",
+  "sourcePlace": [
+    ""
+  ],
+  "sourcePlaceDistrict": "",
+  "sourcePlaceFullPath": [
+    ""
+  ],
+  "sourcePlacePolicy": "",
+  "education": {
+    "graduate": {
+      "retake": "",
+      "punishment": ""
+    },
+    "undergraduate": {
+      "retake": "",
+      "punishment": ""
+    }
+  },
+  "telecomRelatives": "",
+  "otherTalentPlan": "",
+  "graduateCoursesSource": "",
+  "graduateCourses": {
+    "计算电磁学中的数值方法": 0,
+    "工程伦理（MOOC）": 0,
+    "研究生英语": 0,
+    "半导体光电子学基础": 0,
+    "新时代中国特色社会主义理论与实践": 0,
+    "现代数字通信": 0,
+    "光电子学": 0,
+    "自然辩证法概论": 0,
+    "科研诚信与学术规范（MOOC）": 0,
+    "生物电子学": 0,
+    "如何写好科研论文": 0,
+    "光电检测技术实验": 0,
+    "宽带光接入网技术": 0
+  },
+  "educationType": "",
+  "undergraduateReference": {
+    "name": "",
+    "phone": "",
+    "source": ""
+  },
+  "undergraduateRankApplication": {
+    "origin": "",
+    "value": "",
+    "source": ""
+  },
+  "recruitmentSource": "",
+  "recruitmentSourceApplication": {
+    "origin": "",
+    "value": "",
+    "source": ""
+  },
+  "projectDates": {
+    "TDC": {
+      "start": "",
+      "end": ""
+    },
+    "laser905": {
+      "start": "",
+      "end": ""
+    }
+  },
+  "projectDatesSource": "",
+  "englishProficiency": "",
+  "publications": "",
+  "englishProficiencySource": "",
+  "haigeConfirmed": {
+    "height": 0,
+    "weight": 0,
+    "nativePlace": "",
+    "nativePlacePath": [
+      ""
+    ],
+    "birthPlace": "",
+    "growthPlace": "",
+    "annualSalary": "",
+    "otherCities": [
+      ""
+    ],
+    "confirmed_on": "",
+    "source": ""
+  },
+  "otherCitiesAvailability": {
+    "origin": "",
+    "key": "",
+    "value": "",
+    "requested": [
+      ""
+    ],
+    "unavailable": [
+      ""
+    ],
+    "evidence": ""
+  },
+  "acceptLocationAdjustment": "",
+  "acceptLocationAdjustmentSource": "",
+  "additionalSkillsVerified": {
+    "names": [
+      ""
+    ],
+    "source": "",
+    "confirmed_on": ""
+  },
+  "boeFieldMappings": {
+    "basic": [
+      {
+        "origin": "",
+        "key": "",
+        "value": "",
+        "source": ""
+      }
+    ],
+    "intent": [],
+    "education": [
+      {
+        "origin": "",
+        "level": "",
+        "key": "",
+        "value": "",
+        "source": ""
+      }
+    ],
+    "additional": [
+      {
+        "origin": "",
+        "key": "",
+        "value": "",
+        "source": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "confirmed_at": "",
+  "source": "",
+  "arrival_date": "",
+  "mailing_address": "",
+  "postal_code": "",
+  "postal_source": "",
+  "application_degree": "",
+  "degree_note": "",
+  "position_category": "",
+  "include_internship_in_work_history": false,
+  "family_status": "",
+  "family_candidates": [
+    {
+      "relationship": "",
+      "name_in_abc": "",
+      "name_in_emergency_contact": "",
+      "phone_candidate": ""
+    }
+  ],
+  "company_candidates": [
+    ""
+  ],
+  "nationality_status": "",
+  "nationality": "",
+  "supervisor_name": "",
+  "supervisor_phone": "",
+  "internship_leader": "",
+  "internship_leader_phone": "",
+  "internship_salary": "",
+  "high_school": "",
+  "allow_not_applicable_none": false,
+  "family": [
+    {
+      "relation": "",
+      "userName": "",
+      "workUnit": "",
+      "tel": "",
+      "age": 0,
+      "age_confirmed_on": "",
+      "position": ""
+    }
+  ],
+  "high_school_start": "",
+  "high_school_end": "",
+  "internship_monthly_salary": 0,
+  "internship_daily_salary": 0,
+  "internship_leader_relation": "",
+  "internship_leader_position": "",
+  "internship_leader_company": "",
+  "internship_updated_on": ""
+}

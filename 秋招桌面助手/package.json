@@ -1,0 +1,16 @@
+{
+  "name": "qiuzhao-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "本地秋招资料与快速填表助手",
+  "main": "src/main.cjs",
+  "scripts": {
+    "start": "node scripts/start.cjs",
+    "test": "node --test tests/*.test.cjs",
+    "test:smoke": "node tests/public-smoke.cjs"
+  },
+  "dependencies": {
+    "electron": "44.4.3",
+    "playwright-core": "1.63.0"
+  }
+}

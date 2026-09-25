@@ -1,0 +1,40 @@
+{
+  "status": "",
+  "confirmed_on": "",
+  "source": "",
+  "recruitment_type": "",
+  "graduate_type": "",
+  "industry": "",
+  "occupation": "",
+  "expected_city": "",
+  "monthly_salary_before_tax": {
+    "currency": "",
+    "minimum": 0,
+    "maximum": 0
+  },
+  "native_place_path": [
+    ""
+  ],
+  "portal_mapping": {
+    "origin": "",
+    "industry": "",
+    "occupation": "",
+    "monthly_salary_before_tax": "",
+    "expected_city": "",
+    "native_place": "",
+    "graduate_type": ""
+  },
+  "verification": "",
+  "scope_note": "",
+  "marital_status": "",
+  "overseas_study": "",
+  "additional_confirmation": "",
+  "no_publications": false,
+  "publications_confirmation": "",
+  "current_salary_application": {
+    "amount": 0,
+    "portal_option": "",
+    "source": "",
+    "confirmed_on": ""
+  }
+}

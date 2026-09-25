@@ -1,0 +1,78 @@
+{
+  "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+  "source_type": "fictional-demo",
+  "education": [
+    {
+      "school": "杭州电子科技大学",
+      "level": "熟练",
+      "major": "计算机技术",
+      "start_date": "2024-09-01",
+      "expected_graduation_date": "2027-06-30",
+      "duration_years": 1,
+      "education_category": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "study_mode": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "status_at_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "college": "计算机学院",
+      "degree_awarded": null,
+      "supervisor": "陈远舟（虚构）",
+      "research_direction": "AI Agent 开发工程师",
+      "national_key_laboratory": true,
+      "national_key_laboratory_name": "无",
+      "joint_training": true,
+      "application_fields_status": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "supervisor_phone": "00000000000",
+      "application_degree": "工程硕士",
+      "supervisor_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "school_location": "杭州电子科技大学",
+      "school_location_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+    },
+    {
+      "school": "杭州电子科技大学",
+      "level": "熟练",
+      "major": "计算机技术",
+      "start_date": "2024-09-01",
+      "school_leaving_date": "杭州电子科技大学",
+      "duration_years": 1,
+      "education_category": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "study_mode": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "status_at_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "college": "计算机学院",
+      "degree_awarded": "工程硕士",
+      "graduation_date": "2027-06-30",
+      "degree_awarded_date": "工程硕士",
+      "thesis_title": "面向企业知识服务的可验证检索增强智能体研究（虚构课题）",
+      "supervisor": null,
+      "supervisor_status": "陈远舟（虚构）",
+      "application_fields_status": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "school_location": "杭州电子科技大学",
+      "school_location_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+    }
+  ],
+  "rules": [
+    "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+    "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+    "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+    "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+    "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+  ],
+  "confirmed_undergraduate_academics": {
+    "gpa": "3.55/4.0",
+    "rank": "前30%",
+    "status": "fictional-demo",
+    "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+    "courses": {
+      "模拟集成电路设计": 1,
+      "微电子学基础": 1,
+      "数字信号处理": 1,
+      "电子电路基础": 1,
+      "计算机基础与C语言": 1
+    }
+  },
+  "high_school": {
+    "school": "杭州电子科技大学",
+    "level": "熟练",
+    "start_date": "2024-09-01",
+    "graduation_date": "2027-06-30",
+    "status": "fictional-demo"
+  }
+}

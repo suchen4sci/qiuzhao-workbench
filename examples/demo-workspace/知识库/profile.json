@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "demo": true,
+  "notice": "所有身份、经历、成绩、奖项和家庭信息均为虚构，学校名称仅用于示例，不表示任何真实就读关系。不得用于真实投递。电话为不可用占位值，邮箱使用保留域 example.invalid，不提供仿真证件号。",
+  "updated": "2026-09-25",
+  "values": {
+    "basic": [
+      {
+        "name": "林知远（虚构演示）",
+        "englishName": "Alex Lin",
+        "gender": "男",
+        "birthDate": "2002-04-16",
+        "phone": "00000000000",
+        "email": "lin.zhiyuan@example.invalid",
+        "idNumber": "",
+        "idType": "",
+        "nationality": "中国",
+        "ethnicity": "汉族",
+        "politicalStatus": "共青团员",
+        "maritalStatus": "未婚",
+        "graduateType": "应届",
+        "overseasStudy": "无",
+        "highestEducation": "硕士研究生",
+        "school": "杭州电子科技大学",
+        "department": "计算机学院",
+        "latestMajor": "计算机技术",
+        "majorCategory": "计算机类",
+        "graduationDate": "2027-06-30",
+        "height": "178",
+        "weight": "70",
+        "nativePlace": "浙江省杭州市",
+        "birthPlace": "浙江省杭州市",
+        "growthPlace": "浙江省杭州市",
+        "currentAddress": "浙江省杭州市",
+        "hukouLocation": "浙江省杭州市",
+        "mailingAddress": "浙江省杭州市某大学研究生宿舍（虚构地址）",
+        "postalCode": "310000",
+        "emergencyContactName": "林建明（虚构）",
+        "emergencyPhone": "00000000000",
+        "healthStatus": "健康",
+        "isGraduate": "是"
+      }
+    ],
+    "education": [
+      {
+        "school": "杭州电子科技大学",
+        "department": "计算机学院",
+        "level": "硕士研究生",
+        "degree": "工程硕士",
+        "major": "计算机技术",
+        "majorCategory": "计算机类",
+        "educationType": "全日制",
+        "startTime": "2024-09-01",
+        "endTime": "2027-06-30",
+        "gpa": "3.65/4.0",
+        "classRank": "前20%",
+        "majorCourses": "自然语言处理、机器学习、分布式系统、信息检索",
+        "researchDirection": "检索增强生成与工具调用智能体",
+        "thesis": "面向企业知识服务的可验证检索增强智能体研究（虚构课题）",
+        "supervisor": "陈远舟（虚构导师）",
+        "retake": "否",
+        "punishment": "否"
+      },
+      {
+        "school": "浙江工业大学",
+        "department": "计算机科学与技术学院",
+        "level": "本科",
+        "degree": "工学学士",
+        "major": "软件工程",
+        "majorCategory": "计算机类",
+        "educationType": "全日制",
+        "startTime": "2020-09-01",
+        "endTime": "2024-06-30",
+        "gpa": "3.55/4.0",
+        "classRank": "前30%",
+        "majorCourses": "数据结构、数据库、操作系统、计算机网络",
+        "retake": "否",
+        "punishment": "否"
+      },
+      {
+        "school": "杭州市第十四中学",
+        "department": "高中部",
+        "level": "高中",
+        "degree": "无",
+        "major": "普通高中",
+        "educationType": "全日制",
+        "startTime": "2017-09-01",
+        "endTime": "2020-06-30"
+      }
+    ],
+    "internship": [
+      {
+        "company": "阿里云计算有限公司（虚构任职，仅作演示）",
+        "department": "智能应用研发部",
+        "position": "AI Agent 开发实习生",
+        "workType": "实习",
+        "companyNature": "民营企业",
+        "startTime": "2026-03-02",
+        "endTime": "2026-08-28",
+        "monthlySalary": "6000",
+        "description": "参与企业知识助理原型开发，负责文档解析、切分、向量检索与重排模块。基于 Python、FastAPI 和 PostgreSQL 构建服务接口，使用 LangGraph 编排检索、工具调用及人工复核节点。为回答添加引用来源与工具调用日志，针对越权检索、无依据回答和失败重试编写评测样例。使用 Docker 配置本地开发环境，并参与接口测试和代码审查。此经历完全虚构，仅用于演示。",
+        "referenceName": "周奕宁（虚构）",
+        "referenceRelation": "实习主管",
+        "referencePosition": "研发负责人",
+        "referenceCompany": "阿里云计算有限公司（虚构任职，仅作演示）",
+        "referenceContact": "contact@example.invalid",
+        "referenceSummary": "周奕宁（虚构）；实习主管；contact@example.invalid"
+      }
+    ],
+    "projects": [
+      {
+        "name": "企业知识库 RAG Agent（虚构项目）",
+        "role": "项目负责人",
+        "startTime": "2025-03-01",
+        "endTime": "2025-12-31",
+        "description": "背景与目标：为模拟企业文档提供可追溯的问答服务，降低无来源回答的比例。\n技术实现：使用 Python 与 FastAPI 构建检索服务，基于 PostgreSQL/pgvector 存储向量，结合关键词检索、向量召回及重排。通过 LangGraph 串联问题改写、检索、证据检查、回答生成和人工复核。为每次检索保留文档版本与引用位置。\n测试成果：建立覆盖权限隔离、空检索、冲突证据和长文档的本地评测集，记录准确性、延迟与调用成本。本项目为虚构演示，不代表真实成果。"
+      },
+      {
+        "name": "工具调用与任务规划 Agent 平台（虚构项目）",
+        "role": "核心开发者",
+        "startTime": "2026-01-05",
+        "endTime": "2026-07-31",
+        "description": "设计面向工单处理的任务规划原型，将需求拆解为查询、汇总、校验和人工确认步骤。使用 TypeScript 构建工具接口，使用 Python 实现状态机与执行记录。为外部工具添加参数校验、调用超时、幂等键和失败恢复。搭建沙盒数据源及自动化测试，验证重复执行、工具异常和用户中止等情况。项目描述、时间与职责均为虚构。"
+      },
+      {
+        "name": "校园办事多智能体助手（虚构项目）",
+        "role": "项目负责人",
+        "startTime": "2024-10-01",
+        "endTime": "2025-04-30",
+        "description": "面向校园办事指南设计多智能体原型，将问答、事项清单、材料检查和人工确认拆分为独立节点。使用 FastAPI、LangGraph 与 SQLite 实现状态持久化，保存每一步输入输出与引用。围绕超时、重复调用和缺少材料建立测试用例。所有经历和成果均为虚构。"
+      },
+      {
+        "name": "Agent 工具评测与追踪系统（虚构项目）",
+        "role": "后端开发",
+        "startTime": "2025-06-01",
+        "endTime": "2026-02-28",
+        "description": "设计离线工具调用评测集，覆盖参数缺失、工具不可用、权限边界和返回格式错误。构建任务回放、失败分类和耗时统计模块，使用 pytest、Docker 与 OpenTelemetry 组织测试和追踪。本项目仅为虚构求职示例。"
+      },
+      {
+        "name": "开源智能求职工作流（虚构项目）",
+        "role": "独立开发者",
+        "startTime": "2026-04-01",
+        "endTime": "2026-09-01",
+        "description": "使用 Electron 和 Playwright 实现本地资料栏、字段识别、逐项回读和投递状态记录。按控件类型设计文本框、下拉和日期分支，将未知信息留作确认。研究 AI 修正规则与确定性执行的分工。此经历完全虚构。"
+      }
+    ],
+    "campus": [
+      {
+        "name": "研究生开源技术社（虚构）",
+        "role": "技术组负责人",
+        "startTime": "2024-10-01",
+        "endTime": "2026-06-30",
+        "description": "组织 Python、Git 与智能体开发主题交流，维护示例仓库、入门文档和活动报名表。协调同学完成开源入门练习。此组织及经历均为虚构。"
+      }
+    ],
+    "awards": [
+      {
+        "name": "研究生学业奖学金（虚构演示）",
+        "date": "2025-11-15",
+        "scope": "学校级",
+        "grade": "二等奖",
+        "issuer": "示例评审委员会（虚构）",
+        "description": "用于演示奖项名称、等级、日期和颁发单位的独立填写。并非真实荣誉。"
+      },
+      {
+        "name": "大学生软件创新赛（虚构演示）",
+        "date": "2023-05-20",
+        "scope": "学校级",
+        "grade": "三等奖",
+        "issuer": "示例竞赛组委会（虚构）",
+        "description": "软件系统原型展示奖项，仅为虚构模板数据。"
+      },
+      {
+        "name": "程序设计校赛（虚构）",
+        "date": "2022-05-14",
+        "scope": "学校级",
+        "grade": "二等奖",
+        "issuer": "浙江工业大学（虚构获奖）",
+        "description": "仅为演示奖项字段的虚构成绩。"
+      },
+      {
+        "name": "智能应用原型竞赛（虚构）",
+        "date": "2025-05-18",
+        "scope": "学校级",
+        "grade": "三等奖",
+        "issuer": "杭州电子科技大学（虚构获奖）",
+        "description": "仅为演示智能体应用方向的虚构奖项。"
+      },
+      {
+        "name": "研究生技术分享活动（虚构）",
+        "date": "2026-04-12",
+        "scope": "学校级",
+        "grade": "优秀分享者",
+        "issuer": "演示技术社",
+        "description": "虚构活动荣誉，不表示真实获奖。"
+      }
+    ],
+    "languages": [
+      {
+        "language": "英语",
+        "proficiency": "熟练",
+        "name": "大学英语六级",
+        "score": "535",
+        "date": "2023-06-17",
+        "englishLevel": "大学英语六级",
+        "englishScore": "535"
+      },
+      {
+        "language": "英语",
+        "proficiency": "熟练",
+        "name": "雅思",
+        "score": "7.0",
+        "date": "2026-02-14"
+      },
+      {
+        "language": "英语",
+        "name": "大学英语四级",
+        "score": "560",
+        "date": "2021-12-18",
+        "proficiency": "熟练"
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "level": "熟练",
+        "category": "开发编程类"
+      },
+      {
+        "name": "TypeScript",
+        "level": "熟练",
+        "category": "开发编程类"
+      },
+      {
+        "name": "SQL",
+        "level": "熟练",
+        "category": "开发编程类"
+      },
+      {
+        "name": "FastAPI",
+        "level": "熟练",
+        "category": "开发编程类"
+      },
+      {
+        "name": "LangGraph",
+        "level": "熟练",
+        "category": "开发编程类"
+      },
+      {
+        "name": "Docker",
+        "level": "熟练",
+        "category": "开发编程类"
+      }
+    ],
+    "family": [
+      {
+        "name": "林建明（虚构）",
+        "relation": "父亲",
+        "company": "示例制造企业（虚构）",
+        "position": "职员",
+        "phone": "00000000000"
+      },
+      {
+        "name": "许清和（虚构）",
+        "relation": "母亲",
+        "company": "示例服务企业（虚构）",
+        "position": "职员",
+        "phone": "00000000000"
+      }
+    ],
+    "intent": [
+      {
+        "occupation": "AI Agent 开发工程师",
+        "industry": "信息技术",
+        "city": "杭州",
+        "primaryCity": "杭州市",
+        "otherCities": "上海、深圳",
+        "salary": "15000–25000元/月",
+        "annualSalary": "20万元",
+        "arrivalDate": "2027-07-01",
+        "recruitmentSource": "官网"
+      }
+    ],
+    "evaluation": [
+      {
+        "description": "计算机技术专业研三学生，计划于2027年毕业，关注 AI Agent、RAG 与后端服务开发。熟悉 Python、TypeScript、SQL、容器化开发和基础测试，愿意从需求澄清、工具接口与评测环节持续完善系统。以上身份与经历全部虚构，仅作为工作台使用示例。"
+      }
+    ],
+    "additional": [
+      {
+        "hobbies": "阅读技术文档、跑步、开源交流（虚构）",
+        "recruitmentSource": "官网",
+        "publications": "无"
+      }
+    ]
+  },
+  "noPublications": true,
+  "targetRoles": [
+    "AI Agent 开发工程师",
+    "大模型应用开发工程师"
+  ],
+  "expectedSalary": "15000–25000元/月"
+}

@@ -1,0 +1,306 @@
+{
+  "demo": true,
+  "notice": "【完全虚构的演示资料】以下人物、在校/任职关系、成绩、获奖和日期由程序示例编造；真实机构名称仅作场景，不能用于真实投递。",
+  "files": [
+    {
+      "file": "00-导航与规则/02-来源与数据口径.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "00-导航与规则/03-岗位选材规则.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "00-导航与规则/04-外部知识库链接.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "00-导航与规则/工作流配置.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "00-导航与规则/网申填写规则.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "01-个人事实/education.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "01-个人事实/中国电信网申待确认-20260921.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "01-个人事实/事实总览.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "01-个人事实/企业内推码.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "01-个人事实/奖项类别确认-20260920.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "01-个人事实/家庭信息.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "01-个人事实/教育补充确认-20260920.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "01-个人事实/求职意向确认-20260920.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "01-个人事实/空天补充确认-20260920.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "01-个人事实/简历事实库.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "01-个人事实/紫光补充确认-20260920.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "01-个人事实/网申填写字段.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "01-个人事实/网申补充与核验.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "01-个人事实/网申补充确认-20260921.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "01-个人事实/自媒体与知识付费销售.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "04-附件索引/附件索引.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "05-变更记录/2026-09-10补充前/01-事实总览.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "05-变更记录/2026-09-10补充前/02-来源与数据口径.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "05-变更记录/2026-09-10补充前/简历事实库.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "05-变更记录/2026-09-14本科GPA统一.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "05-变更记录/2026-09-14英文简历同步中文版本.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "05-变更记录/2026-09-14销售简历自媒体置顶.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "05-变更记录/20260920-奖项日期与亚军确认/事实总览.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "05-变更记录/20260920-奖项日期与亚军确认/确认说明.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "05-变更记录/20260920-奖项日期与亚军确认/简历事实库.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "05-变更记录/20260920-奖项日期与亚军确认/网申填写字段.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "05-变更记录/20260920-奖项日期与亚军确认/网申补充与核验.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "05-变更记录/20260920-获奖混合记录纠错.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "05-变更记录/20260921-本次补充确认-1789958487921/education.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "05-变更记录/20260921-本次补充确认-1789958487921/简历事实库.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "05-变更记录/20260921-本次补充确认-1789958487921/网申填写字段.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "05-变更记录/20260921-本次补充确认-1789958487921/网申补充确认-20260921.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "05-变更记录/目录迁移记录.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "05-变更记录/目录迁移路径映射.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "06-网站适配/2026-09-19-人工教学核验.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "06-网站适配/learned-fields.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "06-网站适配/region-paths.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "06-网站适配/专业类别与工作台导入.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "06-网站适配/北森-自动添加项目-20260920.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "06-网站适配/北森-获奖逐条与论文不适用-20260920.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "06-网站适配/北森求职意向-20260920.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "06-网站适配/启元实验室/README.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "06-网站适配/启元实验室/待确认字段.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "06-网站适配/教学流程-1e2206aa-4aab-4b0e-aabc-b736cee5f979.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "06-网站适配/空天研究院/README.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "06-网站适配/获奖已确认纠错.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "06-网站适配/获奖情况快速填写规则.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "06-网站适配/通用控件与快速填写/2026-09-23-Layui与AI读取排障.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "06-网站适配/通用控件与快速填写/20260921-海格验证与通用修正.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "06-网站适配/通用控件与快速填写/20260922-AI按钮修复与多步骤验证.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "06-网站适配/通用控件与快速填写/20260922-AI读取自动修正规则.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "06-网站适配/通用控件与快速填写/20260922-京东方清空重填验证.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "06-网站适配/通用控件与快速填写/20260923-声明字段与附件回读.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "06-网站适配/通用控件与快速填写/Element-UI控件.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "06-网站适配/通用控件与快速填写/README.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "06-网站适配/通用控件与快速填写/北森跨公司复用与分类搜索.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "06-网站适配/通用控件与快速填写/结构化表单-SD组件与年月联动.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "06-网站适配/通用控件与快速填写/统一控件执行器.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "06-网站适配/通用控件与快速填写/跨站表单扫描、匹配与验证.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "06-网站适配/通用控件与快速填写/逐栏填写与回归验证.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "06-网站适配/问卷星/README.md",
+      "mode": "fictional-counterpart"
+    },
+    {
+      "file": "06-网站适配/问卷星/中国电科电子科学研究院2027.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "07-教学待确认/教学-2026-09-19T12-41-07-683Z-1e2206aa.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "07-教学待确认/页面新增内容核对-20260920.json",
+      "mode": "same-json-structure-fictional-values"
+    },
+    {
+      "file": "02-经历与成果/01-企业知识库 RAG Agent.md",
+      "mode": "AI-Agent-experience-counterpart"
+    },
+    {
+      "file": "02-经历与成果/02-工具调用与任务规划 Agent 平台.md",
+      "mode": "AI-Agent-experience-counterpart"
+    },
+    {
+      "file": "02-经历与成果/03-校园办事多智能体助手.md",
+      "mode": "AI-Agent-experience-counterpart"
+    },
+    {
+      "file": "02-经历与成果/04-Agent 工具评测与追踪系统.md",
+      "mode": "AI-Agent-experience-counterpart"
+    },
+    {
+      "file": "02-经历与成果/05-开源智能求职工作流.md",
+      "mode": "AI-Agent-experience-counterpart"
+    }
+  ],
+  "excluded": [
+    "项目编译产物、第三方依赖、浏览器快照、真实附件、真实教学日志、身份号码及登录令牌不发布。"
+  ],
+  "runtimeSource": "profile.json；其他对应文件保留知识库组织范式，修改后需同步回 profile.json。"
+}

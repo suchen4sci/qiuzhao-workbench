@@ -1,0 +1,53 @@
+{
+  "source": "",
+  "source_type": "",
+  "education": [
+    {
+      "school": "",
+      "level": "",
+      "major": "",
+      "start_date": "",
+      "expected_graduation_date": "",
+      "duration_years": 0,
+      "education_category": "",
+      "study_mode": "",
+      "status_at_source": "",
+      "college": "",
+      "degree_awarded": "",
+      "supervisor": "",
+      "research_direction": "",
+      "national_key_laboratory": false,
+      "national_key_laboratory_name": "",
+      "joint_training": false,
+      "application_fields_status": "",
+      "supervisor_phone": "",
+      "application_degree": "",
+      "supervisor_source": "",
+      "school_location": "",
+      "school_location_source": ""
+    }
+  ],
+  "rules": [
+    ""
+  ],
+  "confirmed_undergraduate_academics": {
+    "gpa": "",
+    "rank": "",
+    "status": "",
+    "source": "",
+    "courses": {
+      "模拟集成电路设计": 0,
+      "微电子学基础": 0,
+      "数字信号处理": 0,
+      "电子电路基础": 0,
+      "计算机基础与C语言": 0
+    }
+  },
+  "high_school": {
+    "school": "",
+    "level": "",
+    "start_date": "",
+    "graduation_date": "",
+    "status": ""
+  }
+}

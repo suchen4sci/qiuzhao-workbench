@@ -1,0 +1,1720 @@
+{
+  "schema_version": "2026-09-25",
+  "last_verified": "2026-09-25",
+  "profile": {
+    "cn": {
+      "name": "林知远（虚构演示）",
+      "contact": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "basic_title": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "gender": "男",
+      "birth_year": "2002-04-16",
+      "age": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "political_status": "共青团员",
+      "phone": "00000000000",
+      "email": "lin.zhiyuan@example.invalid",
+      "english": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+    },
+    "en": {
+      "name": "林知远（虚构演示）",
+      "contact": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "basic_title": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "gender": "男",
+      "birth_year": "2002-04-16",
+      "age": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "political_status": "共青团员",
+      "phone": "00000000000",
+      "email": "lin.zhiyuan@example.invalid",
+      "english": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+    },
+    "logo": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+    "photo": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+    "birth_date": "2002-04-16"
+  },
+  "facts": {
+    "edu_ms": {
+      "title": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "date": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "bullets": {
+        "cn": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ],
+        "en": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ]
+      }
+    },
+    "edu_bs": {
+      "title": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "date": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "bullets": {
+        "cn": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ],
+        "en": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ]
+      }
+    },
+    "verification_intern": {
+      "title": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "date": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "bullets": {
+        "cn": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ],
+        "en": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ]
+      },
+      "current_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "copy_policy": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "revision_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "organization_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+    },
+    "tdc_project": {
+      "title": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "date": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "bullets": {
+        "cn": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ],
+        "en": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ]
+      },
+      "role": "AI Agent 开发工程师",
+      "current_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "copy_policy": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+    },
+    "lidar_system": {
+      "title": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "date": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "bullets": {
+        "cn": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ],
+        "en": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ]
+      },
+      "role": "AI Agent 开发工程师",
+      "current_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "copy_policy": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "measurement_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+    },
+    "lidar_system_state_technical": {
+      "title": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "date": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "bullets": {
+        "cn": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ],
+        "en": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ]
+      },
+      "measurement_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+    },
+    "sales_product": {
+      "title": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "date": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "bullets": {
+        "cn": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ],
+        "en": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ]
+      }
+    },
+    "self_media": {
+      "title": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "date": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "bullets": {
+        "cn": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ],
+        "en": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ]
+      }
+    },
+    "challenge_cup": {
+      "title": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "date": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "bullets": {
+        "cn": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ],
+        "en": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ]
+      },
+      "date_note": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+    },
+    "honors": {
+      "title": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "date": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "bullets": {
+        "cn": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ],
+        "en": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ]
+      }
+    },
+    "debate_achievements": {
+      "title": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "date": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "bullets": {
+        "cn": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ],
+        "en": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ]
+      }
+    },
+    "language_proficiency": {
+      "title": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "date": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "bullets": {
+        "cn": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ],
+        "en": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ]
+      }
+    },
+    "leadership": {
+      "title": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "date": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "bullets": {
+        "cn": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ],
+        "en": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ]
+      }
+    },
+    "campus_service": {
+      "title": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "date": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "bullets": {
+        "cn": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ],
+        "en": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ]
+      }
+    },
+    "student_work_state": {
+      "title": {
+        "cn": "组织 Python、Git 与智能体开发主题交流，维护示例仓库、入门文档和活动报名表。协调同学完成开源入门练习。此组织及经历均为虚构。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "date": {
+        "cn": "组织 Python、Git 与智能体开发主题交流，维护示例仓库、入门文档和活动报名表。协调同学完成开源入门练习。此组织及经历均为虚构。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "bullets": {
+        "cn": [
+          "组织 Python、Git 与智能体开发主题交流，维护示例仓库、入门文档和活动报名表。协调同学完成开源入门练习。此组织及经历均为虚构。",
+          "组织 Python、Git 与智能体开发主题交流，维护示例仓库、入门文档和活动报名表。协调同学完成开源入门练习。此组织及经历均为虚构。",
+          "组织 Python、Git 与智能体开发主题交流，维护示例仓库、入门文档和活动报名表。协调同学完成开源入门练习。此组织及经历均为虚构。",
+          "组织 Python、Git 与智能体开发主题交流，维护示例仓库、入门文档和活动报名表。协调同学完成开源入门练习。此组织及经历均为虚构。"
+        ],
+        "en": []
+      },
+      "current_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "copy_policy": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+    },
+    "skills_technical": {
+      "title": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "date": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "bullets": {
+        "cn": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ],
+        "en": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ]
+      }
+    },
+    "skills_sales": {
+      "title": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "date": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "bullets": {
+        "cn": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ],
+        "en": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ]
+      }
+    },
+    "skills_fae": {
+      "title": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "date": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "bullets": {
+        "cn": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ],
+        "en": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ]
+      }
+    },
+    "skills_state": {
+      "title": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "date": {
+        "cn": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "en": "Fictional demo: Alex Lin, AI Agent developer"
+      },
+      "bullets": {
+        "cn": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ],
+        "en": [
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+          "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+        ]
+      }
+    }
+  },
+  "variants": [
+    {
+      "folder": "演示简历版本",
+      "filename": "04-附件索引/演示简历.md",
+      "language": "zh-CN",
+      "docx_scale": 1,
+      "contact": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "role": "AI Agent 开发工程师",
+      "sections": [
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical"
+            },
+            {
+              "fact": "skills_technical"
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "show_heading": true
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "show_heading": true
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "approved_markdown": "profile.json（完全虚构演示）",
+      "approved_word_content_sha256": ""
+    },
+    {
+      "folder": "演示简历版本",
+      "filename": "04-附件索引/演示简历.md",
+      "language": "zh-CN",
+      "docx_scale": 1,
+      "docx_line_spacing_add": 1,
+      "contact": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "role": "AI Agent 开发工程师",
+      "sections": [
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical"
+            },
+            {
+              "fact": "skills_technical"
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "show_heading": true
+            }
+          ]
+        }
+      ],
+      "approved_markdown": "profile.json（完全虚构演示）",
+      "approved_word_content_sha256": ""
+    },
+    {
+      "folder": "演示简历版本",
+      "filename": "04-附件索引/演示简历.md",
+      "language": "zh-CN",
+      "docx_scale": 1,
+      "contact": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "role": "AI Agent 开发工程师",
+      "sections": [
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical"
+            },
+            {
+              "fact": "skills_technical"
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "show_heading": true
+            }
+          ]
+        }
+      ],
+      "approved_markdown": "profile.json（完全虚构演示）",
+      "approved_word_content_sha256": ""
+    },
+    {
+      "folder": "演示简历版本",
+      "filename": "04-附件索引/演示简历.md",
+      "language": "zh-CN",
+      "docx_scale": 1,
+      "docx_line_spacing_add": 1,
+      "contact_font_size": 1,
+      "header_side_width": 0,
+      "contact": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "role": "AI Agent 开发工程师",
+      "sections": [
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical"
+            },
+            {
+              "fact": "skills_technical"
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ],
+              "show_heading": true
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "show_heading": true
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "show_heading": true
+            }
+          ]
+        }
+      ],
+      "approved_markdown": "profile.json（完全虚构演示）",
+      "approved_word_content_sha256": ""
+    },
+    {
+      "folder": "演示简历版本",
+      "filename": "04-附件索引/演示简历.md",
+      "language": "zh-CN",
+      "docx_scale": 1,
+      "docx_line_spacing_add": 1,
+      "contact_font_size": 1,
+      "header_side_width": 0,
+      "contact": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "role": "AI Agent 开发工程师",
+      "sections": [
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical"
+            },
+            {
+              "fact": "skills_technical"
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ],
+              "show_heading": true
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "show_heading": true
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "show_heading": true
+            }
+          ]
+        }
+      ],
+      "approved_markdown": "profile.json（完全虚构演示）",
+      "approved_word_content_sha256": ""
+    },
+    {
+      "folder": "演示简历版本",
+      "filename": "04-附件索引/演示简历.md",
+      "language": "zh-CN",
+      "docx_scale": 1,
+      "docx_line_spacing_add": 1,
+      "contact": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "role": "AI Agent 开发工程师",
+      "sections": [
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical"
+            },
+            {
+              "fact": "skills_technical"
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "show_heading": true
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "show_heading": true
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "approved_markdown": "profile.json（完全虚构演示）",
+      "approved_word_content_sha256": ""
+    },
+    {
+      "folder": "演示简历版本",
+      "filename": "04-附件索引/演示简历.md",
+      "language": "zh-CN",
+      "docx_scale": 1,
+      "contact": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "role": "AI Agent 开发工程师",
+      "sections": [
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical"
+            },
+            {
+              "fact": "skills_technical"
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "show_heading": true
+            }
+          ]
+        }
+      ],
+      "approved_markdown": "profile.json（完全虚构演示）",
+      "approved_word_content_sha256": ""
+    },
+    {
+      "folder": "演示简历版本",
+      "filename": "04-附件索引/演示简历.md",
+      "language": "zh-CN",
+      "docx_scale": 1,
+      "docx_line_spacing_add": 1,
+      "contact": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "role": "AI Agent 开发工程师",
+      "sections": [
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical"
+            },
+            {
+              "fact": "skills_technical"
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1,
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1,
+                1
+              ]
+            },
+            {
+              "fact": "skills_technical",
+              "indices": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "title": "AI Agent 开发项目（虚构）",
+          "blocks": [
+            {
+              "fact": "skills_technical",
+              "show_heading": true
+            }
+          ]
+        }
+      ],
+      "approved_markdown": "profile.json（完全虚构演示）",
+      "approved_word_content_sha256": ""
+    },
+    {
+      "folder": "演示简历版本",
+      "filename": "04-附件索引/演示简历.md",
+      "language": "zh-CN",
+      "role": "AI Agent 开发工程师",
+      "sections": [],
+      "approved_markdown": "profile.json（完全虚构演示）",
+      "approved_word_content_sha256": ""
+    }
+  ],
+  "approved_reference": "04-附件索引/演示简历.md",
+  "application_profile": {
+    "updated": "2026-09-25",
+    "source_policy": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+    "sales_self_media_latest": {
+      "status": "fictional-demo",
+      "latest_confirmation": "2026-09-25",
+      "date": "2026-09-25",
+      "account": "Agent开发学习笔记（虚构账号）",
+      "business": "智能体学习资料分享（虚构实践）",
+      "pain_point": "初学者缺少可运行的工具调用实例",
+      "solution": {
+        "part_2": "整理入门代码和评测说明",
+        "part_3": "根据匿名模拟反馈改进教程"
+      },
+      "content_topics": [
+        "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+      ],
+      "results": {
+        "period_months": 1,
+        "cumulative_sales_cny": 1,
+        "average_monthly_net_income_cny": 1,
+        "paid_users_min": 0,
+        "repurchase_rate": "不适用：演示项目没有真实交易",
+        "click_to_purchase_conversion_rate": "不适用：未统计真实转化",
+        "all_platform_likes_min": 1,
+        "ten_thousand_like_videos_min": 0,
+        "students_improved_from_5_0_or_5_5_to_6_0_plus_min": 1
+      },
+      "ownership": [
+        "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+      ],
+      "resume_positioning": "04-附件索引/演示简历.md"
+    },
+    "birth_date": {
+      "value": "2002-04-16",
+      "status": "fictional-demo",
+      "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "latest_confirmation": "2026-09-25"
+    },
+    "education_graduate": {
+      "school": "杭州电子科技大学",
+      "college": "计算机学院",
+      "major": "计算机技术",
+      "start_date": "2024-09-01",
+      "expected_graduation_date": "2027-06-30",
+      "supervisor": "陈远舟（虚构）",
+      "research_direction": "AI Agent 开发工程师",
+      "national_key_laboratory": true,
+      "national_key_laboratory_name": "无",
+      "joint_training": true,
+      "status": "fictional-demo",
+      "confirmed_on": "2026-09-25"
+    },
+    "education_undergraduate": {
+      "graduation_date": "2027-06-30",
+      "degree_date": "工学学士",
+      "degree": "工学学士",
+      "official_major": "软件工程",
+      "thesis_title": "面向企业知识服务的可验证检索增强智能体研究（虚构课题）",
+      "supervisor": null,
+      "supervisor_status": "陈远舟（虚构）",
+      "thesis_date": "2026-09-25",
+      "status": "fictional-demo",
+      "sources": [
+        "profile.json（完全虚构演示）",
+        "profile.json（完全虚构演示）",
+        "profile.json（完全虚构演示）"
+      ],
+      "research_summary": "背景与目标：为模拟企业文档提供可追溯的问答服务，降低无来源回答的比例。\n技术实现：使用 Python 与 FastAPI 构建检索服务，基于 PostgreSQL/pgvector 存储向量，结合关键词检索、向量召回及重排。通过 LangGraph 串联问题改写、检索、证据检查、回答生成和人工复核。为每次检索保留文档版本与引用位置。\n测试成果：建立覆盖权限隔离、空检索、冲突证据和长文档的本地评测集，记录准确性、延迟与调用成本。本项目为虚构演示，不代表真实成果。",
+      "gpa": "3.55/4.0"
+    },
+    "internship": {
+      "company": "阿里云计算有限公司（虚构任职，仅作演示）",
+      "section": "2026-09-25",
+      "job_title": "AI Agent 开发工程师",
+      "company_type": "阿里云计算有限公司（虚构任职，仅作演示）",
+      "department": "计算机学院",
+      "start": "2024-09-01",
+      "end": "2027-06-30",
+      "status": "fictional-demo",
+      "certificate_required": true,
+      "work_description": "2026-09-25",
+      "description_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+    },
+    "student_work": {
+      "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "copy_policy": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "items": [
+        "组织 Python、Git 与智能体开发主题交流，维护示例仓库、入门文档和活动报名表。协调同学完成开源入门练习。此组织及经历均为虚构。",
+        "组织 Python、Git 与智能体开发主题交流，维护示例仓库、入门文档和活动报名表。协调同学完成开源入门练习。此组织及经历均为虚构。",
+        "组织 Python、Git 与智能体开发主题交流，维护示例仓库、入门文档和活动报名表。协调同学完成开源入门练习。此组织及经历均为虚构。",
+        "组织 Python、Git 与智能体开发主题交流，维护示例仓库、入门文档和活动报名表。协调同学完成开源入门练习。此组织及经历均为虚构。"
+      ]
+    },
+    "languages": {
+      "IELTS": {
+        "test_date": "2026-09-25",
+        "report_date": "2026-09-25",
+        "type": "学术类",
+        "overall": 1,
+        "listening": 1,
+        "reading": 1,
+        "writing": 1,
+        "speaking": 1,
+        "CEFR": "C1（虚构成绩示例）",
+        "status": "fictional-demo",
+        "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+      },
+      "CET4": {
+        "exam_month": "2023-06",
+        "total": 1,
+        "listening": 1,
+        "reading": 1,
+        "writing_translation": 1,
+        "oral_month": "2023-05",
+        "oral_grade": "B",
+        "status": "fictional-demo",
+        "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+        "note": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+        "latest_confirmation": "2026-09-25"
+      },
+      "CET6": {
+        "exam_month": "2023-06",
+        "total": 1,
+        "listening": 1,
+        "reading": 1,
+        "writing_translation": 1,
+        "oral_grade": null,
+        "status": "fictional-demo",
+        "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+        "note": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+        "latest_confirmation": "2026-09-25"
+      }
+    },
+    "awards": [
+      {
+        "name": "林知远（虚构演示）",
+        "date": "2026-09-25",
+        "date_precision": "2026-09-25",
+        "issuer": "演示评审委员会（虚构）",
+        "level": "熟练",
+        "status": "fictional-demo",
+        "other_description": "2026-09-25",
+        "portal_include": true,
+        "portal_date": "2026-09-25",
+        "portal_date_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+        "portal_scope": "学校级",
+        "portal_grade": "二等奖"
+      },
+      {
+        "name": "林知远（虚构演示）",
+        "date": "2026-09-25",
+        "date_precision": "2026-09-25",
+        "issuer": "演示评审委员会（虚构）",
+        "level": "熟练",
+        "status": "fictional-demo",
+        "display_name": "智能应用实践奖（虚构）",
+        "other_description": "2026-09-25",
+        "portal_include": true,
+        "portal_scope": "学校级",
+        "portal_grade": "二等奖"
+      },
+      {
+        "name": "林知远（虚构演示）",
+        "date": "2026-09-25",
+        "date_precision": "2026-09-25",
+        "issuer": "演示评审委员会（虚构）",
+        "level": "熟练",
+        "status": "fictional-demo",
+        "rank": "前20%",
+        "rank_status": "前20%",
+        "other_description": "2026-09-25",
+        "portal_include": true,
+        "display_name": "智能应用实践奖（虚构）",
+        "portal_scope": "学校级",
+        "portal_grade": "二等奖"
+      },
+      {
+        "name": "林知远（虚构演示）",
+        "date": "2026-09-25",
+        "date_precision": "2026-09-25",
+        "issuer": "演示评审委员会（虚构）",
+        "level": "熟练",
+        "status": "fictional-demo",
+        "other_description": "2026-09-25",
+        "portal_include": true,
+        "portal_scope": "学校级",
+        "portal_grade": "二等奖"
+      },
+      {
+        "name": "林知远（虚构演示）",
+        "date": "2026-09-25",
+        "date_precision": "2026-09-25",
+        "issuer": "演示评审委员会（虚构）",
+        "level": "熟练",
+        "status": "fictional-demo",
+        "role": "AI Agent 开发工程师",
+        "other_description": "2026-09-25",
+        "portal_include": true,
+        "portal_scope": "学校级",
+        "portal_grade": "二等奖"
+      },
+      {
+        "name": "林知远（虚构演示）",
+        "date": "2026-09-25",
+        "date_precision": "2026-09-25",
+        "issuer": "演示评审委员会（虚构）",
+        "level": "熟练",
+        "status": "fictional-demo",
+        "academic_year": "2025–2026",
+        "academic_year_status": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "other_description": "2026-09-25",
+        "portal_include": true
+      },
+      {
+        "name": "林知远（虚构演示）",
+        "date": "2026-09-25",
+        "date_precision": "2026-09-25",
+        "issuer": "演示评审委员会（虚构）",
+        "level": "熟练",
+        "status": "fictional-demo",
+        "academic_year": "2025–2026",
+        "academic_year_status": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "other_description": "2026-09-25",
+        "portal_include": true
+      },
+      {
+        "name": "林知远（虚构演示）",
+        "date": "2026-09-25",
+        "date_precision": "2026-09-25",
+        "issuer": "演示评审委员会（虚构）",
+        "level": "熟练",
+        "status": "fictional-demo",
+        "other_description": "2026-09-25",
+        "portal_include": true
+      }
+    ],
+    "portal_answers": {
+      "scope": "仅用于虚构演示",
+      "status": "fictional-demo",
+      "source_channel": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "relatives_at_employer": true,
+      "legal_disputes": true,
+      "overseas_experience": true,
+      "family_disease_history": true
+    },
+    "exclusions": {
+      "undergraduate_scholarship_documents": "2027-06-30",
+      "ranking_documents": "前20%",
+      "award_documents": "未提供真实附件；见附件索引中的演示Markdown",
+      "internship_certificate": "未提供真实附件；见附件索引中的演示Markdown",
+      "published_papers": true,
+      "patents": true
+    },
+    "pending": [],
+    "debate_championships": [
+      {
+        "competition": "2026-09-25",
+        "date": "2026-09-25",
+        "role": "AI Agent 开发工程师",
+        "result": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "status": "fictional-demo"
+      },
+      {
+        "competition": "2026-09-25",
+        "date": null,
+        "role": "AI Agent 开发工程师",
+        "result": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "status": "fictional-demo",
+        "note": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+      }
+    ],
+    "challenge_project_period": {
+      "start": "2024-09-01",
+      "end": "2027-06-30",
+      "precision": "2026-09-25",
+      "status": "fictional-demo"
+    },
+    "ai_projects": {
+      "tools": [
+        "Python",
+        "LangGraph"
+      ],
+      "github_stars": 1,
+      "as_of": "2026-09-25",
+      "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "repository_url": null
+    },
+    "self_evaluation": "2026-09-25",
+    "portal_projects": [
+      {
+        "name": "林知远（虚构演示）",
+        "role": "AI Agent 开发工程师",
+        "start_month": "2024-09-01",
+        "end_month": "2027-06-30",
+        "date_precision": "2026-09-25",
+        "description": "2026-09-25",
+        "responsibilities": "背景与目标：为模拟企业文档提供可追溯的问答服务，降低无来源回答的比例。\n技术实现：使用 Python 与 FastAPI 构建检索服务，基于 PostgreSQL/pgvector 存储向量，结合关键词检索、向量召回及重排。通过 LangGraph 串联问题改写、检索、证据检查、回答生成和人工复核。为每次检索保留文档版本与引用位置。\n测试成果：建立覆盖权限隔离、空检索、冲突证据和长文档的本地评测集，记录准确性、延迟与调用成本。本项目为虚构演示，不代表真实成果。",
+        "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+        "date_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+        "portal_start_date": "2024-09-01",
+        "portal_end_date": "2027-06-30",
+        "portal_dates_verified": false,
+        "portal_date_note": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+      },
+      {
+        "name": "林知远（虚构演示）",
+        "role": "AI Agent 开发工程师",
+        "start_month": "2024-09-01",
+        "end_month": "2027-06-30",
+        "date_precision": "2026-09-25",
+        "description": "2026-09-25",
+        "responsibilities": "背景与目标：为模拟企业文档提供可追溯的问答服务，降低无来源回答的比例。\n技术实现：使用 Python 与 FastAPI 构建检索服务，基于 PostgreSQL/pgvector 存储向量，结合关键词检索、向量召回及重排。通过 LangGraph 串联问题改写、检索、证据检查、回答生成和人工复核。为每次检索保留文档版本与引用位置。\n测试成果：建立覆盖权限隔离、空检索、冲突证据和长文档的本地评测集，记录准确性、延迟与调用成本。本项目为虚构演示，不代表真实成果。",
+        "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+        "date_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+        "portal_start_date": "2024-09-01",
+        "portal_end_date": "2027-06-30",
+        "portal_dates_verified": false,
+        "portal_date_note": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+      }
+    ],
+    "portal_copy_policy": {
+      "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "description": "2026-09-25",
+      "project_responsibilities": "背景与目标：为模拟企业文档提供可追溯的问答服务，降低无来源回答的比例。\n技术实现：使用 Python 与 FastAPI 构建检索服务，基于 PostgreSQL/pgvector 存储向量，结合关键词检索、向量召回及重排。通过 LangGraph 串联问题改写、检索、证据检查、回答生成和人工复核。为每次检索保留文档版本与引用位置。\n测试成果：建立覆盖权限隔离、空检索、冲突证据和长文档的本地评测集，记录准确性、延迟与调用成本。本项目为虚构演示，不代表真实成果。",
+      "historical_snapshot_policy": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "browser_order": [
+        "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+      ]
+    },
+    "language_order": [
+      "CET6",
+      "IELTS",
+      "CET4"
+    ],
+    "latest_confirmed_application_fields": {
+      "status": "fictional-demo",
+      "updated": "2026-09-25",
+      "source": "完整虚构示例",
+      "graduate_supervisor": "陈远舟（虚构）",
+      "undergraduate_supervisor": "赵明澄（虚构）",
+      "undergraduate_supervisor_status": "陈远舟（虚构）",
+      "research_direction": "检索增强生成与工具调用智能体",
+      "national_key_laboratory": "无",
+      "joint_training": "否",
+      "english_name": "Alex Lin",
+      "ethnicity": "汉族",
+      "native_place": "浙江省杭州市",
+      "current_hukou": {
+        "province": "浙江省",
+        "city": "杭州市",
+        "district": "西湖区",
+        "address": "浙江省杭州市示例校区（虚构）",
+        "basis": "虚构校内集体户示例"
+      },
+      "undergraduate_rank": "前30%",
+      "graduate_rank": "前20%",
+      "accept_role_adjustment": true,
+      "expected_monthly_salary_cny": "15000–25000",
+      "preferred_cities_ordered": [
+        "杭州",
+        "上海",
+        "深圳"
+      ],
+      "fallback_city": "南京",
+      "current_salary": "实习6000元/月",
+      "arrival": "2027-07-01",
+      "recruitment_type": "校园招聘",
+      "final_submission_authorized": false,
+      "graduate_supervisor_phone": "00000000000",
+      "political_status": "共青团员",
+      "height_cm": 178,
+      "weight_kg": 70,
+      "graduate_end_date": "2027-06-30",
+      "major_category": "计算机类",
+      "health_status": "健康",
+      "emergency_contact": {
+        "name": "林建明（虚构）",
+        "phone": "00000000000",
+        "relationship": "父亲"
+      },
+      "internship_reference": {
+        "name": "周奕宁（虚构）",
+        "contact": "contact@example.invalid",
+        "position": "研发负责人",
+        "relationship": "领导"
+      }
+    }
+  },
+  "last_profile_updated": "04-附件索引/演示简历.md",
+  "latest_confirmed_application_fields": {
+    "status": "fictional-demo",
+    "updated": "2026-09-25",
+    "source": "完整虚构示例",
+    "graduate_supervisor": "陈远舟（虚构）",
+    "undergraduate_supervisor": "赵明澄（虚构）",
+    "undergraduate_supervisor_status": "陈远舟（虚构）",
+    "research_direction": "检索增强生成与工具调用智能体",
+    "national_key_laboratory": "无",
+    "joint_training": "否",
+    "english_name": "Alex Lin",
+    "ethnicity": "汉族",
+    "native_place": "浙江省杭州市",
+    "current_hukou": {
+      "province": "浙江省",
+      "city": "杭州市",
+      "district": "西湖区",
+      "address": "浙江省杭州市示例校区（虚构）",
+      "basis": "虚构校内集体户示例"
+    },
+    "undergraduate_rank": "前30%",
+    "graduate_rank": "前20%",
+    "accept_role_adjustment": true,
+    "expected_monthly_salary_cny": "15000–25000",
+    "preferred_cities_ordered": [
+      "杭州",
+      "上海",
+      "深圳"
+    ],
+    "fallback_city": "南京",
+    "current_salary": "实习6000元/月",
+    "arrival": "2027-07-01",
+    "recruitment_type": "校园招聘",
+    "final_submission_authorized": false,
+    "graduate_supervisor_phone": "00000000000",
+    "political_status": "共青团员",
+    "height_cm": 178,
+    "weight_kg": 70,
+    "graduate_end_date": "2027-06-30",
+    "major_category": "计算机类",
+    "health_status": "健康",
+    "emergency_contact": {
+      "name": "林建明（虚构）",
+      "phone": "00000000000",
+      "relationship": "父亲"
+    },
+    "internship_reference": {
+      "name": "周奕宁（虚构）",
+      "contact": "contact@example.invalid",
+      "position": "研发负责人",
+      "relationship": "领导"
+    }
+  },
+  "confirmed_undergraduate_academics": {
+    "gpa": "3.55/4.0",
+    "rank": "前30%",
+    "status": "fictional-demo",
+    "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+    "courses": {
+      "模拟集成电路设计": 1,
+      "微电子学基础": 1,
+      "数字信号处理": 1,
+      "电子电路基础": 1,
+      "计算机基础与C语言": 1
+    }
+  },
+  "company_referral_codes": {
+    "思特威": {
+      "value": "",
+      "status": "not-provided",
+      "confirmed_on": "2026-09-25",
+      "scope": "无真实内推码",
+      "supersedes": "无",
+      "note": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+    },
+    "长江存储": {
+      "value": "",
+      "status": "not-provided",
+      "confirmed_on": "2026-09-25",
+      "scope": "无真实内推码"
+    }
+  },
+  "company_application_answers": {
+    "长江存储": {
+      "referral_code": "",
+      "previously_employed": true,
+      "relatives_at_employer": true,
+      "source_channel": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "status": "fictional-demo",
+      "confirmed_on": "2026-09-25"
+    }
+  },
+  "multi_role_application_policy": {
+    "confirmed_on": "2026-09-25",
+    "policy": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+    "submission_stage": "未投递",
+    "evidence_log": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+  },
+  "identity_document_verified": {
+    "number": "",
+    "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+    "status": "fictional-demo",
+    "date": "2026-09-25"
+  },
+  "marital_status": {
+    "value": "未婚",
+    "status": "fictional-demo",
+    "date": "2026-09-25"
+  },
+  "social_media_sales_experience": {
+    "name": "林知远（虚构演示）",
+    "role": "AI Agent 开发工程师",
+    "start_month": "2024-09-01",
+    "ongoing": true,
+    "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+    "as_of": "2026-09-25",
+    "full_record": "背景与目标：为模拟企业文档提供可追溯的问答服务，降低无来源回答的比例。\n技术实现：使用 Python 与 FastAPI 构建检索服务，基于 PostgreSQL/pgvector 存储向量，结合关键词检索、向量召回及重排。通过 LangGraph 串联问题改写、检索、证据检查、回答生成和人工复核。为每次检索保留文档版本与引用位置。\n测试成果：建立覆盖权限隔离、空检索、冲突证据和长文档的本地评测集，记录准确性、延迟与调用成本。本项目为虚构演示，不代表真实成果。"
+  },
+  "latest_target_role_categories": {
+    "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+    "priority": [
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+    ],
+    "recruitment_type": "校园招聘",
+    "note": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+  }
+}

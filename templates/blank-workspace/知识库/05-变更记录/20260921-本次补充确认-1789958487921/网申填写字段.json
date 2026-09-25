@@ -1,0 +1,331 @@
+{
+  "status": "",
+  "updated": "",
+  "source_authority": {
+    "current_resume_source": "",
+    "applies_to": [
+      ""
+    ],
+    "copy_policy": "",
+    "historical_snapshot_policy": "",
+    "confirmed_on": ""
+  },
+  "projects": [
+    {
+      "name": "",
+      "section": "",
+      "role": "",
+      "role_source": "",
+      "start_month": "",
+      "end_month": "",
+      "date_precision": "",
+      "description": "",
+      "responsibilities": "",
+      "source": "",
+      "date_source": "",
+      "portal_start_date": "",
+      "portal_end_date": "",
+      "portal_dates_verified": false,
+      "portal_date_note": ""
+    }
+  ],
+  "awards": [
+    {
+      "name": "",
+      "date": "",
+      "date_precision": "",
+      "issuer": "",
+      "level": "",
+      "status": "",
+      "other_description": "",
+      "portal_include": false,
+      "portal_date": "",
+      "portal_date_source": "",
+      "portal_scope": "",
+      "portal_grade": ""
+    }
+  ],
+  "languages": {
+    "IELTS": {
+      "test_date": "",
+      "report_date": "",
+      "type": "",
+      "overall": 0,
+      "listening": 0,
+      "reading": 0,
+      "writing": 0,
+      "speaking": 0,
+      "CEFR": "",
+      "status": "",
+      "source": ""
+    },
+    "CET4": {
+      "exam_month": "",
+      "total": 0,
+      "listening": 0,
+      "reading": 0,
+      "writing_translation": 0,
+      "oral_month": "",
+      "oral_grade": "",
+      "status": "",
+      "source": "",
+      "note": "",
+      "latest_confirmation": ""
+    },
+    "CET6": {
+      "exam_month": "",
+      "total": 0,
+      "listening": 0,
+      "reading": 0,
+      "writing_translation": 0,
+      "oral_grade": "",
+      "status": "",
+      "source": "",
+      "note": "",
+      "latest_confirmation": ""
+    }
+  },
+  "internship": {
+    "company": "",
+    "section": "",
+    "job_title": "",
+    "job_title_source": "",
+    "company_type": "",
+    "department": "",
+    "start": "",
+    "end": "",
+    "status": "",
+    "certificate_required": false,
+    "work_description": "",
+    "description_source": "",
+    "leader_name": "",
+    "leader_phone": "",
+    "leader_phone_portal_value": "",
+    "daily_salary_cny": 0,
+    "source_latest": "",
+    "monthly_salary_cny": 0,
+    "leader_contact": "",
+    "leader_relation": "",
+    "leader_position": "",
+    "leader_company": "",
+    "confirmed_on": ""
+  },
+  "student_work": {
+    "source": "",
+    "copy_policy": "",
+    "items": [
+      ""
+    ]
+  },
+  "education_application_fields": {
+    "graduate": {
+      "supervisor": "",
+      "research_direction": "",
+      "national_key_laboratory": false,
+      "joint_training": false,
+      "status": "",
+      "confirmed_on": ""
+    },
+    "undergraduate": {
+      "supervisor": "",
+      "supervisor_status": "",
+      "status": "",
+      "confirmed_on": ""
+    }
+  },
+  "self_evaluation": "",
+  "resume_attachment": "",
+  "resume_upload_verified": false,
+  "submitted": false,
+  "month_date_policy": "",
+  "birth_date": "",
+  "language_order": [
+    ""
+  ],
+  "birth_date_portal_verified": false,
+  "portal_verification": {
+    "browser": "",
+    "completion": "",
+    "dates_persisted": false,
+    "award_count": 0,
+    "award_notes_empty": false,
+    "english_order": [
+      ""
+    ],
+    "transcripts": [
+      ""
+    ],
+    "pdf_attachment_retention": "",
+    "submission": ""
+  },
+  "location_preference": {
+    "primary": [
+      ""
+    ],
+    "secondary": [
+      ""
+    ],
+    "excluded": [
+      ""
+    ],
+    "portal_city_selection": ""
+  },
+  "attachment_audit": {
+    "date": "",
+    "visible_and_loaded_files": [
+      ""
+    ],
+    "resume_pdf_record_present": false,
+    "original_pdf_backend_retention": "",
+    "gpgpu_portal_status": "",
+    "gpgpu_submitted_at": "",
+    "soc_cpu_status": ""
+  },
+  "latest_confirmed_application_fields": {
+    "graduate_end_date": "",
+    "graduate_end_date_source": "",
+    "status": "",
+    "updated": "",
+    "source": "",
+    "graduate_supervisor": "",
+    "undergraduate_supervisor": "",
+    "undergraduate_supervisor_status": "",
+    "research_direction": "",
+    "national_key_laboratory": false,
+    "joint_training": false,
+    "english_name": "",
+    "ethnicity": "",
+    "native_place": "",
+    "current_hukou": {
+      "province": "",
+      "city": "",
+      "district": "",
+      "address": "",
+      "basis": ""
+    },
+    "undergraduate_rank": "",
+    "graduate_rank": "",
+    "accept_role_adjustment": false,
+    "expected_monthly_salary_cny": {
+      "min": 0,
+      "max": 0
+    },
+    "preferred_cities_ordered": [
+      ""
+    ],
+    "fallback_city": "",
+    "current_salary": "",
+    "arrival": "",
+    "recruitment_type": "",
+    "final_submission_authorized": false,
+    "height_cm": 0,
+    "weight_kg": 0,
+    "health_status": "",
+    "political_status": "",
+    "emergency_contact": {
+      "name": "",
+      "relationship": "",
+      "phone": ""
+    },
+    "physical_and_contact_fields_confirmed_on": "",
+    "arrival_source": "",
+    "mailing_address": "",
+    "postal_code": "",
+    "application_degree": "",
+    "degree_status": "",
+    "graduate_supervisor_phone": "",
+    "nationality": "",
+    "major_category": "",
+    "major_category_source": "",
+    "internship_reference": {
+      "name": "",
+      "relation": "",
+      "position": "",
+      "company": "",
+      "contact": "",
+      "monthly_salary_cny": 0,
+      "daily_salary_cny": 0,
+      "source": "",
+      "confirmed_on": ""
+    }
+  },
+  "confirmed_undergraduate_academics": {
+    "gpa": "",
+    "rank": "",
+    "status": "",
+    "source": "",
+    "courses": {
+      "模拟集成电路设计": 0,
+      "微电子学基础": 0,
+      "数字信号处理": 0,
+      "电子电路基础": 0,
+      "计算机基础与C语言": 0
+    }
+  },
+  "company_referral_codes": {
+    "思特威": {
+      "value": "",
+      "status": "",
+      "confirmed_on": "",
+      "scope": "",
+      "supersedes": "",
+      "note": ""
+    },
+    "长江存储": {
+      "value": "",
+      "status": "",
+      "confirmed_on": "",
+      "scope": ""
+    }
+  },
+  "company_application_answers": {
+    "长江存储": {
+      "referral_code": "",
+      "previously_employed": false,
+      "relatives_at_employer": false,
+      "source_channel": "",
+      "status": "",
+      "confirmed_on": ""
+    },
+    "空天研究院": {
+      "position_category": "",
+      "include_internship_in_work_history": false,
+      "status": "",
+      "confirmed_on": ""
+    }
+  },
+  "multi_role_application_policy": {
+    "confirmed_on": "",
+    "policy": "",
+    "submission_stage": "",
+    "evidence_log": ""
+  },
+  "identity_document_verified": {
+    "number": "",
+    "source": "",
+    "status": "",
+    "date": ""
+  },
+  "marital_status": {
+    "value": "",
+    "status": "",
+    "date": ""
+  },
+  "social_media_sales_experience": {
+    "name": "",
+    "role": "",
+    "start_month": "",
+    "ongoing": false,
+    "source": "",
+    "as_of": "",
+    "full_record": ""
+  },
+  "latest_target_role_categories": {
+    "source": "",
+    "priority": [
+      ""
+    ],
+    "recruitment_type": "",
+    "note": ""
+  }
+}

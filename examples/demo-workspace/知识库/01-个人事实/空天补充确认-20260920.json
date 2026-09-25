@@ -1,0 +1,66 @@
+{
+  "confirmed_at": "2026-09-25",
+  "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+  "arrival_date": "2026-09-25",
+  "mailing_address": "浙江省杭州市",
+  "postal_code": "310000",
+  "postal_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+  "application_degree": "工程硕士",
+  "degree_note": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+  "position_category": "AI Agent 开发工程师",
+  "include_internship_in_work_history": true,
+  "family_status": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+  "family_candidates": [
+    {
+      "relationship": "父亲",
+      "name_in_abc": "智能应用实践奖（虚构）",
+      "name_in_emergency_contact": "智能应用实践奖（虚构）",
+      "phone_candidate": "00000000000"
+    },
+    {
+      "relationship": "父亲",
+      "name_in_abc": "智能应用实践奖（虚构）"
+    }
+  ],
+  "company_candidates": [
+    "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+    "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+  ],
+  "nationality_status": "中国",
+  "nationality": "中国",
+  "supervisor_name": "陈远舟（虚构）",
+  "supervisor_phone": "00000000000",
+  "internship_leader": "陈远舟（虚构）",
+  "internship_leader_phone": "00000000000",
+  "internship_salary": "6000",
+  "high_school": "杭州电子科技大学",
+  "allow_not_applicable_none": true,
+  "family": [
+    {
+      "relation": "2026-09-25",
+      "userName": "林知远（虚构演示）",
+      "workUnit": "阿里云计算有限公司（虚构任职，仅作演示）",
+      "tel": "00000000000",
+      "age": 1,
+      "age_confirmed_on": "2026-09-25",
+      "position": "AI Agent 开发工程师"
+    },
+    {
+      "relation": "2026-09-25",
+      "userName": "林知远（虚构演示）",
+      "workUnit": "阿里云计算有限公司（虚构任职，仅作演示）",
+      "tel": "00000000000",
+      "age": 1,
+      "age_confirmed_on": "2026-09-25",
+      "position": "AI Agent 开发工程师"
+    }
+  ],
+  "high_school_start": "杭州电子科技大学",
+  "high_school_end": "杭州电子科技大学",
+  "internship_monthly_salary": 1,
+  "internship_daily_salary": 1,
+  "internship_leader_relation": "陈远舟（虚构）",
+  "internship_leader_position": "陈远舟（虚构）",
+  "internship_leader_company": "阿里云计算有限公司（虚构任职，仅作演示）",
+  "internship_updated_on": "2026-09-25"
+}

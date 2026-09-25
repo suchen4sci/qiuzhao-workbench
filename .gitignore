@@ -1,0 +1,14 @@
+**/node_modules/
+.local-workspace/
+**/artifacts/
+**/.runtime/
+**/*.log
+**/app-connection.json
+**/metrics/
+.env*
+!.env.example
+**/*.xlsx
+**/*.pdf
+**/*.docx
+**/Cookies*
+**/Local Storage/

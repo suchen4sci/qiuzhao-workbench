@@ -1,0 +1,393 @@
+{
+  "status": "fictional-demo",
+  "updated": "2026-09-25",
+  "source_authority": {
+    "current_resume_source": "04-附件索引/演示简历.md",
+    "applies_to": [
+      "profile.json（完全虚构演示）",
+      "profile.json（完全虚构演示）",
+      "profile.json（完全虚构演示）"
+    ],
+    "copy_policy": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+    "historical_snapshot_policy": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+    "confirmed_on": "2026-09-25"
+  },
+  "projects": [
+    {
+      "name": "林知远（虚构演示）",
+      "section": "2026-09-25",
+      "role": "AI Agent 开发工程师",
+      "role_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "start_month": "2024-09-01",
+      "end_month": "2027-06-30",
+      "date_precision": "2026-09-25",
+      "description": "2026-09-25",
+      "responsibilities": "背景与目标：为模拟企业文档提供可追溯的问答服务，降低无来源回答的比例。\n技术实现：使用 Python 与 FastAPI 构建检索服务，基于 PostgreSQL/pgvector 存储向量，结合关键词检索、向量召回及重排。通过 LangGraph 串联问题改写、检索、证据检查、回答生成和人工复核。为每次检索保留文档版本与引用位置。\n测试成果：建立覆盖权限隔离、空检索、冲突证据和长文档的本地评测集，记录准确性、延迟与调用成本。本项目为虚构演示，不代表真实成果。",
+      "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "date_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "portal_start_date": "2024-09-01",
+      "portal_end_date": "2027-06-30",
+      "portal_dates_verified": false,
+      "portal_date_note": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+    },
+    {
+      "name": "林知远（虚构演示）",
+      "section": "2026-09-25",
+      "role": "AI Agent 开发工程师",
+      "role_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "start_month": "2024-09-01",
+      "end_month": "2027-06-30",
+      "date_precision": "2026-09-25",
+      "description": "2026-09-25",
+      "responsibilities": "背景与目标：为模拟企业文档提供可追溯的问答服务，降低无来源回答的比例。\n技术实现：使用 Python 与 FastAPI 构建检索服务，基于 PostgreSQL/pgvector 存储向量，结合关键词检索、向量召回及重排。通过 LangGraph 串联问题改写、检索、证据检查、回答生成和人工复核。为每次检索保留文档版本与引用位置。\n测试成果：建立覆盖权限隔离、空检索、冲突证据和长文档的本地评测集，记录准确性、延迟与调用成本。本项目为虚构演示，不代表真实成果。",
+      "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "date_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "portal_start_date": "2024-09-01",
+      "portal_end_date": "2027-06-30",
+      "portal_dates_verified": false,
+      "portal_date_note": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+    }
+  ],
+  "awards": [
+    {
+      "name": "林知远（虚构演示）",
+      "date": "2026-09-25",
+      "date_precision": "2026-09-25",
+      "issuer": "演示评审委员会（虚构）",
+      "level": "熟练",
+      "status": "fictional-demo",
+      "other_description": "2026-09-25",
+      "portal_include": true,
+      "portal_date": "2026-09-25",
+      "portal_date_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "portal_scope": "学校级",
+      "portal_grade": "二等奖"
+    },
+    {
+      "name": "林知远（虚构演示）",
+      "date": "2026-09-25",
+      "date_precision": "2026-09-25",
+      "issuer": "演示评审委员会（虚构）",
+      "level": "熟练",
+      "status": "fictional-demo",
+      "display_name": "智能应用实践奖（虚构）",
+      "portal_scope_overrides": {
+        "长安汽车": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+      },
+      "portal_scope_override_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "other_description": "2026-09-25",
+      "portal_include": true,
+      "portal_scope": "学校级",
+      "portal_grade": "二等奖"
+    },
+    {
+      "name": "林知远（虚构演示）",
+      "date": "2026-09-25",
+      "date_precision": "2026-09-25",
+      "issuer": "演示评审委员会（虚构）",
+      "level": "熟练",
+      "status": "fictional-demo",
+      "rank": "前20%",
+      "portal_display_name_overrides": {
+        "长安汽车": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+      },
+      "rank_status": "前20%",
+      "other_description": "2026-09-25",
+      "portal_include": true,
+      "display_name": "智能应用实践奖（虚构）",
+      "portal_scope": "学校级",
+      "portal_grade": "二等奖"
+    },
+    {
+      "name": "林知远（虚构演示）",
+      "date": "2026-09-25",
+      "date_precision": "2026-09-25",
+      "issuer": "演示评审委员会（虚构）",
+      "level": "熟练",
+      "status": "fictional-demo",
+      "other_description": "2026-09-25",
+      "portal_include": true,
+      "portal_scope": "学校级",
+      "portal_grade": "二等奖"
+    },
+    {
+      "name": "林知远（虚构演示）",
+      "date": "2026-09-25",
+      "date_precision": "2026-09-25",
+      "issuer": "演示评审委员会（虚构）",
+      "level": "熟练",
+      "status": "fictional-demo",
+      "role": "AI Agent 开发工程师",
+      "other_description": "2026-09-25",
+      "portal_include": true,
+      "portal_scope": "学校级",
+      "portal_grade": "二等奖"
+    }
+  ],
+  "languages": {
+    "IELTS": {
+      "test_date": "2026-09-25",
+      "report_date": "2026-09-25",
+      "type": "学术类",
+      "overall": 1,
+      "listening": 1,
+      "reading": 1,
+      "writing": 1,
+      "speaking": 1,
+      "CEFR": "C1（虚构成绩示例）",
+      "status": "fictional-demo",
+      "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+    },
+    "CET4": {
+      "exam_month": "2023-06",
+      "total": 1,
+      "listening": 1,
+      "reading": 1,
+      "writing_translation": 1,
+      "oral_month": "2023-05",
+      "oral_grade": "B",
+      "status": "fictional-demo",
+      "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "note": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "latest_confirmation": "2026-09-25"
+    },
+    "CET6": {
+      "exam_month": "2023-06",
+      "total": 1,
+      "listening": 1,
+      "reading": 1,
+      "writing_translation": 1,
+      "oral_grade": null,
+      "status": "fictional-demo",
+      "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "note": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "latest_confirmation": "2026-09-25"
+    }
+  },
+  "internship": {
+    "company": "阿里云计算有限公司（虚构任职，仅作演示）",
+    "section": "2026-09-25",
+    "job_title": "AI Agent 开发工程师",
+    "job_title_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+    "company_type": "阿里云计算有限公司（虚构任职，仅作演示）",
+    "department": "计算机学院",
+    "start": "2024-09-01",
+    "end": "2027-06-30",
+    "status": "fictional-demo",
+    "certificate_required": true,
+    "work_description": "2026-09-25",
+    "description_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+  },
+  "student_work": {
+    "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+    "copy_policy": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+    "items": [
+      "组织 Python、Git 与智能体开发主题交流，维护示例仓库、入门文档和活动报名表。协调同学完成开源入门练习。此组织及经历均为虚构。",
+      "组织 Python、Git 与智能体开发主题交流，维护示例仓库、入门文档和活动报名表。协调同学完成开源入门练习。此组织及经历均为虚构。",
+      "组织 Python、Git 与智能体开发主题交流，维护示例仓库、入门文档和活动报名表。协调同学完成开源入门练习。此组织及经历均为虚构。",
+      "组织 Python、Git 与智能体开发主题交流，维护示例仓库、入门文档和活动报名表。协调同学完成开源入门练习。此组织及经历均为虚构。"
+    ]
+  },
+  "education_application_fields": {
+    "graduate": {
+      "supervisor": "陈远舟（虚构）",
+      "research_direction": "AI Agent 开发工程师",
+      "national_key_laboratory": true,
+      "joint_training": true,
+      "status": "fictional-demo",
+      "confirmed_on": "2026-09-25"
+    },
+    "undergraduate": {
+      "supervisor": null,
+      "supervisor_status": "陈远舟（虚构）",
+      "status": "fictional-demo",
+      "confirmed_on": "2026-09-25"
+    }
+  },
+  "self_evaluation": "2026-09-25",
+  "resume_attachment": "04-附件索引/演示简历.md",
+  "resume_upload_verified": false,
+  "submitted": false,
+  "month_date_policy": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+  "birth_date": "2002-04-16",
+  "language_order": [
+    "CET6",
+    "IELTS",
+    "CET4"
+  ],
+  "birth_date_portal_verified": false,
+  "portal_verification": {
+    "browser": "Electron内嵌浏览器",
+    "completion": "2026-09-25",
+    "dates_persisted": true,
+    "award_count": 1,
+    "award_notes_empty": true,
+    "english_order": [
+      "CET6",
+      "IELTS",
+      "CET4"
+    ],
+    "transcripts": [
+      "未提供真实附件；见附件索引中的演示Markdown",
+      "未提供真实附件；见附件索引中的演示Markdown"
+    ],
+    "pdf_attachment_retention": "04-附件索引/演示简历.md",
+    "submission": "2026-09-25"
+  },
+  "location_preference": {
+    "primary": [
+      "杭州"
+    ],
+    "secondary": [
+      "杭州"
+    ],
+    "excluded": [
+      "杭州"
+    ],
+    "portal_city_selection": "浙江省杭州市"
+  },
+  "attachment_audit": {
+    "date": "2026-09-25",
+    "visible_and_loaded_files": [
+      "未提供真实附件；见附件索引中的演示Markdown",
+      "未提供真实附件；见附件索引中的演示Markdown",
+      "未提供真实附件；见附件索引中的演示Markdown",
+      "未提供真实附件；见附件索引中的演示Markdown"
+    ],
+    "resume_pdf_record_present": true,
+    "original_pdf_backend_retention": "https://example.invalid/demo",
+    "gpgpu_portal_status": "未提供真实附件；见附件索引中的演示Markdown",
+    "gpgpu_submitted_at": "未提供真实附件；见附件索引中的演示Markdown",
+    "soc_cpu_status": "未提供真实附件；见附件索引中的演示Markdown"
+  },
+  "latest_confirmed_application_fields": {
+    "graduate_end_date": "2027-06-30",
+    "graduate_end_date_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+    "status": "fictional-demo",
+    "updated": "2026-09-25",
+    "source": "完整虚构示例",
+    "graduate_supervisor": "陈远舟（虚构）",
+    "undergraduate_supervisor": "赵明澄（虚构）",
+    "undergraduate_supervisor_status": "陈远舟（虚构）",
+    "research_direction": "检索增强生成与工具调用智能体",
+    "national_key_laboratory": "无",
+    "joint_training": "否",
+    "english_name": "Alex Lin",
+    "ethnicity": "汉族",
+    "native_place": "浙江省杭州市",
+    "current_hukou": {
+      "province": "浙江省",
+      "city": "杭州市",
+      "district": "西湖区",
+      "address": "浙江省杭州市示例校区（虚构）",
+      "basis": "虚构校内集体户示例"
+    },
+    "undergraduate_rank": "前30%",
+    "graduate_rank": "前20%",
+    "accept_role_adjustment": true,
+    "expected_monthly_salary_cny": "15000–25000",
+    "preferred_cities_ordered": [
+      "杭州",
+      "上海",
+      "深圳"
+    ],
+    "fallback_city": "南京",
+    "current_salary": "实习6000元/月",
+    "arrival": "2027-07-01",
+    "recruitment_type": "校园招聘",
+    "final_submission_authorized": false,
+    "height_cm": 178,
+    "weight_kg": 70,
+    "health_status": "健康",
+    "political_status": "共青团员",
+    "emergency_contact": {
+      "name": "林建明（虚构）",
+      "phone": "00000000000",
+      "relationship": "父亲"
+    },
+    "physical_and_contact_fields_confirmed_on": "2026-09-25",
+    "graduate_supervisor_phone": "00000000000",
+    "major_category": "计算机类",
+    "internship_reference": {
+      "name": "周奕宁（虚构）",
+      "contact": "contact@example.invalid",
+      "position": "研发负责人",
+      "relationship": "领导"
+    }
+  },
+  "confirmed_undergraduate_academics": {
+    "gpa": "3.55/4.0",
+    "rank": "前30%",
+    "status": "fictional-demo",
+    "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+    "courses": {
+      "模拟集成电路设计": 1,
+      "微电子学基础": 1,
+      "数字信号处理": 1,
+      "电子电路基础": 1,
+      "计算机基础与C语言": 1
+    }
+  },
+  "company_referral_codes": {
+    "思特威": {
+      "value": "",
+      "status": "not-provided",
+      "confirmed_on": "2026-09-25",
+      "scope": "无真实内推码",
+      "supersedes": "无",
+      "note": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+    },
+    "长江存储": {
+      "value": "",
+      "status": "not-provided",
+      "confirmed_on": "2026-09-25",
+      "scope": "无真实内推码"
+    }
+  },
+  "company_application_answers": {
+    "长江存储": {
+      "referral_code": "",
+      "previously_employed": true,
+      "relatives_at_employer": true,
+      "source_channel": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+      "status": "fictional-demo",
+      "confirmed_on": "2026-09-25"
+    }
+  },
+  "multi_role_application_policy": {
+    "confirmed_on": "2026-09-25",
+    "policy": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+    "submission_stage": "未投递",
+    "evidence_log": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+  },
+  "identity_document_verified": {
+    "number": "",
+    "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+    "status": "fictional-demo",
+    "date": "2026-09-25"
+  },
+  "marital_status": {
+    "value": "未婚",
+    "status": "fictional-demo",
+    "date": "2026-09-25"
+  },
+  "social_media_sales_experience": {
+    "name": "林知远（虚构演示）",
+    "role": "AI Agent 开发工程师",
+    "start_month": "2024-09-01",
+    "ongoing": true,
+    "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+    "as_of": "2026-09-25",
+    "full_record": "背景与目标：为模拟企业文档提供可追溯的问答服务，降低无来源回答的比例。\n技术实现：使用 Python 与 FastAPI 构建检索服务，基于 PostgreSQL/pgvector 存储向量，结合关键词检索、向量召回及重排。通过 LangGraph 串联问题改写、检索、证据检查、回答生成和人工复核。为每次检索保留文档版本与引用位置。\n测试成果：建立覆盖权限隔离、空检索、冲突证据和长文档的本地评测集，记录准确性、延迟与调用成本。本项目为虚构演示，不代表真实成果。"
+  },
+  "latest_target_role_categories": {
+    "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+    "priority": [
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+    ],
+    "recruitment_type": "校园招聘",
+    "note": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+  }
+}

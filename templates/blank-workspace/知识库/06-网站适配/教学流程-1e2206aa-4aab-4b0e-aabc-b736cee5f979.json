@@ -1,0 +1,29 @@
+{
+  "version": 0,
+  "site": {
+    "origin": "",
+    "path": "",
+    "route": ""
+  },
+  "sourceSession": "",
+  "policy": "",
+  "components": [],
+  "openings": [
+    {
+      "selector": "",
+      "headings": [
+        ""
+      ],
+      "expectedFields": [
+        ""
+      ],
+      "status": ""
+    }
+  ],
+  "capabilities": [
+    ""
+  ],
+  "limitations": [
+    ""
+  ]
+}

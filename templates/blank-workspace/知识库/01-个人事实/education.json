@@ -1,0 +1,45 @@
+{
+  "source": "",
+  "source_type": "",
+  "education": [
+    {
+      "school": "",
+      "college": "",
+      "level": "",
+      "major": "",
+      "start_date": "",
+      "expected_graduation_date": "",
+      "graduation_date": "",
+      "application_degree": "",
+      "gpa": "",
+      "class_rank": "",
+      "study_mode": ""
+    }
+  ],
+  "rules": [
+    ""
+  ],
+  "confirmed_undergraduate_academics": {
+    "gpa": "",
+    "rank": "",
+    "status": "",
+    "source": "",
+    "courses": {
+      "模拟集成电路设计": 0,
+      "微电子学基础": 0,
+      "数字信号处理": 0,
+      "电子电路基础": 0,
+      "计算机基础与C语言": 0
+    }
+  },
+  "high_school": {
+    "school": "",
+    "department": "",
+    "level": "",
+    "degree": "",
+    "major": "",
+    "educationType": "",
+    "startTime": "",
+    "endTime": ""
+  }
+}

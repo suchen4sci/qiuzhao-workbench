@@ -1,0 +1,46 @@
+{
+  "confirmed_on": "2026-09-25",
+  "digital_direction_single": "AI",
+  "digital_direction_multiple": [
+    "AI",
+    "软件开发"
+  ],
+  "skills": [
+    {
+      "name": "Python",
+      "level": "熟练",
+      "category": "开发编程类"
+    },
+    {
+      "name": "TypeScript",
+      "level": "熟练",
+      "category": "开发编程类"
+    },
+    {
+      "name": "SQL",
+      "level": "熟练",
+      "category": "开发编程类"
+    },
+    {
+      "name": "FastAPI",
+      "level": "熟练",
+      "category": "开发编程类"
+    },
+    {
+      "name": "LangGraph",
+      "level": "熟练",
+      "category": "开发编程类"
+    },
+    {
+      "name": "Docker",
+      "level": "熟练",
+      "category": "开发编程类"
+    }
+  ],
+  "python_level": null,
+  "save_authorized_company_id": "阿里云计算有限公司（虚构任职，仅作演示）",
+  "save_authorization": "2026-09-25",
+  "english_listening_speaking": "535",
+  "english_reading_writing": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+  "english_level_source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+}

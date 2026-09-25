@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; frame-src http://127.0.0.1:33210"><title>秋招工作台</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<aside class="library">
+  <header class="brand"><div class="brand-mark">秋</div><div><h1>秋招工作台</h1><p>资料在手，填写顺手。</p></div><span class="version">基础版</span></header>
+  <nav class="workspace-tabs" aria-label="工作区"><button id="forms-tab" class="active" aria-pressed="true">填表助手</button><button id="dashboard-tab" aria-pressed="false">秋招工作台</button></nav>
+  <div class="library-heading"><span>我的资料</span><button id="refresh" class="text-button" title="重新读取知识库">刷新资料 ↻</button></div>
+  <div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="搜索字段、项目、经历…" aria-label="搜索资料"><kbd>/</kbd></div>
+  <div class="source-note"><i></i> 已连接本地知识库 <span id="field-count"></span></div>
+  <nav id="categories" aria-label="资料分类"></nav>
+  <div id="records" class="records"></div>
+  <footer class="library-footer"><strong>点字段复制 · 点卡片选择经历</strong><span>所选经历用于当前页；原文不改写。</span></footer>
+</aside>
+<main>
+  <header class="workspace-header"><div><span class="eyebrow">校园招聘 / 填表工作区</span><h2 id="page-title">先在练习页试一次</h2></div><button id="demo" class="button subtle">打开练习页</button></header>
+  <form id="navigation" class="navigation"><button type="button" class="icon" id="back" title="后退">←</button><button type="button" class="icon" id="forward" title="前进">→</button><button type="button" class="icon" id="reload" title="刷新网页">↻</button><div class="url-wrap"><span>⌕</span><input id="url" placeholder="输入网址或搜索内容，如：北京芯片验证校招" aria-label="输入网址或搜索内容" autocomplete="off"></div><button class="button navigate" type="submit">前往</button></form>
+  <section class="actionbar"><div class="primary-actions"><button id="fill" class="button primary">ϟ 快速填写</button><button id="inspect" class="button">检查漏项</button><button id="ai" class="button ai">✧ AI读取</button><button id="stop" class="button danger" hidden>停止</button></div><button id="results" class="text-button">查看结果 ↗</button></section>
+  <div id="browser-anchor"></div>
+  <footer class="statusbar"><span id="status"><i></i> 就绪 · 只填写当前页，保留已有内容</span><span id="summary">填写不等于保存或提交</span></footer>
+</main>
+<section id="dashboard-pane" hidden><iframe id="dashboard-frame" title="秋招工作台：全部公司与投递进度"></iframe></section>
+<div id="overlay" class="overlay" hidden><section class="panel"><header><div><span class="eyebrow" id="panel-eyebrow">当前页面</span><h2 id="panel-title">填写结果</h2></div><button id="close-panel" class="icon" aria-label="关闭面板">×</button></header><div id="panel-body"></div></section></div>
+<div id="toast" class="toast" role="status" hidden></div>
+<script src="app.js"></script><script src="control-trace.js"></script><script src="runtime-status.js"></script><script src="dashboard-import.js"></script><script src="ai-reader.js"></script><script src="address-bar.js"></script></body></html>
+

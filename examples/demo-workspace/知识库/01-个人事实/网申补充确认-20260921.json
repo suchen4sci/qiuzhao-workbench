@@ -1,0 +1,163 @@
+{
+  "confirmed_on": "2026-09-25",
+  "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+  "sourcePlace": [
+    "profile.json（完全虚构演示）",
+    "profile.json（完全虚构演示）"
+  ],
+  "sourcePlaceDistrict": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+  "sourcePlaceFullPath": [
+    "profile.json（完全虚构演示）",
+    "profile.json（完全虚构演示）",
+    "profile.json（完全虚构演示）"
+  ],
+  "sourcePlacePolicy": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+  "education": {
+    "graduate": {
+      "retake": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "punishment": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+    },
+    "undergraduate": {
+      "retake": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "punishment": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+    }
+  },
+  "telecomRelatives": "00000000000",
+  "otherTalentPlan": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+  "graduateCoursesSource": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+  "graduateCourses": {
+    "计算电磁学中的数值方法": 1,
+    "工程伦理（MOOC）": 1,
+    "研究生英语": 1,
+    "半导体光电子学基础": 1,
+    "新时代中国特色社会主义理论与实践": 1,
+    "现代数字通信": 1,
+    "光电子学": 1,
+    "自然辩证法概论": 1,
+    "科研诚信与学术规范（MOOC）": 1,
+    "生物电子学": 1,
+    "如何写好科研论文": 1,
+    "光电检测技术实验": 1,
+    "宽带光接入网技术": 1
+  },
+  "educationType": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+  "undergraduateReference": {
+    "name": "林知远（虚构演示）",
+    "phone": "00000000000",
+    "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+  },
+  "undergraduateRankApplication": {
+    "origin": "https://example.invalid/demo",
+    "value": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+    "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+  },
+  "recruitmentSource": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+  "recruitmentSourceApplication": {
+    "origin": "https://example.invalid/demo",
+    "value": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+    "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+  },
+  "projectDates": {
+    "TDC": {
+      "start": "2024-09-01",
+      "end": "2027-06-30"
+    },
+    "laser905": {
+      "start": "2024-09-01",
+      "end": "2027-06-30"
+    }
+  },
+  "projectDatesSource": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+  "englishProficiency": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+  "publications": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+  "englishProficiencySource": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+  "haigeConfirmed": {
+    "height": 1,
+    "weight": 1,
+    "nativePlace": "浙江省杭州市",
+    "nativePlacePath": [
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+    ],
+    "birthPlace": "浙江省杭州市",
+    "growthPlace": "浙江省杭州市",
+    "annualSalary": "20000",
+    "otherCities": [
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+    ],
+    "confirmed_on": "2026-09-25",
+    "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+  },
+  "otherCitiesAvailability": {
+    "origin": "https://example.invalid/demo",
+    "key": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+    "value": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+    "requested": [
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+    ],
+    "unavailable": [
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+    ],
+    "evidence": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+  },
+  "acceptLocationAdjustment": "浙江省杭州市",
+  "acceptLocationAdjustmentSource": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+  "additionalSkillsVerified": {
+    "names": [
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+    ],
+    "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+    "confirmed_on": "2026-09-25"
+  },
+  "boeFieldMappings": {
+    "basic": [
+      {
+        "origin": "https://example.invalid/demo",
+        "key": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "value": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+      },
+      {
+        "origin": "https://example.invalid/demo",
+        "key": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "value": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+      }
+    ],
+    "intent": [],
+    "education": [
+      {
+        "origin": "https://example.invalid/demo",
+        "level": "熟练",
+        "key": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "value": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+      }
+    ],
+    "additional": [
+      {
+        "origin": "https://example.invalid/demo",
+        "key": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "value": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "confirmed_at": "2026-09-25",
+  "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+  "school_scholarship_second_or_above": true,
+  "provincial_ministerial_science_technology_award": true,
+  "details_status": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+  "questionnaire_options": [
+    "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+    "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+  ]
+}

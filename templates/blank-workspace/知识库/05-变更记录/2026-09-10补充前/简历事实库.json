@@ -1,0 +1,400 @@
+{
+  "schema_version": "",
+  "last_verified": "",
+  "profile": {
+    "cn": {
+      "name": "",
+      "contact": "",
+      "basic_title": "",
+      "gender": "",
+      "birth_year": "",
+      "age": "",
+      "political_status": "",
+      "phone": "",
+      "email": "",
+      "english": ""
+    },
+    "en": {
+      "name": "",
+      "contact": "",
+      "basic_title": "",
+      "gender": "",
+      "birth_year": "",
+      "age": "",
+      "political_status": "",
+      "phone": "",
+      "email": "",
+      "english": ""
+    },
+    "logo": "",
+    "photo": ""
+  },
+  "facts": {
+    "edu_ms": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "edu_bs": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "verification_intern": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      },
+      "revision_source": ""
+    },
+    "tdc_project": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "lidar_system": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      },
+      "measurement_source": ""
+    },
+    "lidar_system_state_technical": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      },
+      "measurement_source": ""
+    },
+    "sales_product": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "self_media": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "challenge_cup": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "honors": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "debate_achievements": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "language_proficiency": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "leadership": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "campus_service": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "student_work_state": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": []
+      }
+    },
+    "skills_technical": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "skills_sales": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "skills_fae": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "skills_state": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    }
+  },
+  "variants": [
+    {
+      "folder": "",
+      "filename": "",
+      "language": "",
+      "docx_scale": 0,
+      "contact": "",
+      "role": "",
+      "sections": [
+        {
+          "title": "",
+          "blocks": [
+            {
+              "fact": ""
+            }
+          ]
+        }
+      ],
+      "approved_markdown": "",
+      "approved_word_content_sha256": ""
+    }
+  ],
+  "approved_reference": ""
+}

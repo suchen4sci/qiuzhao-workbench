@@ -1,0 +1,38 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>填表练习场 · 本地演示</title><link rel="stylesheet" href="demo.css"></head><body>
+<header><span class="badge">本地练习场</span><span>填写只发生在本机，不会投递</span></header>
+<div class="intro"><div><p class="eyebrow">准备好资料，再去下一站。</p><h1>先试试，一键填好这些。</h1><p>点击上方「快速填写」，观察资料如何进入表单。<br>左侧选择另一条经历，再在空白表单中使用。</p></div><div class="demo-note"><b>3 个步骤</b><span>选资料 → 快速填写 → 检查漏项</span><small>这是真实表单，使用与招聘网页相同的填表引擎。</small></div></div>
+<form autocomplete="off">
+<fieldset><legend>基本信息</legend><div class="grid">
+<label>姓名<input id="name" name="name" required></label><label>性别<select id="gender"><option value="">请选择</option><option>男</option><option>女</option></select></label>
+<label>手机号<input id="phone" type="tel" required></label><label>邮箱<input id="email" type="email" required></label>
+<label>出生日期<input id="birth" type="date"></label><label>英文名<input id="english"></label>
+<label>籍贯<input id="native"></label><label>户口所在地<input id="hukou"></label>
+<label>现居地<input id="address" placeholder="未确认的内容保持为空"></label><label>验证码<input id="captcha" placeholder="由本人操作"></label>
+</div></fieldset>
+<fieldset><legend>教育经历 · 硕士研究生</legend><div class="grid">
+<label>学校名称<input id="ms-school"></label><label>学历<select id="ms-level"><option value="">请选择</option><option>硕士研究生</option><option>本科</option></select></label>
+<label>专业<input id="ms-major"></label><label>学院<input id="ms-department"></label>
+<label>入学时间<input id="ms-start" type="month"></label><label>毕业时间<input id="ms-end" type="date"></label>
+<label>导师<input id="ms-supervisor"></label><label>研究方向<input id="ms-research"></label>
+</div></fieldset>
+<fieldset><legend>教育经历 · 本科</legend><div class="grid">
+<label>学校名称<input id="bs-school"></label><label>专业<input id="bs-major"></label>
+<label>GPA<input id="bs-gpa"></label><label>成绩排名<select id="bs-rank"><option value="">请选择</option><option>前20%</option><option>前50%</option><option>前80%</option></select></label>
+<label>入学时间<input id="bs-start" type="month"></label><label>毕业时间<input id="bs-end" type="date"></label>
+<label>导师<input id="bs-supervisor" placeholder="本科无导师，保持为空"></label><label>学位<input id="bs-degree"></label>
+</div></fieldset>
+<fieldset><legend>实习经历</legend><div class="grid">
+<label>公司名称<input id="intern-company"></label><label>职位名称<input id="intern-role"></label>
+<label>开始时间<input id="intern-start" type="date"></label><label>结束时间<input id="intern-end" type="date"></label>
+<label class="full">工作内容<textarea id="intern-description" rows="7"></textarea></label>
+</div></fieldset>
+<fieldset><legend>项目经历</legend><div class="grid">
+<label>项目名称<input id="project-name"></label><label>项目角色<input id="project-role"></label>
+<label>开始时间<input id="project-start" type="month"></label><label>结束时间<input id="project-end" type="month"></label>
+<label class="full">项目描述<textarea id="project-description" rows="7"></textarea></label>
+<label class="full">项目职责<textarea id="project-duty" rows="3"></textarea></label>
+</div></fieldset>
+<fieldset><legend>自我评价</legend><label>自我评价<textarea id="evaluation" rows="5"></textarea></label></fieldset>
+<fieldset hidden><legend>教育经历</legend><label>学校名称<input id="hidden-school"></label></fieldset>
+<div class="end-note">练习页不提供提交按钮。实际招聘网站请自行核验保存结果与附件。</div>
+</form></body></html>

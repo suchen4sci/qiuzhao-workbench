@@ -1,0 +1,100 @@
+{
+  "source": "【完全虚构的演示资料】以下人物、在校/任职关系、成绩、获奖和日期由程序示例编造；真实机构名称仅作场景，不能用于真实投递。",
+  "source_type": "fictional-demo",
+  "education": [
+    {
+      "school": "杭州电子科技大学",
+      "college": "计算机学院",
+      "level": "硕士研究生",
+      "major": "计算机技术",
+      "start_date": "2024-09-01",
+      "expected_graduation_date": "2027-06-30",
+      "graduation_date": "2027-06-30",
+      "application_degree": "工程硕士",
+      "gpa": "3.65/4.0",
+      "class_rank": "前20%",
+      "study_mode": "全日制",
+      "duration_years": 0,
+      "education_category": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "status_at_source": "profile.json（完全虚构演示）",
+      "degree_awarded": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "supervisor": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "research_direction": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "national_key_laboratory": false,
+      "national_key_laboratory_name": "无",
+      "joint_training": false,
+      "application_fields_status": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "supervisor_phone": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "supervisor_source": "profile.json（完全虚构演示）",
+      "school_location": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "school_location_source": "profile.json（完全虚构演示）",
+      "admission_type": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "admission_type_source": "profile.json（完全虚构演示）"
+    },
+    {
+      "school": "浙江工业大学",
+      "college": "计算机科学与技术学院",
+      "level": "本科",
+      "major": "软件工程",
+      "start_date": "2020-09-01",
+      "expected_graduation_date": "2024-06-30",
+      "graduation_date": "2024-06-30",
+      "application_degree": "工学学士",
+      "gpa": "3.55/4.0",
+      "class_rank": "前30%",
+      "study_mode": "全日制",
+      "school_leaving_date": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "duration_years": 0,
+      "education_category": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "status_at_source": "profile.json（完全虚构演示）",
+      "degree_awarded": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "degree_awarded_date": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "thesis_title": "面向企业知识服务的可验证检索增强智能体研究（虚构课题）",
+      "supervisor": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "supervisor_status": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "application_fields_status": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "school_location": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "school_location_source": "profile.json（完全虚构演示）",
+      "admission_type": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+      "admission_type_source": "profile.json（完全虚构演示）",
+      "reference": {
+        "name": "智能应用实践奖（虚构）",
+        "phone": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+        "source": "profile.json（完全虚构演示）"
+      }
+    }
+  ],
+  "rules": [
+    "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+    "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+    "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+    "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+    "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+  ],
+  "confirmed_undergraduate_academics": {
+    "gpa": "3.55/4.0",
+    "rank": "前30%",
+    "status": "fictional-demo",
+    "source": "虚构演示资料；未进行真实申请或事实核验；请替换为本人信息后再使用。",
+    "courses": {
+      "模拟集成电路设计": 1,
+      "微电子学基础": 1,
+      "数字信号处理": 1,
+      "电子电路基础": 1,
+      "计算机基础与C语言": 1
+    }
+  },
+  "high_school": {
+    "school": "杭州市第十四中学",
+    "department": "高中部",
+    "level": "高中",
+    "degree": "无",
+    "major": "普通高中",
+    "educationType": "全日制",
+    "startTime": "2017-09-01",
+    "endTime": "2020-06-30",
+    "start_date": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+    "graduation_date": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。",
+    "status": "演示记录：AI Agent开发方向研三学生，所有内容虚构，实际运行值以profile.json对应字段为准。"
+  }
+}

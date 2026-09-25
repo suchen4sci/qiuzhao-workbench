@@ -1,0 +1,14 @@
+{
+  "name": "qiuzhao-workbench",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "setup": "npm ci --prefix 秋招桌面助手",
+    "start": "npm start --prefix 秋招桌面助手",
+    "test": "npm test --prefix 秋招桌面助手",
+    "test:smoke": "npm run test:smoke --prefix 秋招桌面助手",
+    "dashboard": "node 秋招看板/网页看板/server.mjs",
+    "init:blank": "node tools/init-workspace.cjs blank",
+    "init:demo": "node tools/init-workspace.cjs demo"
+  }
+}

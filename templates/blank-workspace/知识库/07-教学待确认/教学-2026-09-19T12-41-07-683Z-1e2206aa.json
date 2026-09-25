@@ -1,0 +1,36 @@
+{
+  "version": 0,
+  "id": "",
+  "startedAt": "",
+  "status": "",
+  "site": {
+    "origin": "",
+    "path": "",
+    "route": ""
+  },
+  "selections": {
+    "basic": 0
+  },
+  "note": "",
+  "events": [
+    {
+      "id": "",
+      "at": "",
+      "kind": "",
+      "frame": {
+        "origin": "",
+        "path": "",
+        "route": ""
+      },
+      "actionId": "",
+      "afterAction": "",
+      "manualOnly": false,
+      "state": {
+        "fields": [],
+        "dialogs": []
+      }
+    }
+  ],
+  "endedAt": "",
+  "endReason": ""
+}

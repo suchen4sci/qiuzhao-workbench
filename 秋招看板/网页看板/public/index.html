@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>秋招进度台</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="workspace">
+    <header class="masthead">
+      <div>
+        <p class="eyebrow">2027 届校园招聘</p>
+        <h1>秋招进度台</h1>
+        <p class="subtitle" id="todayText">全部岗位在一张表里，先处理最紧急的下一步。</p>
+      </div>
+      <div class="header-actions">
+        <span class="sync-state" id="syncState">正在读取 Excel…</span>
+        <button class="button" id="refreshButton" type="button">同步 Excel</button>
+        <button class="button primary" id="addCompanyButton" type="button">＋ 添加公司</button>
+      </div>
+    </header>
+
+    <section class="stats" aria-label="投递统计" id="stats"></section>
+
+    <section class="timeline-band" aria-label="未来七天">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">最近节点</p>
+          <h2>未来七天</h2>
+        </div>
+        <p>按官方时间与准备 DDL 中更早的一项排序</p>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <section class="board-section">
+      <div class="board-toolbar">
+        <div>
+          <p class="eyebrow">Excel 全量同步</p>
+          <h2><span id="resultCount">0</span> 个岗位</h2>
+        </div>
+        <div class="filters">
+          <label class="search">
+            <span>搜索</span>
+            <input id="searchInput" type="search" placeholder="公司、岗位、地区或技术方向">
+          </label>
+          <label class="select-filter">
+            <span>企业类别</span>
+            <select id="categoryFilter"><option value="">全部</option></select>
+          </label>
+          <label class="select-filter">
+            <span>当前状态</span>
+            <select id="stageFilter"><option value="">全部</option></select>
+          </label>
+          <div class="segmented" id="filterButtons" aria-label="筛选岗位">
+            <button type="button" data-filter="all" class="active">全部</button>
+            <button type="button" data-filter="todo">待处理</button>
+            <button type="button" data-filter="active">进行中</button>
+            <button type="button" data-filter="closed">已结束</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-shell">
+        <table class="jobs-table">
+          <thead>
+            <tr>
+              <th>公司与岗位</th>
+              <th>企业类别</th>
+              <th>当前状态</th>
+              <th>下一步</th>
+              <th>最近时间</th>
+              <th aria-label="查看详情"></th>
+            </tr>
+          </thead>
+          <tbody id="jobsBody"></tbody>
+        </table>
+      </div>
+      <div class="empty-state" id="emptyState" hidden><p>没有符合当前筛选的岗位。</p><button class="button" id="emptyAddButton" type="button">添加这家公司</button></div>
+    </section>
+  </main>
+
+  <dialog id="addDialog" class="dialog add-dialog" aria-labelledby="addTitle">
+    <form id="addForm" class="detail-sheet">
+      <div class="dialog-head"><div><h2 id="addTitle">添加公司</h2><p>只填公司名称也可以，保存后可随时更新投递状态。</p></div><button type="button" class="icon-button" data-close="addDialog" aria-label="关闭">×</button></div>
+      <div class="add-fields">
+        <label>公司名称 <span>必填</span><input id="addCompany" name="公司名称" required maxlength="200" placeholder="例如：中国农业银行"></label>
+        <label>投递岗位 <span>选填</span><input name="投递岗位" maxlength="200" placeholder="暂未确定可留空"></label>
+        <label>当前状态<select name="当前状态"><option value="待投递">未投递（待投递）</option><option value="已投递">已投递</option><option value="待确认岗位">待确认岗位</option></select></label>
+        <label>企业类别<select name="公司类型"><option value="">暂不确定</option><option>国央企</option><option>私企</option><option>外企</option></select></label>
+        <label>地区 <span>选填</span><input name="地区" placeholder="例如：北京"></label>
+        <label>投递链接 <span>选填</span><input type="url" name="投递链接" placeholder="https://"></label>
+      </div>
+      <p class="form-error" id="addError" role="alert"></p>
+      <div class="add-actions"><button class="button" type="button" data-close="addDialog">取消</button><button class="button primary" id="saveCompanyButton" type="submit">保存公司</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="detailDialog" class="dialog">
+    <div class="detail-sheet">
+      <div class="dialog-head">
+        <div>
+          <p class="eyebrow" id="dialogCompanyType">岗位详情</p>
+          <h2 id="dialogTitle">公司名称</h2>
+          <p id="dialogRole"></p>
+        </div>
+        <button type="button" class="icon-button" data-close="detailDialog" aria-label="关闭">×</button>
+      </div>
+
+      <section class="detail-status" aria-label="当前状态">
+        <div>
+          <span class="detail-label">当前状态</span>
+          <select id="detailStageSelect" class="status-select"></select>
+        </div>
+        <div>
+          <span class="detail-label">最近时间</span>
+          <strong id="detailDue">等待邮箱更新</strong>
+          <span id="detailDateNote" class="due-kind"></span>
+        </div>
+        <div class="detail-action" id="detailAction"></div>
+      </section>
+
+      <div class="detail-grid">
+        <section class="detail-card span-2">
+          <p class="detail-kicker">岗位 JD</p>
+          <div id="jdContent" class="rich-copy"></div>
+        </section>
+        <section class="detail-card">
+          <p class="detail-kicker">公司背调</p>
+          <div id="backgroundContent" class="rich-copy"></div>
+        </section>
+        <section class="detail-card">
+          <p class="detail-kicker">业务与技术方向</p>
+          <div id="technologyContent" class="rich-copy"></div>
+        </section>
+        <section class="detail-card highlight-card span-2">
+          <p class="detail-kicker">面试时可重点展开</p>
+          <div id="highlightContent" class="rich-copy"></div>
+        </section>
+        <section class="detail-card question-card span-2">
+          <p class="detail-kicker">可以问面试官</p>
+          <div id="questionContent" class="rich-copy"></div>
+        </section>
+        <section class="detail-card span-2" id="interviewCard" hidden>
+          <p class="detail-kicker">本轮安排</p>
+          <div id="interviewContent" class="fact-list"></div>
+        </section>
+        <section class="source-strip span-2" id="sourceStrip"></section>
+        <p class="browser-note span-2">外部链接使用系统默认浏览器打开，会沿用该浏览器已有的登录状态；看板不保存账号或密码。</p>
+      </div>
+      <p class="form-error" id="detailError" role="alert"></p>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

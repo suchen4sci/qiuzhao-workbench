@@ -1,0 +1,12 @@
+{
+  "demo": true,
+  "attachments": [
+    {
+      "path": "04-附件索引/演示简历.md",
+      "type": "fictional-markdown",
+      "verified": false,
+      "uploaded": false,
+      "note": "非正式附件，不可当成绩单或证书；使用自己的原件。"
+    }
+  ]
+}

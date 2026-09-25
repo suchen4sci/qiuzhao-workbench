@@ -1,0 +1,777 @@
+{
+  "schema_version": "",
+  "last_verified": "",
+  "profile": {
+    "cn": {
+      "name": "",
+      "contact": "",
+      "basic_title": "",
+      "gender": "",
+      "birth_year": "",
+      "age": "",
+      "political_status": "",
+      "phone": "",
+      "email": "",
+      "english": ""
+    },
+    "en": {
+      "name": "",
+      "contact": "",
+      "basic_title": "",
+      "gender": "",
+      "birth_year": "",
+      "age": "",
+      "political_status": "",
+      "phone": "",
+      "email": "",
+      "english": ""
+    },
+    "logo": "",
+    "photo": "",
+    "birth_date": ""
+  },
+  "facts": {
+    "edu_ms": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "edu_bs": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "verification_intern": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      },
+      "current_source": "",
+      "copy_policy": "",
+      "revision_source": "",
+      "organization_source": ""
+    },
+    "tdc_project": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      },
+      "role": "",
+      "current_source": "",
+      "copy_policy": ""
+    },
+    "lidar_system": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      },
+      "role": "",
+      "current_source": "",
+      "copy_policy": "",
+      "measurement_source": ""
+    },
+    "lidar_system_state_technical": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      },
+      "measurement_source": ""
+    },
+    "sales_product": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "self_media": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "challenge_cup": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      },
+      "date_note": ""
+    },
+    "honors": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "debate_achievements": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "language_proficiency": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "leadership": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "campus_service": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "student_work_state": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": []
+      },
+      "current_source": "",
+      "copy_policy": ""
+    },
+    "skills_technical": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "skills_sales": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "skills_fae": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    },
+    "skills_state": {
+      "title": {
+        "cn": "",
+        "en": ""
+      },
+      "date": {
+        "cn": "",
+        "en": ""
+      },
+      "bullets": {
+        "cn": [
+          ""
+        ],
+        "en": [
+          ""
+        ]
+      }
+    }
+  },
+  "variants": [
+    {
+      "folder": "",
+      "filename": "",
+      "language": "",
+      "docx_scale": 0,
+      "contact": "",
+      "role": "",
+      "sections": [
+        {
+          "title": "",
+          "blocks": [
+            {
+              "fact": ""
+            }
+          ]
+        }
+      ],
+      "approved_markdown": "",
+      "approved_word_content_sha256": ""
+    }
+  ],
+  "approved_reference": "",
+  "application_profile": {
+    "updated": "",
+    "source_policy": "",
+    "sales_self_media_latest": {
+      "status": "",
+      "latest_confirmation": "",
+      "date": "",
+      "account": "",
+      "business": "",
+      "pain_point": "",
+      "solution": {
+        "part_2": "",
+        "part_3": ""
+      },
+      "content_topics": [
+        ""
+      ],
+      "results": {
+        "period_months": 0,
+        "cumulative_sales_cny": 0,
+        "average_monthly_net_income_cny": 0,
+        "paid_users_min": 0,
+        "repurchase_rate": "",
+        "click_to_purchase_conversion_rate": "",
+        "all_platform_likes_min": 0,
+        "ten_thousand_like_videos_min": 0,
+        "students_improved_from_5_0_or_5_5_to_6_0_plus_min": 0
+      },
+      "ownership": [
+        ""
+      ],
+      "resume_positioning": ""
+    },
+    "birth_date": {
+      "value": "",
+      "status": "",
+      "source": "",
+      "latest_confirmation": ""
+    },
+    "education_graduate": {
+      "school": "",
+      "college": "",
+      "major": "",
+      "start_date": "",
+      "expected_graduation_date": "",
+      "supervisor": "",
+      "research_direction": "",
+      "national_key_laboratory": false,
+      "national_key_laboratory_name": "",
+      "joint_training": false,
+      "status": "",
+      "confirmed_on": ""
+    },
+    "education_undergraduate": {
+      "graduation_date": "",
+      "degree_date": "",
+      "degree": "",
+      "official_major": "",
+      "thesis_title": "",
+      "supervisor": "",
+      "supervisor_status": "",
+      "thesis_date": "",
+      "status": "",
+      "sources": [
+        ""
+      ],
+      "research_summary": "",
+      "gpa": ""
+    },
+    "internship": {
+      "company": "",
+      "section": "",
+      "job_title": "",
+      "company_type": "",
+      "department": "",
+      "start": "",
+      "end": "",
+      "status": "",
+      "certificate_required": false,
+      "work_description": "",
+      "description_source": ""
+    },
+    "student_work": {
+      "source": "",
+      "copy_policy": "",
+      "items": [
+        ""
+      ]
+    },
+    "languages": {
+      "IELTS": {
+        "test_date": "",
+        "report_date": "",
+        "type": "",
+        "overall": 0,
+        "listening": 0,
+        "reading": 0,
+        "writing": 0,
+        "speaking": 0,
+        "CEFR": "",
+        "status": "",
+        "source": ""
+      },
+      "CET4": {
+        "exam_month": "",
+        "total": 0,
+        "listening": 0,
+        "reading": 0,
+        "writing_translation": 0,
+        "oral_month": "",
+        "oral_grade": "",
+        "status": "",
+        "source": "",
+        "note": "",
+        "latest_confirmation": ""
+      },
+      "CET6": {
+        "exam_month": "",
+        "total": 0,
+        "listening": 0,
+        "reading": 0,
+        "writing_translation": 0,
+        "oral_grade": "",
+        "status": "",
+        "source": "",
+        "note": "",
+        "latest_confirmation": ""
+      }
+    },
+    "awards": [
+      {
+        "name": "",
+        "date": "",
+        "date_precision": "",
+        "issuer": "",
+        "level": "",
+        "status": "",
+        "other_description": "",
+        "portal_include": false,
+        "portal_date": "",
+        "portal_date_source": "",
+        "portal_scope": "",
+        "portal_grade": ""
+      }
+    ],
+    "portal_answers": {
+      "scope": "",
+      "status": "",
+      "source_channel": "",
+      "relatives_at_employer": false,
+      "legal_disputes": false,
+      "overseas_experience": false,
+      "family_disease_history": false
+    },
+    "exclusions": {
+      "undergraduate_scholarship_documents": "",
+      "ranking_documents": "",
+      "award_documents": "",
+      "internship_certificate": "",
+      "published_papers": false,
+      "patents": false
+    },
+    "pending": [],
+    "debate_championships": [
+      {
+        "competition": "",
+        "date": "",
+        "role": "",
+        "result": "",
+        "status": ""
+      }
+    ],
+    "challenge_project_period": {
+      "start": "",
+      "end": "",
+      "precision": "",
+      "status": ""
+    },
+    "ai_projects": {
+      "tools": [
+        ""
+      ],
+      "github_stars": 0,
+      "as_of": "",
+      "source": "",
+      "repository_url": ""
+    },
+    "self_evaluation": "",
+    "portal_projects": [
+      {
+        "name": "",
+        "role": "",
+        "start_month": "",
+        "end_month": "",
+        "date_precision": "",
+        "description": "",
+        "responsibilities": "",
+        "source": "",
+        "date_source": "",
+        "portal_start_date": "",
+        "portal_end_date": "",
+        "portal_dates_verified": false,
+        "portal_date_note": ""
+      }
+    ],
+    "portal_copy_policy": {
+      "source": "",
+      "description": "",
+      "project_responsibilities": "",
+      "historical_snapshot_policy": "",
+      "browser_order": [
+        ""
+      ]
+    },
+    "language_order": [
+      ""
+    ],
+    "latest_confirmed_application_fields": {
+      "status": "",
+      "updated": "",
+      "source": "",
+      "graduate_supervisor": "",
+      "undergraduate_supervisor": "",
+      "undergraduate_supervisor_status": "",
+      "research_direction": "",
+      "national_key_laboratory": false,
+      "joint_training": false,
+      "english_name": "",
+      "ethnicity": "",
+      "native_place": "",
+      "current_hukou": {
+        "province": "",
+        "city": "",
+        "district": "",
+        "address": "",
+        "basis": ""
+      },
+      "undergraduate_rank": "",
+      "graduate_rank": "",
+      "accept_role_adjustment": false,
+      "expected_monthly_salary_cny": {
+        "min": 0,
+        "max": 0
+      },
+      "preferred_cities_ordered": [
+        ""
+      ],
+      "fallback_city": "",
+      "current_salary": "",
+      "arrival": "",
+      "recruitment_type": "",
+      "final_submission_authorized": false
+    }
+  },
+  "last_profile_updated": "",
+  "latest_confirmed_application_fields": {
+    "status": "",
+    "updated": "",
+    "source": "",
+    "graduate_supervisor": "",
+    "undergraduate_supervisor": "",
+    "undergraduate_supervisor_status": "",
+    "research_direction": "",
+    "national_key_laboratory": false,
+    "joint_training": false,
+    "english_name": "",
+    "ethnicity": "",
+    "native_place": "",
+    "current_hukou": {
+      "province": "",
+      "city": "",
+      "district": "",
+      "address": "",
+      "basis": ""
+    },
+    "undergraduate_rank": "",
+    "graduate_rank": "",
+    "accept_role_adjustment": false,
+    "expected_monthly_salary_cny": {
+      "min": 0,
+      "max": 0
+    },
+    "preferred_cities_ordered": [
+      ""
+    ],
+    "fallback_city": "",
+    "current_salary": "",
+    "arrival": "",
+    "recruitment_type": "",
+    "final_submission_authorized": false
+  },
+  "confirmed_undergraduate_academics": {
+    "gpa": "",
+    "rank": "",
+    "status": "",
+    "source": "",
+    "courses": {
+      "模拟集成电路设计": 0,
+      "微电子学基础": 0,
+      "数字信号处理": 0,
+      "电子电路基础": 0,
+      "计算机基础与C语言": 0
+    }
+  },
+  "company_referral_codes": {
+    "思特威": {
+      "value": "",
+      "status": "",
+      "confirmed_on": "",
+      "scope": "",
+      "supersedes": "",
+      "note": ""
+    },
+    "长江存储": {
+      "value": "",
+      "status": "",
+      "confirmed_on": "",
+      "scope": ""
+    }
+  },
+  "company_application_answers": {
+    "长江存储": {
+      "referral_code": "",
+      "previously_employed": false,
+      "relatives_at_employer": false,
+      "source_channel": "",
+      "status": "",
+      "confirmed_on": ""
+    }
+  },
+  "multi_role_application_policy": {
+    "confirmed_on": "",
+    "policy": "",
+    "submission_stage": "",
+    "evidence_log": ""
+  },
+  "identity_document_verified": {
+    "number": "",
+    "source": "",
+    "status": "",
+    "date": ""
+  },
+  "marital_status": {
+    "value": "",
+    "status": "",
+    "date": ""
+  },
+  "social_media_sales_experience": {
+    "name": "",
+    "role": "",
+    "start_month": "",
+    "ongoing": false,
+    "source": "",
+    "as_of": "",
+    "full_record": ""
+  },
+  "latest_target_role_categories": {
+    "source": "",
+    "priority": [
+      ""
+    ],
+    "recruitment_type": "",
+    "note": ""
+  }
+}
