@@ -1,0 +1,27 @@
+Use case: ui-mockup / precise-object-edit.
+Edit the attached approved layout concept into ONE revised branding concept. Preserve the exact single-screen composition, natural aspect ratio (source 1487 x 1058), navigation order, grid, task rows, content hierarchy, typography scale, readable Chinese, all task times and demo data. Only redesign the palette and brand identity plus the exact app-name replacement. Do not create a collage or extra screens.
+
+PRODUCT NAME MUST BE EXACTLY: 招聘工作台. Replace the top-left 秋招工作台 with 招聘工作台. Remove every occurrence of the standalone 秋 logo or former name. The app is a general job-seeker workbench, not an autumn-only or recruiter admin product.
+
+NEW ORIGINAL SYMBOL:
+At the same top-left logo position create a distinctive original compact geometric brand mark, approximately 44-48px. Two precisely balanced interlocking rounded strokes form an open doorway with a rising path through negative space, subtly suggesting the next career step and connection between person and opportunity. Asymmetric enough to be memorable, simple enough to work as a one-color 16px icon. Strong silhouette, even optical weight, no fine lines, no letter inside a colored square, no Chinese character, no generic briefcase, no magnifying glass, no robot, no sparkle, no graduation cap, no leaf. The main logo is a free-standing flat symbol in deep forest green with at most one muted sage accent, not a glossy app tile. Do not imitate a known brand. Adjacent 招聘工作台 wordmark uses confident dark charcoal Chinese sans-serif with careful spacing and alignment. Keep mark and name on one line, fit the existing sidebar width without clipping.
+
+PALETTE REPLACEMENT THROUGHOUT:
+Primary deep forest green #245C4F (buttons, selected navigation icon/text, links and major accent).
+Primary hover/darker idea #1C483E.
+Canvas warm off-white #FAF9F6, white content #FFFFFF.
+Sidebar very pale warm stone #F2F1EB, thin border #E5E4DC.
+Primary text charcoal #252D2A, secondary #65716A with sufficient contrast.
+Selected navigation and supportive interview panel pale sage #E7EFE7 / #F0F4ED.
+Muted amber deadline badge #F4E6C4 background / #825C1E text.
+No cobalt blue, navy-blue accents, cold blue panels, purple, neon green, black sidebar, gradients, or strong shadows. Keep the design quiet, mature, warm and professional. Green should be restrained, most area remains warm white. Consistent icon strokes in charcoal or green. Primary 查看面试简报 button solid forest green, with white text.
+Use original rounded corners and fine separators, but no adding borders/cards. Top nav 今日 active in pale sage. Notification dot green. Current blue circles become very pale sage with green icons.
+
+PRESERVE CONTENT:
+Sidebar: 今日, 机会, 投递, 面试准备; bottom 设置 and 本地工作区.
+Title 今日. Date 2026年10月2日 · 周五.
+3 项待办 · 1 场面试 · 1 项待确认.
+Task rows 技术一面, 完成线上测评, 完成网申并上传简历, at 15:00, 18:00 前, 20:00 前.
+Right 下一场面试 and 查看面试简报, source and update indication.
+Keep the small caption 界面概念 · 演示数据 visible. Companies and information remain fictional.
+Create a polished coherent full UI, NOT a branding presentation board. No logo annotations or outside-screen explanation. No layout restructuring.

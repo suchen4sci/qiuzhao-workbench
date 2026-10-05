@@ -3,12 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "setup": "npm ci --prefix 秋招桌面助手",
-    "start": "npm start --prefix 秋招桌面助手",
-    "test": "npm test --prefix 秋招桌面助手",
-    "test:smoke": "npm run test:smoke --prefix 秋招桌面助手",
-    "dashboard": "node 秋招看板/网页看板/server.mjs",
+    "setup": "npm ci --prefix desktop",
+    "start": "npm start --prefix desktop",
+    "test": "npm test --prefix desktop && npm test --prefix hosted-service",
+    "test:smoke": "npm run test:smoke --prefix desktop",
+    "dashboard": "node dashboard/server.mjs",
     "init:blank": "node tools/init-workspace.cjs blank",
-    "init:demo": "node tools/init-workspace.cjs demo"
+    "init:demo": "node tools/init-workspace.cjs demo",
+    "pack": "npm run pack --prefix desktop",
+    "dist:win": "npm run dist:win --prefix desktop",
+    "dist:mac": "npm run dist:mac --prefix desktop",
+    "start:hosted": "npm start --prefix hosted-service",
+    "test:hosted": "npm test --prefix hosted-service"
   }
 }

@@ -1,0 +1,1 @@
+{"name":"qiuzhao-hosted-service","version":"0.1.0","private":true,"type":"commonjs","engines":{"node":">=24"},"scripts":{"start":"node server.cjs","test":"node --test tests/*.test.cjs"}}

@@ -1,0 +1,505 @@
+﻿文件路径,字节数,分类,用途
+.gitignore,323,仓库入口,README、当前 TODO、包配置、忽略规则或许可证
+LICENSE,1067,仓库入口,README、当前 TODO、包配置、忽略规则或许可证
+README.md,4907,仓库入口,README、当前 TODO、包配置、忽略规则或许可证
+THIRD_PARTY_NOTICES.md,643,仓库入口,README、当前 TODO、包配置、忽略规则或许可证
+TODO.md,2515,仓库入口,README、当前 TODO、包配置、忽略规则或许可证
+dashboard/README.md,669,模块说明,兼容看板目录说明
+dashboard/launch-dashboard.ps1,1489,兼容组件,旧 JSON 看板，仍有运行/打包/测试依赖
+dashboard/lib/store.mjs,2710,兼容组件,旧 JSON 看板，仍有运行/打包/测试依赖
+dashboard/package.json,124,兼容组件,旧 JSON 看板，仍有运行/打包/测试依赖
+dashboard/public/app.js,21994,兼容组件,旧 JSON 看板，仍有运行/打包/测试依赖
+dashboard/public/index.html,7338,兼容组件,旧 JSON 看板，仍有运行/打包/测试依赖
+dashboard/public/styles.css,12921,兼容组件,旧 JSON 看板，仍有运行/打包/测试依赖
+dashboard/server.mjs,5412,兼容组件,旧 JSON 看板，仍有运行/打包/测试依赖
+desktop/README.md,633,模块说明,主程序目录说明
+desktop/fixtures/demo.css,1747,验证资产,本地填表练习页
+desktop/fixtures/demo.html,4004,验证资产,本地填表练习页
+desktop/package-lock.json,160870,构建配置,桌面包描述与可复现依赖锁定
+desktop/package.json,1971,构建配置,桌面包描述与可复现依赖锁定
+desktop/scripts/ai-reader-service.cjs,7633,开发工具,历史 Codex 修复/热更新工具，默认关闭
+desktop/scripts/restore-window.ps1,1118,开发工具,历史 Codex 修复/热更新工具，默认关闭
+desktop/scripts/start.cjs,898,当前产品,源码启动入口
+desktop/scripts/update-live-engine.cjs,6911,开发工具,历史 Codex 修复/热更新工具，默认关闭
+desktop/src/add-awards.cjs,2925,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/add-projects.cjs,2504,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/add-record-control.cjs,861,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/ai-corrections.cjs,6079,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/ai-mapping.cjs,7047,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/ai-reader.cjs,8816,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/ai-reader.schema.json,621,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/ai-settings.cjs,2641,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/aircas-records.cjs,4487,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/aircas.cjs,5583,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/ant-controls.cjs,7164,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/calendar.cjs,3799,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/control-dispatcher.cjs,17054,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/control-value.cjs,2017,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/dashboard-import.cjs,2327,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/element-controls.cjs,3475,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/engine.cjs,48348,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/fill-execution.cjs,4597,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/form-cell-records.cjs,4096,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/job-context.cjs,1470,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/layui-controls.cjs,1792,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/learned-fields.cjs,1386,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/learning-summary.cjs,1553,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/main.cjs,41669,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/native-region.cjs,1636,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/navigation.cjs,867,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/phoenix-campus.cjs,2188,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/phoenix-family.cjs,1775,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/phoenix.cjs,9319,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/preload.cjs,825,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/profile.cjs,1978,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/qiyuan.cjs,10805,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/region.cjs,2125,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/render-health.cjs,1628,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/repair-awards.cjs,1857,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/rules.cjs,14831,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/runtime-version.cjs,1534,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/sd-controls.cjs,4196,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/services/ai-client.cjs,2158,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/assets.cjs,5873,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/backup.cjs,7086,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/briefings.cjs,7738,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/browser-workflow.cjs,7442,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/calendar.cjs,3573,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/discovery-search.cjs,8307,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/discovery.cjs,3484,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/document-worker.cjs,2887,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/event-context.cjs,1267,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/hosted.cjs,18150,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/interview-materials.cjs,2800,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/legacy.cjs,5016,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/local-time.cjs,1473,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/mail-ai.cjs,10755,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/mail-linkage.cjs,4159,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/mail-rules.cjs,4991,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/mail.cjs,13887,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/matching.cjs,9724,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/onboarding.cjs,4307,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/opportunity-actions.cjs,5043,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/opportunity-digest.cjs,5659,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/profile-service.cjs,8218,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/public-page.cjs,3843,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/qualifications.cjs,2974,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/reminders.cjs,8856,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/resume-ai.cjs,7275,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/search.cjs,5625,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/secret-vault.cjs,1075,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/source-adapters/baidu.cjs,4830,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/sources.cjs,14969,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/store.cjs,8945,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/workbench.cjs,9831,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/services/workflow.cjs,24542,当前产品,资料/存储/机会/邮件/提醒/AI/来源等业务服务
+desktop/src/structured-education.cjs,1819,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/teaching.cjs,19021,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/text-control.cjs,3634,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/ui/address-bar.js,1214,当前产品,工作台与浏览器界面；部分模块为兼容或开发入口
+desktop/src/ui/ai-corrections.js,7780,当前产品,工作台与浏览器界面；部分模块为兼容或开发入口
+desktop/src/ui/ai-reader.js,10579,当前产品,工作台与浏览器界面；部分模块为兼容或开发入口
+desktop/src/ui/app.js,11499,当前产品,工作台与浏览器界面；部分模块为兼容或开发入口
+desktop/src/ui/codex-repair-ui.js,1293,当前产品,工作台与浏览器界面；部分模块为兼容或开发入口
+desktop/src/ui/control-trace.js,1821,当前产品,工作台与浏览器界面；部分模块为兼容或开发入口
+desktop/src/ui/dashboard-import.js,2961,当前产品,工作台与浏览器界面；部分模块为兼容或开发入口
+desktop/src/ui/fill-takeover.html,651,当前产品,工作台与浏览器界面；部分模块为兼容或开发入口
+desktop/src/ui/hot-profile.js,1809,当前产品,工作台与浏览器界面；部分模块为兼容或开发入口
+desktop/src/ui/index.html,5147,当前产品,工作台与浏览器界面；部分模块为兼容或开发入口
+desktop/src/ui/interview-preparation.js,3298,当前产品,工作台与浏览器界面；部分模块为兼容或开发入口
+desktop/src/ui/opportunity-browser.js,1599,当前产品,工作台与浏览器界面；部分模块为兼容或开发入口
+desktop/src/ui/runtime-status.js,1447,当前产品,工作台与浏览器界面；部分模块为兼容或开发入口
+desktop/src/ui/style.css,10716,当前产品,工作台与浏览器界面；部分模块为兼容或开发入口
+desktop/src/ui/teaching.js,7636,当前产品,工作台与浏览器界面；部分模块为兼容或开发入口
+desktop/src/ui/workbench.css,17996,当前产品,工作台与浏览器界面；部分模块为兼容或开发入口
+desktop/src/ui/workbench.js,148405,当前产品,工作台与浏览器界面；部分模块为兼容或开发入口
+desktop/src/wjx.cjs,5965,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/workspace.cjs,1414,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/zhaopin-flow.cjs,1547,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/src/zhaopin.cjs,8289,当前产品与兼容,桌面主进程、规则/控件/站点执行器和辅助模块
+desktop/tests/add-record-control.test.cjs,923,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/ai-corrections-smoke.cjs,4409,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/ai-corrections.test.cjs,2640,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/ai-reader.test.cjs,2581,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/ai-scope-review.test.cjs,5384,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/assets-review.test.cjs,4716,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/assets.test.cjs,2849,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/backup-review.test.cjs,3754,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/backup.test.cjs,2841,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/baidu-source-smoke.cjs,4164,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/baidu-source.test.cjs,6730,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/briefings-review.test.cjs,11963,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/briefings.test.cjs,3621,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/browser-workflow.test.cjs,6762,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/calendar-history-review.test.cjs,7191,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/calendar-history-smoke.cjs,3027,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/calendar-history.test.cjs,3149,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/cloud-monitoring-review.test.cjs,4427,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/cloud-smoke.cjs,3805,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/comac-generic-fixes.test.cjs,1174,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/daily-search-review.test.cjs,11264,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/dashboard-import.test.cjs,1565,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/discovery-review.test.cjs,6912,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/discovery-search-smoke.cjs,4794,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/discovery-search.test.cjs,4726,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/discovery.test.cjs,3220,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/event-association-review.test.cjs,7503,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/event-link-smoke.cjs,4111,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/explicit-links-review.test.cjs,7482,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/fill-execution-review-smoke.cjs,5210,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/fill-execution-review.test.cjs,2537,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/fill-execution.test.cjs,4799,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/fill-takeover-smoke.cjs,4019,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/filled-corrections-review.cjs,10519,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/hosted-corrections-smoke.cjs,3915,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/hosted-mail-smoke.cjs,5118,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/hosted-mapping-review.test.cjs,10586,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/hosted-review.test.cjs,10288,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/integrations-smoke.cjs,10068,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/interview-materials-review.test.cjs,7488,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/interview-materials-smoke.cjs,4740,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/interview-materials.test.cjs,3000,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/legacy-review.test.cjs,6612,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/legacy.test.cjs,3024,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/mail-ai-review.test.cjs,13215,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/mail-ai-smoke.cjs,4035,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/mail-ai.test.cjs,4533,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/mail-association-review.test.cjs,9712,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/mail-association-smoke.cjs,4738,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/mail-association.test.cjs,3690,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/mail-review.test.cjs,13196,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/mail-update-review.test.cjs,9350,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/mail-updates-smoke.cjs,3955,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/mail-updates.test.cjs,4364,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/mail.test.cjs,4525,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/matching.test.cjs,3924,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/navigation.test.cjs,1271,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/offer-dates-review.test.cjs,9897,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/offer-dates-smoke.cjs,4060,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/offer-dates.test.cjs,4252,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/onboarding-review.test.cjs,5374,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/onboarding-smoke.cjs,5212,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/onboarding.test.cjs,4233,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/opportunity-browse-review.test.cjs,8467,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/opportunity-browse-smoke.cjs,5390,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/opportunity-browse.test.cjs,3847,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/opportunity-digest-review.test.cjs,9237,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/opportunity-digest-smoke.cjs,3563,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/opportunity-digest.test.cjs,4477,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/preference-editor-review.test.cjs,7518,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/preferences-preview.test.cjs,2267,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/preferences-smoke.cjs,4076,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/product-services.test.cjs,9341,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/profile-service.test.cjs,2973,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/public-smoke.cjs,8021,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/qualification-editor-review.test.cjs,6478,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/qualification-editor-smoke.cjs,3973,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/qualification-editor.test.cjs,2830,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/reminders-date-review.test.cjs,5975,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/reminders-review.test.cjs,4760,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/reminders.test.cjs,2570,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/resume-ai-review.test.cjs,5457,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/resume-ai.test.cjs,1015,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/search-review.test.cjs,5076,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/search-smoke.cjs,4081,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/search.test.cjs,2701,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/source-daily-review.test.cjs,7395,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/source-scheduling.test.cjs,2827,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/source-update-review.test.cjs,10567,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/source-update-smoke.cjs,3424,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/source-update.test.cjs,3580,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/sources-review.test.cjs,9067,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/sources.test.cjs,4821,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/store.test.cjs,4824,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/text-control.test.cjs,1044,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/workbench-smoke.cjs,5100,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+desktop/tests/workflow.test.cjs,6124,验证资产,单元/集成/审查回归或 Electron 冒烟；避免清理后功能退化
+docs/AI读取.md,3422,当前文档,使用/范围/状态/目录说明
+docs/README.md,1840,当前文档,使用/范围/状态/目录说明
+docs/archive/README.md,1159,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/00-导航与规则/02-来源与数据口径.md,120,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/00-导航与规则/03-岗位选材规则.md,117,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/00-导航与规则/04-外部知识库链接.md,120,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/00-导航与规则/工作流配置.json,363,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/00-导航与规则/网申填写规则.md,114,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/01-个人事实/README.md,102,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/01-个人事实/education.json,848,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/01-个人事实/中国电信网申待确认-20260921.md,132,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/01-个人事实/事实总览.md,108,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/01-个人事实/企业内推码.md,111,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/01-个人事实/奖项类别确认-20260920.json,213,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/01-个人事实/家庭信息.json,209,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/01-个人事实/教育补充确认-20260920.json,258,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/01-个人事实/求职意向确认-20260920.json,802,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/01-个人事实/空天补充确认-20260920.json,1159,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/01-个人事实/简历事实库.json,14714,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/01-个人事实/紫光补充确认-20260920.json,379,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/01-个人事实/网申填写字段.json,5628,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/01-个人事实/网申补充与核验.md,117,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/01-个人事实/网申补充确认-20260921.json,2544,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/01-个人事实/自媒体与知识付费销售.md,126,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/02-简历版本/README.md,102,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/02-经历与成果/01-企业知识库 RAG Agent.md,124,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/02-经历与成果/02-工具调用与任务规划 Agent 平台.md,139,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/02-经历与成果/03-校园办事多智能体助手.md,129,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/02-经历与成果/04-Agent 工具评测与追踪系统.md,132,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/02-经历与成果/05-开源智能求职工作流.md,126,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/03-公司岗位/README.md,102,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/04-投递记录/README.md,102,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/04-附件索引/演示简历.md,105,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/04-附件索引/附件索引.json,84,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/05-变更记录/2026-09-10补充前/01-事实总览.md,111,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/05-变更记录/2026-09-10补充前/02-来源与数据口径.md,120,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/05-变更记录/2026-09-10补充前/简历事实库.json,5963,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/05-变更记录/2026-09-14本科GPA统一.md,121,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/05-变更记录/2026-09-14英文简历同步中文版本.md,136,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/05-变更记录/2026-09-14销售简历自媒体置顶.md,133,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/05-变更记录/20260920-奖项日期与亚军确认/事实总览.md,108,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/05-变更记录/20260920-奖项日期与亚军确认/确认说明.md,108,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/05-变更记录/20260920-奖项日期与亚军确认/简历事实库.json,14516,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/05-变更记录/20260920-奖项日期与亚军确认/网申填写字段.json,6111,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/05-变更记录/20260920-奖项日期与亚军确认/网申补充与核验.md,117,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/05-变更记录/20260920-获奖混合记录纠错.md,129,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/05-变更记录/20260921-本次补充确认-1789958487921/education.json,1174,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/05-变更记录/20260921-本次补充确认-1789958487921/简历事实库.json,14516,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/05-变更记录/20260921-本次补充确认-1789958487921/网申填写字段.json,7061,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/05-变更记录/20260921-本次补充确认-1789958487921/网申补充确认-20260921.json,901,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/05-变更记录/目录迁移记录.md,114,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/05-变更记录/目录迁移路径映射.json,19,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/05-附件证据/README.md,102,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/2026-09-19-人工教学核验.md,125,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/learned-fields.json,406,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/region-paths.json,121,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/专业类别与工作台导入.md,126,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/北森-自动添加项目-20260920.md,130,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/北森-获奖逐条与论文不适用-20260920.md,142,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/北森求职意向-20260920.md,123,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/启元实验室/README.md,102,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/启元实验室/待确认字段.json,46,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/教学流程-1e2206aa-4aab-4b0e-aabc-b736cee5f979.json,368,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/空天研究院/README.md,102,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/获奖已确认纠错.json,223,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/获奖情况快速填写规则.md,126,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/通用控件与快速填写/2026-09-23-Layui与AI读取排障.md,129,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/通用控件与快速填写/20260921-海格验证与通用修正.md,132,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/通用控件与快速填写/20260922-AI按钮修复与多步骤验证.md,137,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/通用控件与快速填写/20260922-AI读取自动修正规则.md,131,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/通用控件与快速填写/20260922-京东方清空重填验证.md,132,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/通用控件与快速填写/20260923-声明字段与附件回读.md,132,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/通用控件与快速填写/Element-UI控件.md,112,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/通用控件与快速填写/README.md,102,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/通用控件与快速填写/北森跨公司复用与分类搜索.md,132,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/通用控件与快速填写/结构化表单-SD组件与年月联动.md,135,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/通用控件与快速填写/统一控件执行器.md,117,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/通用控件与快速填写/跨站表单扫描、匹配与验证.md,132,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/通用控件与快速填写/逐栏填写与回归验证.md,123,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/问卷星/README.md,102,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/06-网站适配/问卷星/中国电科电子科学研究院2027.json,1541,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/07-教学待确认/教学-2026-09-19T12-41-07-683Z-1e2206aa.json,533,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/07-教学待确认/页面新增内容核对-20260920.json,186,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/README.md,102,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/profile.json,1344,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/blank-workspace-baseline/知识库/对应清单.json,152,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/design/今日页概念-v1.png,1136974,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/design/今日页概念图-v1-prompt.txt,5167,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/design/招聘工作台-今日页概念-v2.png,1177276,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/design/招聘工作台-今日页苹果风-v3.png,1279740,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/design/招聘工作台-品牌概念-v2-prompt.txt,3373,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/design/招聘工作台-苹果风-v3-prompt.txt,6234,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/planning-2026-10-02/TODO-2026-09.md,6713,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/planning-2026-10-02/产品功能清单与UI实施路线.md,25551,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/planning-2026-10-02/当前版本界面验收指南.md,6074,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/planning-2026-10-02/界面重设计与智能工作流.md,12576,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/planning-2026-10-02/秋招全流程功能与API规划.md,24895,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/planning-2026-10-02/项目实现与产品化梳理.md,19125,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/ui-audit-20261002/01-dashboard.png,526824,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/archive/ui-audit-20261002/02-form-browser.png,501482,历史归档,追溯旧规划/视觉/空白模板；非日常运行必需
+docs/design/招聘工作台-浅彩参考-v4-prompt.txt,6414,设计依据,v4 参考方向、提示词与用户参考，不是运行截图
+docs/design/招聘工作台-浅彩参考-v4.png,1162688,设计依据,v4 参考方向、提示词与用户参考，不是运行截图
+docs/design/用户参考-SchoolHub.png,584760,设计依据,v4 参考方向、提示词与用户参考，不是运行截图
+docs/implementation/reviews/F1-ai-merge-review.md,4812,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/F1-onboarding-review.md,3409,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/F2-baidu-source-review.md,3756,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/F2-browse-gap-review.md,4365,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/F2-browse-review.md,3089,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/F2-daily-search-review.md,5356,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/F2-explicit-links-review.md,3603,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/F2-feedback-digest-gap-review.md,6816,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/F2-feedback-review.md,4129,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/F2-opportunity-digest-review.md,4655,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/F2-preference-editor-review.md,2291,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/F2-qualification-editor-review.md,2480,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/F3-filled-corrections-review.md,7064,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/F3-hosted-corrections-review.md,4350,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/F3-manual-takeover-review.md,6437,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/F5-hosted-mail-review.md,5775,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/F5-mail-ai-review.md,5188,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/F5-mail-association-review.md,3687,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/F5-mail-updates-review.md,4509,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/F5-offer-dates-review.md,4247,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/F6-calendar-history-review.md,4248,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/F7-event-association-review.md,3768,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/F7-interview-materials-review.md,3982,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/S01-storage-review.md,5877,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/S02-profile-review.md,6490,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/S03-assets-review.md,7145,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/S04-matching-review.md,4670,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/S05-daily-review.md,4706,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/S05-source-update-review.md,4169,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/S05-sources-review.md,4284,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/S06-plans-review.md,7923,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/S07-upload-review.md,9801,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/S08-ai-scope-review.md,4187,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/S08-hosted-mapping-review.md,4877,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/S09-calendar-review.md,7409,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/S10-mail-review.md,5512,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/S11-reminders-review.md,5886,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/S12-briefings-review.md,4379,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/S12-search-review.md,5012,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/S13-hosted-review.md,8713,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/S14-ui-review.md,7553,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/S15-monitoring-review.md,5865,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/S16-backup-review.md,3749,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/S16-current-release-review.md,4430,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/S16-legacy-review.md,3882,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/S16-packaging-review.md,4451,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/baseline-review.md,12922,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/reviews/final-scope-gap-review.md,11579,验证证据,版本审查记录；历史缺口需结合最新台账阅读
+docs/implementation/实施与审查台账.md,36014,当前文档,实现/测试/外部验收台账
+docs/research/招聘来源首轮核验-2026-10-03.md,4651,研究依据,来源观察与未达覆盖门槛
+docs/产品实施Plan-v1.md,64122,当前文档,使用/范围/状态/目录说明
+docs/发布验证.md,5282,当前文档,使用/范围/状态/目录说明
+docs/字段参考.md,6949,当前文档,使用/范围/状态/目录说明
+docs/工作台使用与运维.md,24789,当前文档,使用/范围/状态/目录说明
+docs/当前版本界面验收指南.md,2056,当前文档,使用/范围/状态/目录说明
+docs/目录盘点与整理-2026-10-05.md,13831,当前文档,目录盘点与整理说明
+docs/知识库建立.md,2168,当前文档,使用/范围/状态/目录说明
+docs/项目进度核对-2026-10-04.md,13378,当前文档,使用/范围/状态/目录说明
+examples/demo-workspace/投递记录.json,1103,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/00-导航与规则/02-来源与数据口径.md,613,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/00-导航与规则/03-岗位选材规则.md,610,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/00-导航与规则/04-外部知识库链接.md,613,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/00-导航与规则/工作流配置.json,1901,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/00-导航与规则/网申填写规则.md,607,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/01-个人事实/README.md,138,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/01-个人事实/education.json,6507,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/01-个人事实/中国电信网申待确认-20260921.md,625,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/01-个人事实/事实总览.md,601,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/01-个人事实/企业内推码.md,604,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/01-个人事实/奖项类别确认-20260920.json,694,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/01-个人事实/家庭信息.json,919,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/01-个人事实/教育补充确认-20260920.json,1599,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/01-个人事实/求职意向确认-20260920.json,2420,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/01-个人事实/空天补充确认-20260920.json,2804,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/01-个人事实/简历事实库.json,59941,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/01-个人事实/紫光补充确认-20260920.json,1231,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/01-个人事实/网申填写字段.json,26787,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/01-个人事实/网申补充与核验.md,610,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/01-个人事实/网申补充确认-20260921.json,10454,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/01-个人事实/自媒体与知识付费销售.md,619,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/02-简历版本/README.md,138,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/02-经历与成果/01-企业知识库 RAG Agent.md,884,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/02-经历与成果/02-工具调用与任务规划 Agent 平台.md,730,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/02-经历与成果/03-校园办事多智能体助手.md,624,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/02-经历与成果/04-Agent 工具评测与追踪系统.md,564,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/02-经历与成果/05-开源智能求职工作流.md,561,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/03-公司岗位/README.md,138,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/04-投递记录/README.md,138,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/04-附件索引/演示简历.md,5467,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/04-附件索引/附件索引.json,279,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/05-变更记录/2026-09-10补充前/01-事实总览.md,380,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/05-变更记录/2026-09-10补充前/02-来源与数据口径.md,389,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/05-变更记录/2026-09-10补充前/简历事实库.json,44835,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/05-变更记录/2026-09-14本科GPA统一.md,390,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/05-变更记录/2026-09-14英文简历同步中文版本.md,405,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/05-变更记录/2026-09-14销售简历自媒体置顶.md,402,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/05-变更记录/20260920-奖项日期与亚军确认/事实总览.md,377,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/05-变更记录/20260920-奖项日期与亚军确认/确认说明.md,377,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/05-变更记录/20260920-奖项日期与亚军确认/简历事实库.json,71299,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/05-变更记录/20260920-奖项日期与亚军确认/网申填写字段.json,17604,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/05-变更记录/20260920-奖项日期与亚军确认/网申补充与核验.md,386,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/05-变更记录/20260920-获奖混合记录纠错.md,398,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/05-变更记录/20260921-本次补充确认-1789958487921/education.json,4314,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/05-变更记录/20260921-本次补充确认-1789958487921/简历事实库.json,72151,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/05-变更记录/20260921-本次补充确认-1789958487921/网申填写字段.json,19636,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/05-变更记录/20260921-本次补充确认-1789958487921/网申补充确认-20260921.json,2132,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/05-变更记录/目录迁移记录.md,383,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/05-变更记录/目录迁移路径映射.json,10723,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/05-附件证据/README.md,138,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/2026-09-19-人工教学核验.md,488,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/learned-fields.json,34631,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/region-paths.json,583,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/专业类别与工作台导入.md,489,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/北森-自动添加项目-20260920.md,493,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/北森-获奖逐条与论文不适用-20260920.md,505,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/北森求职意向-20260920.md,486,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/启元实验室/README.md,465,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/启元实验室/待确认字段.json,10563,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/教学流程-1e2206aa-4aab-4b0e-aabc-b736cee5f979.json,11771,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/空天研究院/README.md,465,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/获奖已确认纠错.json,1856,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/获奖情况快速填写规则.md,489,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/通用控件与快速填写/2026-09-23-Layui与AI读取排障.md,492,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/通用控件与快速填写/20260921-海格验证与通用修正.md,495,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/通用控件与快速填写/20260922-AI按钮修复与多步骤验证.md,500,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/通用控件与快速填写/20260922-AI读取自动修正规则.md,494,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/通用控件与快速填写/20260922-京东方清空重填验证.md,495,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/通用控件与快速填写/20260923-声明字段与附件回读.md,495,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/通用控件与快速填写/Element-UI控件.md,475,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/通用控件与快速填写/README.md,465,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/通用控件与快速填写/北森跨公司复用与分类搜索.md,495,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/通用控件与快速填写/结构化表单-SD组件与年月联动.md,498,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/通用控件与快速填写/统一控件执行器.md,480,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/通用控件与快速填写/跨站表单扫描、匹配与验证.md,495,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/通用控件与快速填写/逐栏填写与回归验证.md,486,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/问卷星/README.md,465,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/06-网站适配/问卷星/中国电科电子科学研究院2027.json,5384,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/07-教学待确认/教学-2026-09-19T12-41-07-683Z-1e2206aa.json,1517093,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/07-教学待确认/页面新增内容核对-20260920.json,16594,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/README.md,626,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/profile.json,12381,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+examples/demo-workspace/知识库/对应清单.json,10257,示例与回归,虚构人物、确认材料与兼容数据，非用户真实资料
+hosted-service/.env.example,759,可选托管,需要独立部署的服务；非本地普通填表启动前提
+hosted-service/README.md,9074,可选托管,需要独立部署的服务；非本地普通填表启动前提
+hosted-service/accounts.cjs,2599,可选托管,需要独立部署的服务；非本地普通填表启动前提
+hosted-service/admin.cjs,1015,可选托管,需要独立部署的服务；非本地普通填表启动前提
+hosted-service/http.cjs,3816,可选托管,需要独立部署的服务；非本地普通填表启动前提
+hosted-service/jobs.cjs,7376,可选托管,需要独立部署的服务；非本地普通填表启动前提
+hosted-service/monitoring.cjs,8191,可选托管,需要独立部署的服务；非本地普通填表启动前提
+hosted-service/package.json,187,可选托管,需要独立部署的服务；非本地普通填表启动前提
+hosted-service/payments.cjs,6912,可选托管,需要独立部署的服务；非本地普通填表启动前提
+hosted-service/processors.cjs,8591,可选托管,需要独立部署的服务；非本地普通填表启动前提
+hosted-service/server.cjs,3917,可选托管,需要独立部署的服务；非本地普通填表启动前提
+hosted-service/store.cjs,3145,可选托管,需要独立部署的服务；非本地普通填表启动前提
+hosted-service/tests/correction-client-review.test.cjs,8464,验证资产,托管 API、任务、计费与云端回归
+hosted-service/tests/correction-client.test.cjs,3633,验证资产,托管 API、任务、计费与云端回归
+hosted-service/tests/http-client.test.cjs,2645,验证资产,托管 API、任务、计费与云端回归
+hosted-service/tests/mail-client-review.test.cjs,9023,验证资产,托管 API、任务、计费与云端回归
+hosted-service/tests/mail-client.test.cjs,3601,验证资产,托管 API、任务、计费与云端回归
+hosted-service/tests/mapping-client.test.cjs,2780,验证资产,托管 API、任务、计费与云端回归
+hosted-service/tests/monitoring-client.test.cjs,3518,验证资产,托管 API、任务、计费与云端回归
+hosted-service/tests/monitoring-review.test.cjs,7568,验证资产,托管 API、任务、计费与云端回归
+hosted-service/tests/review.test.cjs,12172,验证资产,托管 API、任务、计费与云端回归
+package.json,732,仓库入口,README、当前 TODO、包配置、忽略规则或许可证
+skills/qiuzhao-assistant/.gitignore,371,可选附加包,DIY 工作流与上游许可，不是主产品后台
+skills/qiuzhao-assistant/LICENSE,1065,可选附加包,DIY 工作流与上游许可，不是主产品后台
+skills/qiuzhao-assistant/README.md,5931,可选附加包,DIY 工作流与上游许可，不是主产品后台
+skills/qiuzhao-assistant/SKILL.md,14803,可选附加包,DIY 工作流与上游许可，不是主产品后台
+skills/qiuzhao-assistant/agents/openai.yaml,329,可选附加包,DIY 工作流与上游许可，不是主产品后台
+skills/qiuzhao-assistant/references/advanced-features.md,4710,可选附加包,DIY 工作流与上游许可，不是主产品后台
+skills/qiuzhao-assistant/references/browser-safety.md,7249,可选附加包,DIY 工作流与上游许可，不是主产品后台
+skills/qiuzhao-assistant/references/data-model.md,6968,可选附加包,DIY 工作流与上游许可，不是主产品后台
+skills/qiuzhao-assistant/references/extension-roadmap.md,2844,可选附加包,DIY 工作流与上游许可，不是主产品后台
+skills/qiuzhao-assistant/references/onboarding.md,4605,可选附加包,DIY 工作流与上游许可，不是主产品后台
+skills/qiuzhao-assistant/references/resume-tailoring.md,2810,可选附加包,DIY 工作流与上游许可，不是主产品后台
+skills/qiuzhao-assistant/references/resume-upload.md,5866,可选附加包,DIY 工作流与上游许可，不是主产品后台
+skills/qiuzhao-assistant/references/workflow.md,5277,可选附加包,DIY 工作流与上游许可，不是主产品后台
+skills/qiuzhao-assistant/scripts/attachment_manifest.py,4113,可选附加包,DIY 工作流与上游许可，不是主产品后台
+skills/qiuzhao-assistant/scripts/init_job_workspace.py,5089,可选附加包,DIY 工作流与上游许可，不是主产品后台
+skills/qiuzhao-assistant/scripts/version_resume.py,5318,可选附加包,DIY 工作流与上游许可，不是主产品后台
+templates/blank-workspace/知识库/06-网站适配/README.md,319,初始化必需,当前最小空白个人工作区
+templates/blank-workspace/知识库/06-网站适配/learned-fields.json,3,初始化必需,当前最小空白个人工作区
+templates/blank-workspace/知识库/README.md,948,初始化必需,当前最小空白个人工作区
+templates/blank-workspace/知识库/profile.json,1344,初始化必需,当前最小空白个人工作区
+tools/copy-tree.cjs,58,开发工具,工作区初始化/复制；源码和测试使用
+tools/init-workspace.cjs,541,开发工具,工作区初始化/复制；源码和测试使用

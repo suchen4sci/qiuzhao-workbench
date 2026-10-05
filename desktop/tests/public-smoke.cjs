@@ -1,0 +1,91 @@
+const fs=require('fs'),path=require('path'),os=require('os'),assert=require('assert/strict');
+console.log('starting smoke');
+const {_electron}=require('playwright-core');
+(async()=>{
+ const root=path.resolve(__dirname,'../..'),workspace=fs.mkdtempSync(path.join(os.tmpdir(),'qiuzhao-public-'));
+ require('../../tools/copy-tree.cjs').copyTree(path.join(root,'examples/demo-workspace'),workspace);
+ const env={...process.env,QIUZHAO_TEST:'1',QIUZHAO_WORKSPACE:workspace,QIUZHAO_USER_DATA:path.join(workspace,'browser')};delete env.ELECTRON_RUN_AS_NODE;
+ console.log('launching smoke desktop');
+ const packaged=process.env.QIUZHAO_SMOKE_EXECUTABLE;
+ if(packaged)delete env.QIUZHAO_WORKSPACE;
+ const app=await _electron.launch({executablePath:packaged||require('electron'),args:packaged?[]:[path.join(root,'desktop')],env});
+ try{
+  await app.firstWindow();let ui;for(let n=0;n<100;n++){ui=app.context().pages().find(p=>p.url().includes('/src/ui/index.html'));if(ui)break;await new Promise(r=>setTimeout(r,100));}assert(ui);await ui.waitForFunction(()=>!!window.workbenchUI);await ui.evaluate(()=>window.workbenchUI.show('browser'));await ui.waitForSelector('.record',{timeout:10000}).catch(async e=>{console.log(await ui.locator('body').innerText());throw e;});let page;
+  for(let n=0;n<100;n++){page=app.context().pages().find(p=>p.url().includes('/fixtures/demo.html'));if(page)break;await new Promise(r=>setTimeout(r,100));}
+  assert(page);await page.waitForSelector('#name');await ui.evaluate(()=>run('fill'));
+  assert.equal(await page.locator('#name').inputValue(),'林知远（虚构演示）');
+  const report=await ui.evaluate(()=>lastReport);assert(report.counts.filled>0);assert.equal(report.counts.failed,0);
+  await ui.evaluate(()=>run('fill'));assert.equal((await ui.evaluate(()=>lastReport)).counts.filled,0);
+  console.log('PASS desktop starts, loads fictional KB, real quick-fill and idempotent readback');
+  const workspaceInfo=await ui.evaluate(()=>call('workspace-info'));
+  if(packaged)assert.equal(workspaceInfo.path,path.join(workspace,'browser/workspace'));
+  await ui.evaluate(()=>$('dashboard-tab').click());
+  await ui.frameLocator('#dashboard-frame').locator('body').waitFor();
+  assert.match(await ui.frameLocator('#dashboard-frame').locator('body').innerText(),/秋招/);
+  const dashboardUrl=await ui.locator('#dashboard-frame').getAttribute('src');
+  assert.equal((await fetch(dashboardUrl+'api/jobs')).status,200);
+  await ui.evaluate(()=>$('forms-tab').click());
+  console.log('PASS embedded dashboard starts without external Node or PowerShell');
+  const http=require('node:http');let payload;
+  const model=http.createServer(async(req,res)=>{
+   let body='';for await(const chunk of req)body+=chunk;payload=JSON.parse(body);
+   const fields=JSON.parse(payload.messages[1].content).fields;
+   const target=fields.find(f=>f.labels.includes('用于国际交流的称呼'));
+   const gender=fields.find(f=>f.labels.includes('称谓标识选择'));
+   res.setHeader('Content-Type','application/json');
+   res.end(JSON.stringify({choices:[{message:{content:JSON.stringify({mappings:[...(target?[{id:target.id,group:'basic',key:'englishName',confidence:0.95,reason:'英文称呼'}]:[]),...(gender?[{id:gender.id,group:'basic',key:'gender',confidence:0.95,reason:'性别标识'}]:[])]})}}]}));
+  });
+  await new Promise(resolve=>model.listen(0,'127.0.0.1',resolve));
+  try{
+   await ui.locator('#ai-settings').click();
+   await ui.locator('#ai-enabled').check();
+   await ui.locator('#ai-base').fill(`http://127.0.0.1:${model.address().port}/v1`);
+   await ui.locator('#ai-model').fill('mock-model');
+   await ui.locator('#ai-config button').click();
+   await ui.locator('#overlay').waitFor({state:'hidden'});
+   await page.evaluate(()=>{document.querySelector('#english').closest('label').remove();const label=document.createElement('label');label.textContent='用于国际交流的称呼';const input=document.createElement('input');input.id='international';label.append(input);document.querySelector('fieldset .grid').append(label);});
+   await ui.locator('#ai').click();
+   await ui.locator('#ai-scope-form input').first().check();
+   await ui.locator('#ai-scope-form button').click();
+   await ui.locator('#ai-proposals').waitFor();
+   assert.equal(await page.locator('#international').inputValue(),'');
+   await ui.locator('#ai-proposals input').check();
+   await ui.locator('#ai-proposals button').click();
+   await ui.locator('#overlay').waitFor({state:'hidden'});
+   assert.equal(await page.locator('#international').inputValue(),'');
+   await ui.locator('#fill').click();
+   await page.waitForFunction(()=>document.querySelector('#international').value.length>0);
+   await ui.waitForFunction(()=>!busy);
+   const expected=JSON.parse(fs.readFileSync(path.join(workspaceInfo.path,'知识库/profile.json'))).values.basic[0].englishName;
+   assert.equal(await page.locator('#international').inputValue(),expected);
+   assert.equal(JSON.stringify(payload).includes('林知远'),false);
+   await ui.evaluate(()=>call('ai-settings',{action:'save',enabled:false,baseUrl:'',model:''}));
+   await page.locator('#international').fill('');
+   await ui.evaluate(()=>run('fill'));
+   assert.equal(await page.locator('#international').inputValue(),expected);
+   console.log('PASS AI metadata request, explicit mapping confirmation, rule replay and offline reuse');
+   await page.route('https://qiyuanzp.zhiye.com/**', route=>route.fulfill({contentType:'text/html; charset=utf-8',body:'<fieldset><legend>基本信息</legend><div class="ux-standard-form"><div class="form-item"><label class="form-item__title">用于国际交流的称呼<input id="international"></label></div><div class="form-item"><label class="form-item__title">称谓标识选择<select id="ai-gender"><option value="">请选择</option><option value="male">男</option><option value="female">女</option></select></label></div></div></fieldset>'}));
+   await ui.evaluate(()=>call('navigate','https://qiyuanzp.zhiye.com/form/local-regression'));
+   await page.waitForSelector('#international');
+   await ui.evaluate(baseUrl=>call('ai-settings',{action:'save',enabled:true,baseUrl,model:'mock-model'}),`http://127.0.0.1:${model.address().port}/v1`);
+   const specialist=await ui.evaluate(async()=>{const scope=await call('ai-scope');return call('ai-suggest',{token:scope.token,ids:scope.fields.map(f=>f.id),confirmed:true});});assert.equal(specialist.suggestions.length,2);
+   await ui.evaluate(result=>call('ai-confirm',{token:result.token,ids:result.suggestions.map(s=>s.id)}),specialist);
+   await ui.evaluate(()=>run('fill'));
+   assert.equal(await page.locator('#international').inputValue(),expected);
+   assert.equal((await ui.evaluate(()=>lastReport)).counts.filled,2);assert.equal(await page.locator('#ai-gender').inputValue(),'male');
+   await ui.evaluate(()=>run('fill'));
+   assert.equal((await ui.evaluate(()=>lastReport)).counts.existing,2);
+   console.log('PASS confirmed AI mappings replay after a legacy site adapter, using an intercepted local fixture');
+  }finally{await new Promise(resolve=>model.close(resolve));}
+
+ }finally{await app.close();}
+ process.env.QIUZHAO_WORKSPACE=workspace;
+ const store=await import('../../dashboard/lib/store.mjs');
+ const baseline=(await store.listJobs()).length;
+ const job=await store.addJob({'公司名称':'演示企业','投递岗位':'Agent开发','当前状态':'待投递'});
+ const changed=await store.updateJob(job['记录ID'],{'当前状态':'已投递'},job.__version);
+ assert.equal(changed['当前状态'],'已投递');assert.equal((await store.listJobs()).length,baseline+1);
+ await assert.rejects(store.addJob({'公司名称':'演示企业','投递岗位':'Agent开发'}),e=>e.code==='DUPLICATE');
+ await assert.rejects(store.updateJob(job['记录ID'],{'当前状态':'Offer'},job.__version),e=>e.code==='CONFLICT');
+ console.log('PASS portable dashboard create/update/persistence/deduplication/conflict');
+})().catch(e=>{console.error(e);process.exitCode=1;});

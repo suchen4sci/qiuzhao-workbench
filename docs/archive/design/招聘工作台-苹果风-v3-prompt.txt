@@ -1,0 +1,38 @@
+Use case: ui-mockup / redesign edit.
+Using the attached previous concept as product/content reference, make ONE substantially more refined desktop application design for 招聘工作台, with Apple macOS-inspired interaction styling and visual restraint. The user rejected the stiff enterprise-dashboard feel and the chunky angular logo. Preserve the product functions and four-entry navigation, but redesign visual rhythm, surfaces, proportions and logo. This must look genuinely different from a recolor of the input. One focused Today screen, 1440 x 1024 natural desktop aspect, flat full-screen UI, no laptop, wallpaper surrounding a floating mockup, perspective, or collage.
+
+Core art direction:
+Native Mac productivity app quality, inspired by the clarity of Calendar, Reminders and Notes without copying their brand identities. Calm white and neutral mist-gray surfaces. A very subtle frosted sidebar with a faint sage tint, lightly translucent unified top toolbar, precise typography, soft continuous corners and exceptionally careful spacing. Texture should be nearly imperceptible, not grain/noise. Color stays GREEN, but green is a restrained lively jade accent #2C8064 on a mostly white/soft-gray canvas. Main text #202724, secondary #6D7671, separator #EBEEEB. Avoid dark forest corporate slabs, beige/yellow cast, huge filled green regions, cold blue, neon, excessive glass blur or shiny 3D. No visible border around every section. No table-like grid of boxed cards. Use whitespace and native list rhythm. One only soft elevated interview feature surface, not a card farm.
+
+Original logo and wordmark:
+Replace the previous chunky interlocking-doorway logo completely. Design a new small elegant ORIGINAL abstract symbol, approx 28-32px, drawn as a single smooth open ascending loop with a clean tapered terminal and a tiny offset circular endpoint. It suggests a personal trajectory reaching a next step. A compact clear silhouette, optically balanced, muted jade, easy to recognize monochromatically. Free-standing, no square tile, no Chinese character, no letter monogram, no corporate building/door/chain/bracket imagery, no heavy bevel, no generic briefcase or handshake, no apple, leaf, robot or sparkle. Do not imitate Apple's logo or any existing company mark. Use a light/medium weight sculpted curve, not two thick angular pieces. Adjacent exact wordmark 招聘工作台 in a medium-weight modern Chinese sans-serif, smaller and less heavy than the reference. This product is for job seekers, not a recruiter CRM.
+
+Layout (keep same navigation but less rigid composition):
+Single LEFT SIDEBAR ~188px. Small refined brand at top. SF-like outline icons with restrained 1.5px line weight. Four entries 今日 (selected subtle sage pill), 机会, 投递, 面试准备. Bottom 设置. A compact small green-dot label 本地工作区. No personal profile, avatar block, 'basic edition' label, permanent secondary nav, or personal-data sidebar.
+MAIN unified very quiet toolbar at top with back/forward small controls at left if appropriate and search + notification at right. Main content generously inset, but not empty or sparse to the point of uselessness.
+Big readable heading 今日, 32px semibold, not oversized black 56px. Small date 2026年10月2日 · 周五. Below a conversational short line 3 项待办，下一场面试在 15:00. Small sync indicator 已同步 · 10:20. All fictional demo information.
+Primary main area is a beautifully spaced agenda list about 700px wide, with no outer card border. A small section heading 今日安排 and a very compact native segmented control 列表 / 日历 aligned right. Three rows separated by short thin dividers, naturally aligned, each with an empty subtle circle completion affordance and time label. Time should NOT shout louder than task names. Typographic hierarchy: task title 17-18px medium, company and role 14px muted, source/notes 12-13px.
+Row 1 15:00 — 技术一面; 启辰数科 · AI 应用工程师; small 线上 · 45 分钟; understated action 查看安排.
+Row 2 18:00 前 — 完成线上测评; 清和科技 · 后端开发工程师; a tiny soft amber label 今日截止; action 打开测评.
+Row 3 20:00 前 — 完成网申并上传简历; 远舟软件 · 软件开发工程师; small 已准备简历; action 继续申请.
+No oversized chevrons, no giant empty tile per row, no blue icons.
+
+RIGHT, a single premium, softly elevated interview preparation surface about 330px wide, slightly rounded 18-22px corners, creamy white with an almost imperceptible sage upper glow, hairline edge only if necessary, very soft natural shadow. This is the supporting focus; don't make it a tall block of green.
+Eyebrow 下一场面试, small pill 今天 15:00.
+Headline 启辰数科, subtext AI 应用工程师 · 技术一面.
+A tidy readiness line 面试简报已就绪.
+Three short elegant text rows with restrained icons:
+公司与业务
+相关产品
+我的项目经历
+Subtle explanatory line 来源与更新时间可查看.
+One prominent jade filled softly rounded button 查看面试简报 (44px tall), no full-width giant green banner. Supporting microcopy 从产品理解，到自己的观点.
+No extra empty cards below. A tiny unboxed text link 资料与简历 · 设置 is optional.
+
+BELOW the main agenda in the left column: a lightweight section 最近变化 with two compact entries in a single borderless feed:
+清和科技发来测评邀请 — 已创建待办 · 10:20
+1 条面试通知需要核对 — 同公司多个岗位 · 去处理
+Icons use very small neutral or pale jade discs, not large colored bubble badges.
+At the very bottom subtle caption 界面概念 · 演示数据.
+Date anchor strictly Friday October 2, 2026. No fake real-company claims.
+Typography: clean Chinese PingFang SC-style UI, medium-weight logo and controls, readable body 14–16px, balanced tracking. Precise soft geometry, relaxed hierarchy, fewer boxes, more intentional whitespace. Match true desktop app proportions. Keep all necessary text legible and spell Chinese accurately. Make the result feel approachable, personal, quiet and exquisitely resolved, NOT a green business admin template. Do not include Apple trademarks or Apple branding.

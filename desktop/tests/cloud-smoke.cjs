@@ -1,0 +1,18 @@
+const fs=require('node:fs'),path=require('node:path'),os=require('node:os'),assert=require('node:assert/strict');
+const {_electron}=require('playwright-core');
+(async()=>{
+ const root=path.resolve(__dirname,'../..'),workspace=fs.mkdtempSync(path.join(os.tmpdir(),'workbench-cloud-'));
+ require('../../tools/copy-tree.cjs').copyTree(path.join(root,'templates/blank-workspace'),workspace);
+ let now=Date.now(),title='初始岗位';const service=require('../../hosted-service/server.cjs').startService({directory:path.join(workspace,'server'),invite:'smoke-invite',monitoringEnabled:true,monitoring:{autoStart:false,clock:()=>now,reader:async url=>({url,body:JSON.stringify({'@type':'JobPosting',title})})}});
+ await new Promise(r=>service.server.listen(0,'127.0.0.1',r));const env={...process.env,QIUZHAO_TEST:'1',QIUZHAO_WORKSPACE:workspace,QIUZHAO_USER_DATA:path.join(workspace,'browser')};delete env.ELECTRON_RUN_AS_NODE;
+ const app=await _electron.launch({executablePath:require('electron'),args:[path.join(root,'desktop')],env});
+ try{await app.firstWindow();let ui;for(let i=0;i<100;i++){ui=app.context().pages().find(p=>p.url().includes('/ui/index.html'));if(ui)break;await new Promise(r=>setTimeout(r,100));}assert(ui);await ui.waitForFunction(()=>!!window.workbenchUI);const errors=[];ui.on('pageerror',e=>errors.push(e.message));
+ // Isolated test-only vault adapter; no real account secrets or OS keychain entries.
+ await app.evaluate(({safeStorage})=>{safeStorage.isEncryptionAvailable=()=>true;safeStorage.encryptString=v=>Buffer.from('TEST:'+v);safeStorage.decryptString=v=>v.toString().slice(5);});
+ await ui.evaluate(()=>window.workbenchUI.show('settings'));await ui.locator('[data-action="cloud-open"]').click();
+ await ui.locator('#panel-body input[name="baseUrl"]').fill(`http://127.0.0.1:${service.server.address().port}`);await ui.locator('#panel-body input[name="email"]').fill('smoke@example.invalid');await ui.locator('#panel-body input[name="password"]').fill('smoke-password-123');await ui.locator('#panel-body input[name="register"]').check();await ui.locator('#panel-body input[name="invite"]').fill('smoke-invite');await ui.locator('#panel-body button[type="submit"]').click();await ui.waitForFunction(()=>window.workbenchUI.getState().hosted?.connected);
+ await ui.evaluate(()=>window.workbenchUI.show('settings'));await ui.locator('[data-action="cloud-open"]').click();await ui.locator('[data-action="cloud-add"]').click();await ui.locator('#panel-body input[name="label"]').fill('云端测试公司');await ui.locator('#panel-body input[name="url"]').fill('https://example.com/jobs');await ui.locator('#panel-body input[name="confirmed"]').check();await ui.locator('#panel-body button[type="submit"]').click();await ui.locator('[data-action="cloud-toggle"]').waitFor();assert.match(await ui.locator('#panel-body').innerText(),/等待检查/);
+ await service.monitoring.tick();title='新内容岗位';now+=86400000;await service.monitoring.tick();await ui.locator('#panel-body [data-action="cloud-open"]').click();await ui.locator('[data-action="cloud-read"]').click();await ui.waitForFunction(()=>document.querySelectorAll('[data-action="cloud-read"]').length===0);
+ await ui.locator('[data-action="cloud-toggle"]').click();await ui.waitForFunction(()=>document.querySelector('[data-action="cloud-toggle"]')?.textContent==='恢复');await ui.locator('[data-action="cloud-remove"]').click();await ui.waitForFunction(()=>document.querySelectorAll('[data-action="cloud-remove"]').length===0);assert.deepEqual(errors,[]);console.log('Cloud GUI passed: login, explicit scope, baseline/change notice, read, pause, remove.');
+ }finally{await app.close();await service.close();fs.rmSync(workspace,{recursive:true,force:true});}
+})().catch(e=>{console.error(e);process.exitCode=1;});

@@ -1,0 +1,26 @@
+'use strict';
+const fs=require('node:fs'),os=require('node:os'),path=require('node:path'),assert=require('node:assert/strict');
+const {_electron}=require('playwright-core');const {abortablePage,runFill}=require('../src/fill-execution.cjs');
+(async()=>{
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'fill-execution-review-'));let app;
+ try{
+  const main=path.join(root,'main.cjs');fs.writeFileSync(main,"const {app,BrowserWindow}=require('electron');app.whenReady().then(async()=>{const w=new BrowserWindow({width:600,height:400,webPreferences:{nodeIntegration:false,contextIsolation:true}});await w.loadURL('data:text/html,<input id=field>');});app.on('window-all-closed',()=>app.quit());");
+  const env={...process.env};delete env.ELECTRON_RUN_AS_NODE;app=await _electron.launch({executablePath:require('electron'),args:[main],env});const page=await app.firstWindow();await page.waitForSelector('#field');console.log('API constructors',page.constructor.name,page.locator('#field').constructor.name);
+  // Actual Playwright auto-wait is canceled before an invisible field appears.
+  await page.locator('#field').evaluate(e=>e.style.display='none');let c=new AbortController(),p=abortablePage(page,c.signal);const began=Date.now(),pending=p.locator('#field').fill('late overwrite',{timeout:4000});const rejected=assert.rejects(pending,/manual takeover|abort/i);await new Promise(r=>setTimeout(r,100));c.abort(Error('manual takeover'));await rejected;assert(Date.now()-began<1500,'cancellation must not wait for ordinary action timeout');
+  await page.locator('#field').evaluate(e=>e.style.display='');await page.locator('#field').fill('manual');await new Promise(r=>setTimeout(r,250));assert.equal(await page.locator('#field').inputValue(),'manual');
+  // A blocked click must not resume after the button becomes actionable.
+  await page.evaluate(()=>{const b=document.createElement('button');b.id='blocked';b.disabled=true;b.textContent='select';b.onclick=()=>document.body.dataset.clicked='yes';document.body.append(b);});
+  c=new AbortController();p=abortablePage(page,c.signal);const clicking=p.locator('#blocked').click({timeout:4000});const clickRejected=assert.rejects(clicking,/manual takeover|abort/i);await new Promise(r=>setTimeout(r,120));c.abort(Error('manual takeover'));await clickRejected;await page.locator('#blocked').evaluate(b=>b.disabled=false);await new Promise(r=>setTimeout(r,150));assert.equal(await page.evaluate(()=>document.body.dataset.clicked),undefined);
+  // Abort must stop sequential input, not merely reject its returned promise.
+  await page.locator('#field').fill('');c=new AbortController();p=abortablePage(page,c.signal);const typing=p.locator('#field').pressSequentially('abcdefghijklmnopqrstuvwxyz',{delay:50,timeout:4000});const typedRejected=assert.rejects(typing);await new Promise(r=>setTimeout(r,140));c.abort(Error('manual takeover'));await typedRejected;const stoppedValue=await page.locator('#field').inputValue();await new Promise(r=>setTimeout(r,350));assert.equal(await page.locator('#field').inputValue(),stoppedValue);assert(stoppedValue.length<26);
+  // Async evaluate cannot be aborted: run must wait before reporting paused.
+  c=new AbortController();let entered;const ready=new Promise(r=>entered=r);let returned=false;
+  const run=runFill(page,{},{},{signal:c.signal,fillPage:async protectedPage=>{entered();await protectedPage.evaluate(async()=>{await new Promise(r=>setTimeout(r,180));document.querySelector('#field').value='settled before manual';});},inspectPage:async raw=>({fields:[],counts:{existing:(await raw.locator('#field').inputValue())==='settled before manual'?1:0}})}).then(r=>{returned=true;return r;});
+  await ready;await new Promise(r=>setTimeout(r,30));c.abort(Error('manual takeover'));await new Promise(r=>setTimeout(r,40));assert.equal(returned,false);const report=await run;assert.equal(report.execution.state,'paused');assert.equal(report.counts.existing,1);
+  // Actual JSHandle property Map remains guarded, not only API-name mocks.
+  c=new AbortController();p=abortablePage(page,c.signal);const properties=await(await p.evaluateHandle(()=>({field:document.querySelector('#field')}))).getProperties();c.abort(Error('manual takeover'));await assert.rejects(async()=>properties.get('field').asElement().fill('escaped'),/manual takeover/);
+  c=new AbortController();p=abortablePage(page,c.signal);await page.evaluate(()=>{const f=document.createElement('iframe');f.id='dynamic';f.srcdoc='<input id=child>';document.body.append(f);});await p.frameLocator('#dynamic').locator('#child').fill('before');const child=p.frames().find(f=>f.url()==='about:srcdoc');assert(child);c.abort(Error('manual takeover'));await assert.rejects(async()=>child.locator('#child').fill('after'),/manual takeover/);assert.equal(await page.frameLocator('#dynamic').locator('#child').inputValue(),'before');
+  console.log('PASS actual Electron/Playwright hidden-field and blocked-click abort, sequential keyboard termination, async evaluate settlement, property-handle and dynamic-iframe cancellation.');
+ }finally{if(app)await app.close();fs.rmSync(root,{recursive:true,force:true});}
+})().catch(error=>{console.error(error);process.exitCode=1;});

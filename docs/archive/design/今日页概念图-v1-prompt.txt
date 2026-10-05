@@ -1,0 +1,36 @@
+Use case: ui-mockup.
+Redesign the attached screenshot of the existing Chinese desktop app 秋招工作台 into ONE polished, production-quality 1440 x 1024 desktop UI concept, showing the new TODAY screen. The input is an existing-state reference/edit source, NOT a layout to preserve. Preserve the product name and its restrained blue/navy/white identity; deliberately replace the wide personal-profile panel, the two-button navigation, giant metric cards, and empty weekly calendar. No collage, no multiple screens, no device mockup, no perspective, no floating app card. Output one full flat readable app screen.
+
+Purpose: a job-search application that helps Chinese graduating students know what to do today, continue REAL job applications, and prepare for interviews. This is a concept for user approval, NOT a real connected product. Show a subtle visible '界面概念 · 演示数据' caption. All sample company names below are fictional. Date anchor exactly Friday October 2, 2026, display '2026年10月2日 · 周五'. Any tomorrow labels must mean October 3 Saturday.
+
+VISUAL SYSTEM:
+Quiet, precise, professional native desktop productivity tool, confident typography and spacing. Blue #235ed8 primary, dark navy #20324c text, muted slate secondary with readable contrast, white work canvas and pale cool-gray sidebar. Chinese sans-serif such as PingFang SC / Noto Sans CJK, crisp 14-16px body and 30px title. 8px rhythm. Minimal 8-12px corner radii. Differentiate sections with whitespace/alignment/hairline row separators before borders; almost no shadows. No gradients, no decorative illustrations, no promotional hero, no avatars or full personal details. Use consistent thin outline icons sparingly. Do not produce tiny illegible text, badges on every row, excessive cards or nested cards.
+
+LAYOUT:
+Single narrow left navigation about 208px, main canvas about 1232px. Sidebar top small blue square '秋' mark with '秋招工作台'. Four main entries only: 今日 (active pale-blue highlight), 机会, 投递, 面试准备. At bottom: 设置 with gear, and '本地工作区' small. NO personal information panel, no second navigation bar, no separate résumé or mailbox nav.
+
+Main content header: title '今日' with small date line below. Top right subtle search field '搜索公司、岗位或任务' plus notification outline icon with one small dot. A small understated status '邮箱已同步 · 10:20' is explicitly mock data under the header. Header summary inline: '3 项待办  ·  1 场面试  ·  1 项待确认', NO large metric cards.
+
+Content below is a wide left action-list column (roughly 700px) and narrower right supporting content column (roughly 360px), with generous gutter. This right region is content, not a second persistent sidebar.
+LEFT:
+Heading '今天要做的事', small two-view toggle '列表 / 日历' with 列表 selected.
+Three clean horizontal rows as ONE list with fine separators, not separate cards. Align time, task detail, and one small text action. Every task is an actual next action:
+Row 1 time 15:00; title '技术一面'; subtitle '启辰数科 · AI 应用工程师'; small info '线上面试 · 45 分钟'; text action '查看安排'.
+Row 2 time '18:00 前'; title '完成线上测评'; subtitle '清和科技 · 后端开发工程师'; small info '邮件通知 · 预计 40 分钟'; restrained amber '今日截止'; text action '打开测评'.
+Row 3 time '20:00 前'; title '完成网申并上传简历'; subtitle '远舟软件 · 软件开发工程师'; small info '已准备简历 · 待完成申请'; text action '继续申请'.
+Below after whitespace, section '最近变化' containing two short feed items:
+'清和科技发来测评邀请' with '已提取截止时间并创建待办' and muted time '10:20'.
+'有 1 条面试通知需要核对' with '同公司多个岗位，需确认关联' and small link '去处理'.
+Keep whitespace near bottom; do not invent more features to fill.
+
+RIGHT:
+One purposeful pale-blue-tinted interview preparation module headed '下一场面试' with compact label '今天 15:00'.
+Company '启辰数科'; role 'AI 应用工程师 · 技术一面'.
+Main supporting statement '面试简报已整理'.
+Three concise one-line bullets or rows: '公司与业务：企业知识服务', '相关产品：知识助手与协作平台', '我的经历：RAG 项目与检索评测'.
+Small source indicator '附来源与更新时间' (clearly still illustrative).
+One strong blue filled primary button '查看面试简报'.
+At the bottom small text '先了解产品，再整理自己的观点'.
+Below this module, a small subtle single-line shortcut '资料与简历已就绪 → 设置' without showing any private fields.
+
+Hierarchy: Today action list is the primary use case. Interview module is the single strong call to action. Clearly distinguish deadlines from scheduled interview time. All content fits naturally without clipping. Spell the supplied Chinese labels accurately, prioritize text legibility and believable operational UI. The attached old screenshot is only grounding for brand and context; do not copy its wide personal-data sidebar or giant statistics.

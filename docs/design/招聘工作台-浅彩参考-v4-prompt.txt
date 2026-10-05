@@ -1,0 +1,44 @@
+Use case: ui-mockup. Create ONE redesigned high fidelity desktop UI for the Chinese job-seeker app 招聘工作台, guided strongly by the ATTACHED USER REFERENCE IMAGE. Target 1440 x 1024, a complete flat application viewport, not a marketing poster or collage.
+
+REFERENCE ROLE: The attached SchoolHub screenshot is the primary visual STYLE reference, NOT the content or branding. Study its matte white surfaces, very light cool-gray canvas, narrow white sidebar, sky-blue selected navigation, pastel lavender and butter-yellow summary tiles, gentle 12px rounding, soft separation and near-black typography. Transfer that specific youthful, friendly editorial dashboard character. Do not copy SchoolHub, its owl, school metrics, human avatar identities, September 2030 dates, outer presentation title, feature pills, or purple background triangles. Fill the image with the actual product UI only, no poster margins. The user explicitly dislikes stiff corporate styling and the earlier deep-green Mac look; use the new pastel palette, no dark green.
+
+PRODUCT:
+Recruitment workbench for an INDIVIDUAL JOB SEEKER, not HR/recruiter management. Name exactly 招聘工作台. Four global sections only: 今日, 机会, 投递, 面试准备. Personal information and résumé editing stay in bottom 设置, never a permanent profile panel. Tasks are actual actions with source and deadlines; interview preparation is a core feature. All example companies are fictional. Mark lower edge subtly 界面概念 · 演示数据.
+
+VISUAL SPEC:
+Base #F7F8FA, white panels/sidebar, primary text #26292F, secondary #727780 (readable). Pastel lavender #D7CFF7, butter yellow #F8E481, sky blue #BFEAF5, faint lavender #F4F0FC, faint yellow #FFF8DA. Dark plum #6654A1 only for actionable text/primary button if needed. Selected nav sky blue with black text. No gradients, glass effects, heavy shadows or thick borders. 12-16px body with readable Chinese sans-serif; 28px page title; section 17-18px. Consistent thin outlined icons. Gaps 18-24px. Cards only for distinct zones like the reference, no nested card forest. Strong alignment, enough content density to be useful, warm approachable rhythm.
+
+LOGO:
+New small original soft graphic symbol in sky blue with a lavender accent, next to wordmark 招聘工作台. Shape a compact simple rounded folded-path/bookmark symbol suggesting a new chapter and next step, distinctive but understated. No owl, graduation cap, Chinese character in a box, corporate angular chain/doorway, Apple symbol, handshake, briefcase-as-logo, previous green curvy logo or fake brand claims. Symbol should fit about 28px and work with the name on one line. This is a proposed brand direction.
+
+LAYOUT:
+LEFT fixed white sidebar around 180-190px. Logo + product name at top. Small muted label 工作空间. Four spaced icon rows 今日 active sky-blue pill, 机会, 投递, 面试准备. A lot of natural clear space below, bottom 设置 then small 本地工作区 with tiny neutral status dot. No huge personal avatar/profile or extra menu items.
+
+TOP across main canvas: slim rounded search input 搜索公司、岗位或任务 at left, small text 最近同步 10:20 and simple notification icon at right. Under this page title 今日, date 2026年10月2日 · 周五. This is fictional morning demo data.
+
+MAIN divide into broad central column ~840px and right content column ~310px.
+CENTRAL TOP: four compact rounded pastel summary tiles one row, no charts or percentage trends. Heights about 90px, not giant cards. Alternate lavender/yellow/lavender/yellow as reference. Each only a small label and number with tiny outline icon:
+今日待办 3; 近期截止 2; 今日面试 1; 待确认 1.
+CENTRAL MAIN: large white section 今日行动 with small flat tabs 全部 / 待处理 / 已完成, no confusing redundant nav. Three horizontal action rows on a SINGLE white surface, subtle separators.
+Row1 left small lavender clock tile, time 15:00; title 技术一面; subtitle 启辰数科 · AI 应用工程师; detail 线上 · 45 分钟; small outline action 查看安排.
+Row2 small butter-yellow task tile, time 18:00 前; title 完成线上测评; subtitle 清和科技 · 后端开发工程师; restrained yellow status 今日截止; detail 来自招聘邮件; action 打开测评.
+Row3 sky-blue file tile, time 20:00 前; title 完成网申并上传简历; subtitle 远舟软件 · 软件开发工程师; detail 简历已就绪; action 继续申请.
+Text must be legible, don't cram. Align task actions as reference list/action style, not oversized full-row buttons.
+
+CENTRAL LOWER: white simple section 招聘动态, two compact items with small colored icon dots:
+清和科技发来测评邀请 / 已提取截止时间并创建待办 / 10:20
+1 条面试通知需要核对 / 同公司多个岗位，需确认关联 / 去处理
+No irrelevant charts, finance, attendance, demographics, fake upward trend or completion percentage.
+
+RIGHT TOP: compact white calendar-like section 本周, subtitle 9月28日 – 10月4日. Show exactly 7 columns 周一 周二 周三 周四 周五 周六 周日 and date row 28 29 30 1 2 3 4. Friday 2 highlighted pale sky blue. Small agenda below with one lavender strip: 15:00 技术一面; 启辰数科. Correct actual week containing October 2, 2026.
+
+RIGHT BELOW: one white or near-white interview preparation section heading 面试准备 with tiny lavender check and small 就绪. Role header 启辰数科 / AI 应用工程师.
+Three tidy short content rows with pastel accents:
+公司与业务
+相关产品
+我的项目经历
+Small line 已整理来源与更新时间.
+Single clear primary rounded button 查看面试简报 in pastel lavender with high-contrast dark text or restrained solid plum white text, looks integrated with reference. Below tiny sentence 先了解产品，再整理自己的观点.
+If space allows small source line 演示内容; no multiple supporting panels.
+
+MAIN GOAL: capture the REFERENCE's pastel-color-block, airy but functional dashboard feel, yet prioritize a job-seeker's actionable tasks. User can recognize the reference aesthetic instantly, but this is its own cohesive product with original logo and Chinese UI. Avoid copying the previous green Mac design, avoid large decorative type, giant KPI cards, excessive badges or 3D. All content fits viewport without clipping, pure UI image, no explanatory prose outside screen.

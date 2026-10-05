@@ -12,3 +12,13 @@
 **/*.docx
 **/Cookies*
 **/Local Storage/
+
+/release/
+
+/.video_agent/
+
+**/.workbench/
+
+# Local archives and OS metadata are never source distribution.
+/.local-archive/
+**/.DS_Store

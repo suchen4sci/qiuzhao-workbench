@@ -1,0 +1,29 @@
+[
+  {
+    "site": {
+      "origin": "",
+      "path": "",
+      "route": ""
+    },
+    "frame": {
+      "origin": "",
+      "path": "",
+      "route": ""
+    },
+    "selector": "",
+    "tag": "",
+    "type": "",
+    "labels": [
+      ""
+    ],
+    "headings": [
+      ""
+    ],
+    "group": "",
+    "key": "",
+    "status": "",
+    "confirmedAt": "",
+    "authorization": "",
+    "sourceSession": ""
+  }
+]

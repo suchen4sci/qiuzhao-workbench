@@ -1,0 +1,13 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),os=require('node:os');
+const {startService}=require('../server.cjs'),{createWorkbench}=require('../../desktop/src/services/workbench.cjs');
+test('selected mapping HTTP: quote sends no values, settled replay retains local suggestions, empty output releases',async t=>{
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'mapping-e2e-'));let calls=0;
+ const service=startService({directory:path.join(root,'server'),invite:'test-invite',prices:{'field-mapping':2},processJob:async(kind,p)=>{calls++;assert.equal(kind,'field-mapping');assert.deepEqual(Object.keys(p),['fields']);assert.ok(!JSON.stringify(p).includes('PRIVATE'));return{mappings:calls===1?[{id:'f1',group:'basic',key:'name',confidence:.95,reason:'姓名'}]:[]};}});
+ await new Promise(r=>service.server.listen(0,'127.0.0.1',r));const workspace=path.join(root,'workspace');fs.mkdirSync(path.join(workspace,'知识库'),{recursive:true});fs.writeFileSync(path.join(workspace,'知识库/profile.json'),JSON.stringify({schemaVersion:1,demo:false,values:{basic:[{name:'PRIVATE'}]}}));const secrets=new Map(),wb=createWorkbench(workspace,{vault:{get:id=>secrets.get(id),set:(id,v)=>secrets.set(id,v),remove:id=>secrets.delete(id)}});
+ t.after(async()=>{wb.close();await service.close();fs.rmSync(root,{recursive:true,force:true});});
+ wb.hosted.configure({baseUrl:`http://127.0.0.1:${service.server.address().port}`});await wb.hosted.login({email:'mapping@example.invalid',password:'test-password-12345',register:true,invite:'test-invite'});service.jobs.grant((await wb.hosted.account()).account.id,10,'grant-mapping');
+ const scope={url:'https://example.com/apply',applicationId:'a1',candidates:[{id:'f1',label:'姓名',labels:['姓名'],headings:[],section:'basic',tag:'input',type:'text',selector:'#name',frameUrl:'https://example.com/apply',value:'PRIVATE'}]};
+ const q=await wb.hosted.quoteMapping(scope);assert.equal((await wb.hosted.account()).account.available,10);assert.ok(!JSON.stringify(wb.hosted.mappingJob(q.id).payload).includes('PRIVATE'));await wb.hosted.start({id:q.id,confirmed:true});let j=await wb.hosted.refresh(q.id);assert.equal(j.status,'ready');assert.equal(j.suggestions[0].target,'基本信息 / 姓名');assert.equal((await wb.hosted.account()).account.balance,8);
+ await wb.hosted.start({id:q.id,confirmed:true});assert.equal(calls,1);assert.equal((await wb.hosted.account()).account.balance,8);assert.equal(wb.hosted.mappingJobs().length,1);
+ const empty=await wb.hosted.quoteMapping(scope);await wb.hosted.start({id:empty.id,confirmed:true});j=await wb.hosted.refresh(empty.id);assert.equal(j.status,'failed');assert.equal((await wb.hosted.account()).account.available,8);
+});
