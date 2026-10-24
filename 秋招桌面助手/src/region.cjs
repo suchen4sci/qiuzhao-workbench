@@ -1,5 +1,6 @@
 async function fillRegion(frame, input, path) {
   if (!Array.isArray(path) || path.length < 1 || path.length > 4 || path.some(p=>typeof p !== 'string' || !p)) throw new Error('REGION_PATH');
+  if(path.length>=2&&/^(北京市|天津市|上海市|重庆市)$/.test(path[0])&&path[0]===path[1])path=[path[0],...path.slice(2)];
   if ((await input.inputValue()).trim()) throw new Error('REGION_EXISTING');
   const panel = frame.locator('.area-selector-container:visible');
   if (await panel.count() === 0) await input.click({timeout:1200});

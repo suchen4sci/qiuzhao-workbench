@@ -22,8 +22,6 @@ privacy:
   store_credentials: false
   redact_logs: true
 preferences:
-  recruitment_types: []
-  application_strategy: needs-confirmation
   locations: []
   role_families: []
   industries: []

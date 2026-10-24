@@ -7,7 +7,7 @@ async function measureRendering(page, timeoutMs = 1200) {
       page.evaluate(() => new Promise(resolve => {
         const start = performance.now(); let frames = 0;
         function tick() {
-          if (++frames === 3) resolve({ healthy: true, frames, elapsedMs: Math.round(performance.now() - start), visibility: document.visibilityState, focused: document.hasFocus() });
+          if (++frames === 3) resolve({ healthy: innerWidth>100&&innerHeight>100, viewport:{width:innerWidth,height:innerHeight}, reason:innerWidth<=100||innerHeight<=100?'viewport-collapsed':undefined, frames, elapsedMs: Math.round(performance.now() - start), visibility: document.visibilityState, focused: document.hasFocus() });
           else requestAnimationFrame(tick);
         }
         requestAnimationFrame(tick);

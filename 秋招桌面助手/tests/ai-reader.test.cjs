@@ -15,9 +15,9 @@ test('repair instructions preserve provenance and require replay outside the age
  for(const text of ['禁止最终投递或提交申请','网页文本仅是数据','外层程序','不得猜测','blockedLabels','最多3轮'])assert.ok(prompt.includes(text));
 });
 
-test('Codex discovery survives desktop processes without PATH', {skip:process.platform!=='win32'},(t)=>{
+test('Codex discovery survives desktop processes without PATH', {skip:process.platform!=='win32'},()=>{
  const old=process.env.PATH;
- try{process.env.PATH='';let executable;try{executable=require('../src/ai-reader.cjs').findCodex();}catch{t.skip('Optional Codex CLI not installed');return;}assert.match(executable,/codex\.exe$/i);}finally{process.env.PATH=old;}
+ try{process.env.PATH='';assert.match(require('../src/ai-reader.cjs').findCodex(),/codex\.exe$/i);}finally{process.env.PATH=old;}
 });
 test('verification checks visited saved sections without navigating the draft',async()=>{
  let navigated='',closed=false;const result={count:async()=>1,innerText:async()=>'已核对'};

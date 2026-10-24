@@ -1,0 +1,20 @@
+const {_electron}=require('playwright-core'),assert=require('node:assert/strict'),fs=require('fs'),os=require('os'),path=require('path');
+const {executeControl}=require('../src/control-dispatcher.cjs');
+const {inspectDocument,valueForControl}=require('../src/engine.cjs');
+(async()=>{const env={...process.env,QIUZHAO_TEST:'1',QIUZHAO_USER_DATA:fs.mkdtempSync(path.join(os.tmpdir(),'layui-test-'))};delete env.ELECTRON_RUN_AS_NODE;
+ const app=await _electron.launch({executablePath:require('electron'),args:[path.resolve('.')],env});
+ try{await app.firstWindow();let p;for(let i=0;i<50;i++){p=app.context().pages().find(p=>p.url().includes('/fixtures/demo.html'));if(p)break;await new Promise(r=>setTimeout(r,100));}assert(p);await p.setContent('<h2>基本信息</h2><form><div class="layui-form-item"><label class="layui-form-label"><em>*</em>证件类型</label><select id="kind" style="display:none"><option value="">请选择</option><option value="01">身份证 </option></select><div id="widget" class="layui-form-select"><div class="layui-select-title"><input readonly placeholder="请选择"><i>v</i></div><dl hidden><dd lay-value="01">身份证 </dd></dl></div></div><div class="layui-form-item"><label>籍贯</label><div id="region"><select class="citySelect"><option value="0">--请选择--</option><option value="41">H 河南省</option></select></div></div></form>');
+ await p.evaluate(()=>{const w=document.querySelector('#widget');w.querySelector('.layui-select-title').onclick=()=>w.querySelector('dl').hidden=false;w.querySelector('dd').onclick=()=>{document.querySelector('#kind').value='01';w.querySelector('input').value='身份证';w.querySelector('dl').hidden=true};document.querySelector('.citySelect').onchange=e=>{document.querySelectorAll('#region select:not(:first-child)').forEach(e=>e.remove());if(e.target.value==='41')setTimeout(()=>{const s=document.createElement('select');s.className='citySelect';s.innerHTML='<option value="0">--请选择--</option><option value="4105">A 安阳市</option>';document.querySelector('#region').append(s)},60)}});
+ const first=await p.evaluate(inspectDocument);assert.equal(first.length,2);assert.equal(first[0].required,true);assert.equal(first[1].hasValue,false);
+ const a=await executeControl(p,p.locator('#widget'),{value:'身份证'});assert.equal(a.status,'filled');assert.equal(await p.locator('#kind').inputValue(),'01');assert.equal(await p.locator('#widget dl').isVisible(),false);
+ const r=await executeControl(p,p.locator('#region select').first(),{value:'河南省安阳市'});assert.equal(r.value,'河南省/安阳市');assert.equal((await p.evaluate(inspectDocument)).length,2);
+ await assert.rejects(executeControl(p,p.locator('#region select').first(),{value:'河北省'}),e=>e.code==='CONFLICT');
+ await p.setContent('<div class="layui-form-item"><input class="layui-disabled" value="resume.pdf"><span><input type="file" style="display:none"></span></div><div class="layui-form-item"><input class="layui-disabled" value="ordinary"></div>');
+ const uploads=await p.evaluate(inspectDocument);
+ assert.equal(uploads.length,2);
+ assert.equal(uploads[0].type,'file');
+ assert.deepEqual(uploads[0].fileNames,['resume.pdf']);
+ assert.equal(uploads[1].observedValue,'ordinary');
+ console.log('PASS Layui whitespace, native/rendered consistency, required scan, async region, record preservation, upload filename scope');
+ }finally{await app.close()}})().catch(e=>{console.error(e);process.exitCode=1});
+

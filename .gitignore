@@ -12,3 +12,9 @@
 **/*.docx
 **/Cookies*
 **/Local Storage/
+
+**/__pycache__/
+**/*.pyc
+**/outputs/
+**/session-storage*
+**/application-tabs.json*

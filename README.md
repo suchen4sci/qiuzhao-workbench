@@ -1,8 +1,10 @@
-# 秋招工作台 · AI Agent 求职演示版
+# 秋招工作台 · 完整分享版 v0.2.0
 
 Windows 桌面填表助手 + 本地投递看板 + 完整虚构知识库 + 空白模板。
 
 **内置资料全部虚构，仅用于学习、开发和本地练习。真实学校、公司名称不表示人物曾就读或任职。不得把演示资料提交给招聘方。**
+
+更新于 **2026-10-24**。包含当前快速填写实现、多标签恢复、两项完整技能与 Edge 扩展。详见[分享内容与版本差异](docs/分享版更新-20261024.md)。
 
 ## 能做什么
 
@@ -14,6 +16,8 @@ Windows 桌面填表助手 + 本地投递看板 + 完整虚构知识库 + 空白
 - 完整示例：林知远，2027届中国大陆研三学生，求职 AI Agent/大模型应用开发；含高中、本科、硕士、实习、5个项目、5项荣誉、语言、技能、家庭和求职意向。
 
 这不是“任意网站一键必过”工具。未知事实、登录验证码、选项不匹配、附件和声明需要人工处理。现有站点适配是参考实现，不保证招聘网站更新后仍有效。
+
+可直接下载 [v0.2.0 完整 ZIP](https://github.com/suchen4sci/qiuzhao-workbench/releases/tag/v0.2.0)。ZIP 含源码与模板，Node.js / Electron 依赖按下方步骤安装。
 
 ## 快速开始（Windows PowerShell）
 
@@ -43,14 +47,23 @@ npm start
 
 参阅[知识库指南](docs/知识库建立.md)、[全部字段](docs/字段参考.md)、[虚构知识库](examples/demo-workspace/知识库)、[空白模板](templates/blank-workspace/知识库)。示例包含原知识库分类对应的74份资料；文件对应清单说明了哪些内容被替换、哪些运行产物没有发布。
 
+## 安装配套技能
+
+```powershell
+npm run skills:install
+```
+
+安装 qiuzhao-assistant 和 repair-resume；已有同名技能会保留。
+
 ## 测试
 
 ```powershell
 npm test
 npm run test:smoke
+npm run test:regression
 ```
 
-单元测试覆盖匹配、导航、回读等逻辑；smoke测试实际启动隔离的桌面应用，在本地页面填写虚构资料，并测试看板新增/更新。不登录招聘网站、不提交申请。
+完整测试中的 Codex CLI 发现测试需要本机已安装 Codex；普通快速填写运行不需要 Codex。单元测试覆盖匹配、导航、回读等逻辑；smoke测试实际启动隔离的桌面应用，在本地页面填写虚构资料，并测试看板新增/更新。不登录招聘网站、不提交申请。
 
 ## 目录
 
@@ -61,6 +74,8 @@ npm run test:smoke
 | examples/demo-workspace/ | 完整虚构身份与对应知识库 |
 | templates/blank-workspace/ | 同结构空白模板 |
 | skills/qiuzhao-assistant/ | 可复用求职工作流及上游许可证 |
+| skills/repair-resume/ | 修补简历、学习规则、复测与投递同步 |
+| extensions/edge-quick-fill/ | 独立 Edge 扩展原型 |
 | .local-workspace/ | 首次启动生成的私人工作区，不入Git |
 | docs/ | 使用、AI权限、数据模型和发布说明 |
 

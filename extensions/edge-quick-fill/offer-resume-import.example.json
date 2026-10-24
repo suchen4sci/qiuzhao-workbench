@@ -1,0 +1,103 @@
+{
+  "name": "林知远（虚构演示，禁止真实投递）",
+  "data": {
+    "basicInfo": {
+      "name": "林知远（虚构演示）",
+      "englishName": "Alex Lin",
+      "gender": "男",
+      "birthDate": "2002-04-16",
+      "phone": "00000000000",
+      "email": "lin.zhiyuan@example.invalid",
+      "idNumber": "",
+      "idType": "",
+      "nationality": "中国",
+      "ethnicity": "汉族",
+      "politicalStatus": "共青团员",
+      "maritalStatus": "未婚",
+      "graduateType": "应届",
+      "overseasStudy": "无",
+      "highestEducation": "硕士研究生",
+      "school": "杭州电子科技大学",
+      "department": "计算机学院",
+      "latestMajor": "计算机技术",
+      "majorCategory": "计算机类",
+      "graduationDate": "2027-06-30",
+      "height": "178",
+      "weight": "70",
+      "nativePlace": "浙江省杭州市",
+      "birthPlace": "浙江省杭州市",
+      "growthPlace": "浙江省杭州市",
+      "currentAddress": "浙江省杭州市",
+      "hukouLocation": "浙江省杭州市",
+      "mailingAddress": "浙江省杭州市某大学研究生宿舍（虚构地址）",
+      "postalCode": "310000",
+      "emergencyContactName": "林建明（虚构）",
+      "emergencyPhone": "00000000000",
+      "healthStatus": "健康",
+      "isGraduate": "是",
+      "graduationSchool": "杭州电子科技大学",
+      "highestMajor": "计算机技术"
+    },
+    "jobIntention": {
+      "position": "AI Agent 开发工程师",
+      "city": "杭州"
+    },
+    "education": [
+      {
+        "school": "杭州电子科技大学",
+        "department": "计算机学院",
+        "level": "硕士研究生",
+        "degree": "工程硕士",
+        "major": "计算机技术",
+        "majorCategory": "计算机类",
+        "educationType": "全日制",
+        "startTime": "2024-09-01",
+        "endTime": "2027-06-30",
+        "gpa": "3.65/4.0",
+        "classRank": "前20%",
+        "majorCourses": "自然语言处理、机器学习、分布式系统、信息检索",
+        "researchDirection": "检索增强生成与工具调用智能体",
+        "thesis": "面向企业知识服务的可验证检索增强智能体研究（虚构课题）",
+        "supervisor": "陈远舟（虚构导师）",
+        "retake": "否",
+        "punishment": "否"
+      },
+      {
+        "school": "浙江工业大学",
+        "department": "计算机科学与技术学院",
+        "level": "本科",
+        "degree": "工学学士",
+        "major": "软件工程",
+        "majorCategory": "计算机类",
+        "educationType": "全日制",
+        "startTime": "2020-09-01",
+        "endTime": "2024-06-30",
+        "gpa": "3.55/4.0",
+        "classRank": "前30%",
+        "majorCourses": "数据结构、数据库、操作系统、计算机网络",
+        "retake": "否",
+        "punishment": "否"
+      },
+      {
+        "school": "杭州市第十四中学",
+        "department": "高中部",
+        "level": "高中",
+        "degree": "无",
+        "major": "普通高中",
+        "educationType": "全日制",
+        "startTime": "2017-09-01",
+        "endTime": "2020-06-30"
+      }
+    ],
+    "languageSkills": [
+      {
+        "name": "英语",
+        "level": "大学英语六级",
+        "score": "535"
+      }
+    ],
+    "selfIntroduction": {
+      "selfIntroduction": "计算机技术专业研三学生，计划于2027年毕业，关注 AI Agent、RAG 与后端服务开发。熟悉 Python、TypeScript、SQL、容器化开发和基础测试，愿意从需求澄清、工具接口与评测环节持续完善系统。以上身份与经历全部虚构，仅作为工作台使用示例。"
+    }
+  }
+}

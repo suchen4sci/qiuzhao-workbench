@@ -1,4 +1,4 @@
-const { app, BrowserWindow, WebContentsView, ipcMain, clipboard, dialog, session, Menu } = require('electron');
+const { app, BrowserWindow, WebContentsView, ipcMain, clipboard, dialog, session, Menu, shell } = require('electron');
 const { chromium } = require('playwright-core');
 const fs = require('node:fs');
 const { execFile } = require('node:child_process');
@@ -12,7 +12,7 @@ const { ensureRendering } = require('./render-health.cjs');
 const { addressTarget } = require('./navigation.cjs');
 const { TeachingRecorder } = require('./teaching.cjs');
 const { loadLearnedFields } = require('./learned-fields.cjs');
-const workspace = process.env.QIUZHAO_WORKSPACE || path.resolve(__dirname, '../..');
+const workspace = process.env.QIUZHAO_WORKSPACE || path.resolve(__dirname, process.env.QIUZHAO_TEST ? '../../examples/demo-workspace' : '../../.local-workspace');
 const userData = process.env.QIUZHAO_USER_DATA || path.join(app.getPath('appData'), 'QiuzhaoWorkbench');
 app.setPath('userData', userData);
 if (!app.requestSingleInstanceLock()) { app.quit(); process.exit(0); }
@@ -22,15 +22,35 @@ if (!app.commandLine.hasSwitch('remote-debugging-port')) app.commandLine.appendS
 const uiUrl = pathToFileURL(path.join(__dirname, 'ui/index.html')).href;
 const demoUrl = pathToFileURL(path.join(__dirname, '../fixtures/demo.html')).href;
 let window, guest, browser, profile, teaching, busy = false, stop = false, lastReport;
-let hotOwner = null;
+let hotOwner = null, applicationTabs;
+const {alive,authPopup,recoveryUrl}=require('./browser-lifecycle.cjs');
+let currentMailApplication;
+const {parseMailApplication}=require('./mail-application.cjs');
+function showMailApplication(url){try{currentMailApplication=parseMailApplication(url);push('mail-application',currentMailApplication);}catch(e){push('error',e.message)}}
+ipcMain.on('portal-mail-application',(event,url)=>{if(alive(guest)&&event.sender===guest.webContents)showMailApplication(url)});
+let portalSession,sessionRetention,lastBrowserUrl=demoUrl,lastStableUrl=demoUrl;
+function retainedTab(event,origin){
+ if(event.senderFrame!==event.sender.mainFrame)return null;
+ let actual;try{actual=new URL(event.senderFrame.url).origin;}catch{return null;}
+ if(actual!==origin)return null;
+ for(const [id,view] of applicationTabs?.views||[])if(alive(view)&&view.webContents===event.sender)return id;
+ return null;
+}
+ipcMain.on('portal-session-restore',(event,origin)=>{const id=retainedTab(event,origin);event.returnValue=id?sessionRetention?.get(id,origin)||null:null;});
+ipcMain.on('portal-session-checkpoint',(event,data)=>{try{const id=retainedTab(event,new URL(data.url).origin);if(id&&data.entries&&typeof data.entries==='object')sessionRetention?.capture(id,data.url,data.entries);}catch{}});
 let browserRect = { x: 336, y: 150, width: 1000, height: 700 };
-function push(type, data) { if (window && !window.isDestroyed()) window.webContents.send('state', { type, data }); }
+function push(type, data) { if(type==='report'&&applicationTabs)applicationTabs.record(data); if (window && !window.isDestroyed()) window.webContents.send('state', { type, data }); }
 function layout() {
-  if (!guest || !window) return;
-  const [w, h] = window.getContentSize();
-  guest.setBounds({ x: browserRect.x, y: browserRect.y, width: Math.max(1, w - browserRect.x), height: Math.max(1, h - browserRect.y - 34) });
+  if (!alive(guest) || !window || window.isDestroyed()) return;
+  let [w, h] = window.getContentSize();
+  if(w<640||h<480){const b=window.getNormalBounds();w=Math.max(1040,b.width);h=Math.max(700,b.height);}
+  const bounds={ x: browserRect.x, y: browserRect.y, width: Math.max(1, w - browserRect.x), height: Math.max(1, h - browserRect.y - 34) };
+  if(applicationTabs)applicationTabs.layout(bounds);else guest.setBounds(bounds);
 }
 function navigationState(error) {
+  if(!alive(guest)){push('navigation',{url:lastBrowserUrl,title:'网页已关闭',loading:false,back:false,forward:false,error:error||'内嵌网页已关闭，点击刷新可恢复'});return;}
+  const current=guest.webContents.getURL();
+  if(current){lastBrowserUrl=current;if(!authPopup(current))lastStableUrl=current;}
   push('navigation', { url: guest.webContents.getURL(), title: guest.webContents.getTitle(), loading: guest.webContents.isLoading(),
     back: guest.webContents.navigationHistory.canGoBack(), forward: guest.webContents.navigationHistory.canGoForward(), error });
 }
@@ -45,10 +65,14 @@ function permittedUrl(raw) {
 async function navigate(raw) {
   if (busy) throw new Error('请先停止填写，再切换页面');
   const url = permittedUrl(raw);
-  await guest.webContents.loadURL(url).catch(e => { if (e.code !== 'ERR_ABORTED') navigationState('页面未能打开，请检查网址或网络'); });
+  if(ensureGuest()&&applicationTabs){applicationTabs.replaceActive(guest);layout();}
+  const target=guest.webContents;
+  const failed=e=>{if(alive(guest)&&guest.webContents===target&&e.code!=='ERR_ABORTED')navigationState('页面未能打开，请检查网址或网络');};
+  await require('./page-navigation.cjs').loadDocument(target,url,failed).catch(failed);
   return true;
 }
 async function getPage() {
+  if(!alive(guest))throw new Error('内嵌网页已关闭，请点击刷新恢复网页后再填写');
   if (!browser || !browser.isConnected()) {
     let port = app.commandLine.getSwitchValue('remote-debugging-port');
     if (!port || port === '0') {
@@ -60,6 +84,7 @@ async function getPage() {
     if (!Number(port)) throw new Error('填表引擎尚未就绪，请稍后重试');
     browser = await chromium.connectOverCDP(`http://127.0.0.1:${port}`, { timeout: 5000 });
   }
+  if(applicationTabs)return require('./active-page.cjs').resolveActivePage(browser,browser.contexts().flatMap(c=>c.pages()).find(p=>p.url()===uiUrl));
   const url = guest.webContents.getURL();
   const pages = browser.contexts().flatMap(c => c.pages()).filter(p => p.url() === url && p.url() !== uiUrl);
   if (pages.length !== 1) throw new Error('当前网页尚未就绪，或存在重复页面，请等待后重试');
@@ -82,6 +107,37 @@ function handle(name, fn) {
     return fn(...args);
   });
 }
+function ensureGuest(){
+ if(alive(guest))return false;
+ if(guest){try{window.contentView.removeChildView(guest)}catch{}}
+ const view=new WebContentsView({webPreferences:{preload:path.join(__dirname,'portal-preload.cjs'),session:portalSession,contextIsolation:true,nodeIntegration:false,sandbox:true,webSecurity:true,backgroundThrottling:true}});
+ guest=view;window.contentView.addChildView(view);layout();
+ const wc=view.webContents;
+ wc.on('dom-ready',()=>wc.executeJavaScript('('+require('./otp-composition.cjs').installOtpCompositionGuard.toString()+')()').catch(()=>{}));
+ wc.setWindowOpenHandler(({url})=>{
+  if(/^mailto:/i.test(url)){showMailApplication(url);return {action:'deny'}}
+  try{permittedUrl(url)}catch{return {action:'deny'}}
+  if(authPopup(url))return {action:'allow',overrideBrowserWindowOptions:{width:900,height:760,parent:window,webPreferences:{session:portalSession,contextIsolation:true,nodeIntegration:false,sandbox:true,webSecurity:true}}};
+  if(!busy)(applicationTabs?applicationTabs.open(url):navigate(url)).catch(e=>push('error',e.message));return {action:'deny'};
+ });
+ wc.on('will-navigate',(event,url)=>{if(/^mailto:/i.test(url)){event.preventDefault();showMailApplication(url);return;}try{permittedUrl(url)}catch{event.preventDefault()}});
+ for(const event of ['did-start-loading','did-stop-loading','did-navigate','did-navigate-in-page','page-title-updated'])wc.on(event,()=>{if(guest===view)navigationState()});
+ wc.on('did-navigate',()=>{if(guest===view){lastReport=null;push('reset-report',null)}});
+ wc.on('did-fail-load',(_event,code)=>{if(guest===view&&code!==-3)navigationState('页面加载失败，可检查网址后重试')});
+ wc.on('destroyed',()=>{
+  if(guest!==view)return;
+  // During this native event, the view's webContents getter is unsafe.
+  // Drop the reference first and defer all native window/view work.
+  guest=null;
+  setImmediate(()=>{
+   if(!window||window.isDestroyed())return;
+   try{window.contentView.removeChildView(view)}catch{}
+   navigationState();
+  });
+ });
+ wc.on('render-process-gone',()=>{if(guest===view)navigationState('网页进程已退出，点击刷新重试')});
+ return true;
+}
 app.whenReady().then(async () => {
   const explicitPort = Number(app.commandLine.getSwitchValue('remote-debugging-port'));
   if (explicitPort) fs.writeFileSync(path.join(userData,'app-connection.json'), JSON.stringify({pid:process.pid,port:explicitPort}));
@@ -90,27 +146,48 @@ app.whenReady().then(async () => {
   profile.learnedFields = loadLearnedFields(workspace);
   teaching = new TeachingRecorder({ workspace, getPage, getProfile: () => profile, onState: data => push('teaching', data) });
   window = new BrowserWindow({ width: 1440, height: 960, minWidth: 1040, minHeight: 700, title: '秋招工作台', backgroundColor: '#f5f7fb',
-    webPreferences: { preload: path.join(__dirname, 'preload.cjs'), contextIsolation: true, nodeIntegration: false, sandbox: true, backgroundThrottling: false } });
-  const portalSession = session.fromPartition(process.env.QIUZHAO_TEST ? 'test-portals' : 'persist:recruitment');
+    webPreferences: { preload: path.join(__dirname, 'preload.cjs'), contextIsolation: true, nodeIntegration: false, sandbox: true, backgroundThrottling: true } });
+  portalSession = session.fromPartition(process.env.QIUZHAO_TEST ? (process.env.QIUZHAO_TEST_RETENTION?'persist:recruitment-test':'test-portals') : 'persist:recruitment');
+  if(!process.env.QIUZHAO_TEST||process.env.QIUZHAO_TEST_RETENTION){
+   sessionRetention=new (require('./session-retention.cjs').SessionRetention)({session:portalSession,safeStorage:require('electron').safeStorage,file:path.join(userData,'login-session.encrypted')});
+   try{await sessionRetention.start();}catch(e){sessionRetention=null;dialog.showErrorBox('登录会话保存',e.message);}
+  }
   portalSession.setPermissionRequestHandler((_wc, _permission, callback) => callback(false));
   portalSession.setPermissionCheckHandler(() => false);
-  guest = new WebContentsView({ webPreferences: { session: portalSession, contextIsolation: true, nodeIntegration: false, sandbox: true, webSecurity: true, backgroundThrottling: false } });
-  window.contentView.addChildView(guest);
-  layout();
+  ensureGuest();
+  applicationTabs=new (require('./desktop-tabs.cjs').DesktopTabs)({window,initialView:guest,demoUrl,storage:path.join(userData,'application-tabs.json'),
+   createView:()=>{const previous=guest;guest=null;ensureGuest();const created=guest;guest=previous;created.setVisible(false);return created;},
+   onActivate:(view,report)=>{guest=view;lastReport=report||null;layout();navigationState();push(report?'report':'reset-report',report||null);},
+   onState:data=>push('application-tabs',data),onMailApplication:url=>showMailApplication(url)});
+  sessionRetention?.restoreTabUrls(applicationTabs.registry);
   window.on('resize', layout);
-  guest.webContents.setWindowOpenHandler(({ url }) => { if (!busy) navigate(url).catch(e => push('error', e.message)); return { action: 'deny' }; });
-  guest.webContents.on('will-navigate', (event, url) => { try { permittedUrl(url); } catch { event.preventDefault(); } });
-  for (const event of ['did-start-loading', 'did-stop-loading', 'did-navigate', 'did-navigate-in-page', 'page-title-updated']) guest.webContents.on(event, () => navigationState());
-  guest.webContents.on('did-navigate', () => { lastReport = null; push('reset-report', null); });
-  guest.webContents.on('did-fail-load', (_event, code) => { if (code !== -3) navigationState('页面加载失败，可检查网址后重试'); });
   window.webContents.on('will-navigate', event => event.preventDefault());
   window.webContents.setWindowOpenHandler(() => ({ action: 'deny' }));
   let closing = false;
   window.on('close', event => {
-    if (teaching.active && !closing) { event.preventDefault(); closing = true; teaching.stop('应用关闭').finally(() => window.destroy()); }
+    if(closing){event.preventDefault();return;}
+    event.preventDefault();closing=true;stop=true;
+    (async()=>{try{if(teaching.active)await teaching.stop('应用关闭');await applicationTabs?.persist();if(sessionRetention)await sessionRetention.checkpoint(applicationTabs);}catch(e){dialog.showErrorBox('关闭前保存未完成',e.message);closing=false;return;}window.destroy();})();
   });
-  window.on('closed', () => { stop = true; if (!guest.webContents.isDestroyed()) guest.webContents.close(); app.quit(); });
+  window.on('closed', () => { stop = true; if(applicationTabs)applicationTabs.destroy();else if (alive(guest)) guest.webContents.close(); app.quit(); });
+  handle('mail-application-action',async action=>{
+    if(!currentMailApplication)throw Error('请先点击网页上的邮件申请入口');
+    const mail=parseMailApplication(currentMailApplication.href);
+    if(action==='copy'){clipboard.writeText(mail.recipients);return true;}
+    if(action==='open'){try{await shell.openExternal(mail.href);return true;}catch{throw Error('系统没有可用的默认邮件客户端，请复制邮箱到网页版邮箱撰写邮件');}}
+    throw Error('未知邮件操作');
+  });
   handle('profile', () => ({ library: profile.library, sources: profile.sources, notes: profile.notes }));
+  handle('application-tabs',async request=>{
+   if(request?.action==='list'){const state=applicationTabs.registry.view();return {...state,tabs:state.tabs.filter(t=>t.status!=='已关闭')};}
+   if(request?.action==='context')return applicationTabs.context();
+   if(busy||teaching.active||await window.webContents.executeJavaScript('Boolean(window.__aiReaderState?.active)'))throw Error('当前网站正在填写，请先停止任务再切换标签');
+   if(request?.action==='open')return applicationTabs.open(permittedUrl(request.url),{independent:true,company:request.company,role:request.role,title:request.title});
+   if(request?.action==='activate')return applicationTabs.activate(request.id);
+   if(request?.action==='close')return applicationTabs.close(request.id);
+   if(request?.action==='mark')return applicationTabs.registry.update(request.id,{status:request.status});
+   throw Error('未知标签操作');
+  });
   handle('runtime-info', () => runtimeInfo('main'));
   handle('sync-hot-report', request => {
     if (request?.phase === 'probe') return { supported: true };
@@ -138,13 +215,18 @@ app.whenReady().then(async () => {
   });
   handle('navigate', raw => navigate(addressTarget(raw)));
   handle('demo', () => navigate(demoUrl));
-  handle('browser-action', action => {
+  handle('browser-action', async action => {
     if (busy) throw new Error('请先停止填写');
+    if(!alive(guest)){
+      if(action!=='reload')throw new Error('内嵌网页已关闭，请点击刷新恢复');
+      const target=lastStableUrl!==demoUrl?lastStableUrl:recoveryUrl(lastBrowserUrl,demoUrl);
+      await navigate(target);return true;
+    }
     if (action === 'back' && guest.webContents.navigationHistory.canGoBack()) guest.webContents.navigationHistory.goBack();
     if (action === 'forward' && guest.webContents.navigationHistory.canGoForward()) guest.webContents.navigationHistory.goForward();
     if (action === 'reload') guest.webContents.reload();
   });
-  handle('browser-visible', visible => { guest.setVisible(!!visible); });
+  handle('browser-visible', visible => { if(applicationTabs)applicationTabs.setVisible(visible);else if(alive(guest))guest.setVisible(!!visible); });
   handle('dashboard-draft', async () => {
     if (busy || teaching.active) throw new Error('请先结束填写或教学');
     return require('./job-context.cjs').readContext(await getPage());
@@ -178,7 +260,7 @@ app.whenReady().then(async () => {
     busy = true; stop = false; push('busy', true);
     try {
       const page = await getPage();
-      const renderHealth = mode === 'fill' ? await ensureRendering(page, async () => { if (window.isMinimized()) window.restore(); window.show(); window.focus(); }) : undefined;
+      const renderHealth = mode === 'fill' ? await ensureRendering(page, async () => { if (window.isMinimized()) window.restore(); window.show(); window.focus(); layout(); }) : undefined;
       const start = Date.now();
       const cleanSelections = Object.fromEntries(Object.entries(selections || {}).filter(([key, value]) => profile.values[key] && Number.isInteger(value) && value >= 0 && value < profile.values[key].length));
       lastReport = mode === 'fill' ? await fillPage(page, profile, cleanSelections, () => stop, data => push('report', withRuntime(data, 'main'))) : require('./qiyuan.cjs').isQiyuan(page) ? await require('./qiyuan.cjs').fillQiyuan(page,profile,()=>stop,true) : require('./aircas.cjs').isAircas(page) ? await require('./aircas.cjs').fillAircas(page,profile,()=>stop,true) : require('./wjx.cjs').isWjx(page) ? await require('./wjx.cjs').fillWjx(page,profile,()=>stop,true) : report(await scanPage(page, profile, cleanSelections), Date.now() - start);
@@ -200,8 +282,7 @@ app.whenReady().then(async () => {
     return { pending: lastReport.fields.filter(f => ['pending', 'failed'].includes(f.status)).length };
   });
   await window.loadURL(uiUrl);
-  if(profile.demo)push('error','当前为虚构演示资料：请仅使用本地练习页，真实投递前替换知识库。');
-  await guest.webContents.loadURL(demoUrl);
+  await applicationTabs.start();
   if (!process.env.QIUZHAO_TEST) {
     let aiChild,aiClosing=false;
     const launchAI=()=>{

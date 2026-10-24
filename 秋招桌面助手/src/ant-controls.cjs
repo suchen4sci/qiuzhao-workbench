@@ -97,9 +97,10 @@ async function fillAntRadio(frame,locator,value,{spec={}}={}){
 }
 async function fillNativeRadioGroup(frame,locator,value,{spec={}}={}){
  const info=await locator.evaluate(e=>{
+  const labelOf=input=>{const raw=(input.labels?.[0]?.textContent||input.getAttribute('aria-label')||input.nextSibling?.textContent?.trim()||input.nextElementSibling?.textContent||'').replace(/\s+/g,' ').trim();if(input.dataset.code==='Y'&&raw.startsWith('是'))return '是';if(input.dataset.code==='N'&&raw.startsWith('否'))return '否';return raw;};
   const radios=[...e.querySelectorAll('input[type="radio"]')];
-  const valid=e.matches('[role="radiogroup"],fieldset')&&radios.length>0&&!!radios[0].name&&radios.every(r=>r.name===radios[0].name&&r.form===radios[0].form)&&!e.querySelector('input:not([type="radio"]),select,textarea');
-  return {valid,entries:radios.map((input,index)=>({index,disabled:input.disabled,label:(input.labels?.[0]?.textContent||input.getAttribute('aria-label')||'').replace(/\s+/g,' ').trim()}))};
+  const valid=e.matches('[role="radiogroup"],fieldset,.radio_list,dt,dd')&&radios.length>0&&!!radios[0].name&&radios.every(r=>r.name===radios[0].name&&r.form===radios[0].form)&&!e.querySelector('input:not([type="radio"]),select,textarea');
+  return {valid,entries:radios.map((input,index)=>({index,disabled:input.disabled,label:labelOf(input)}))};
  });
  if(!info.valid)throw error('AMBIGUOUS');
  const names=optionNames(value,spec),exact=info.entries.filter(e=>e.label===names[0]);

@@ -1,0 +1,25 @@
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const os = require('node:os');
+test('a running engine retains its loaded version and reports source changes', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'qiuzhao-version-'));
+  fs.mkdirSync(path.join(root, 'src')); fs.mkdirSync(path.join(root, 'scripts'));
+  fs.copyFileSync(path.resolve(__dirname, '../src/runtime-version.cjs'), path.join(root, 'src/runtime-version.cjs'));
+  fs.writeFileSync(path.join(root, 'scripts/update-live-engine.cjs'), '// bridge fixture');
+  fs.writeFileSync(path.join(root, 'src/control.cjs'), 'module.exports = 1;');
+  const { runtimeInfo, sourceVersion, withRuntime } = require(path.join(root, 'src/runtime-version.cjs'));
+  const loaded = runtimeInfo('main');
+  assert.match(loaded.engineVersion, /^[a-f0-9]{12}$/);
+  assert.equal(loaded.engineVersion, sourceVersion());
+  assert.equal(loaded.sourceChanged, false);
+  fs.writeFileSync(path.join(root, 'src/control.cjs'), 'module.exports = 2;');
+  const after = withRuntime({ fields: [], counts: {} }, 'hot', { hostSync: 'unavailable' });
+  assert.equal(after.runtime.engineVersion, loaded.engineVersion);
+  assert.notEqual(sourceVersion(), loaded.engineVersion);
+  assert.equal(after.runtime.sourceChanged, true);
+  assert.equal(after.runtime.hostSync, 'unavailable');
+  assert.equal(after.runtime.mode, 'hot');
+  assert.equal(after.runtime.pid, process.pid);
+});

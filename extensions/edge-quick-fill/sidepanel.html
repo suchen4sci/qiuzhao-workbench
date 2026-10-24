@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>秋招投递</title>
+    <link rel="stylesheet" href="sidepanel.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="masthead">
+        <div class="brand-mark" aria-hidden="true">投</div>
+        <div>
+          <p class="eyebrow">本地半自动填表</p>
+          <h1>秋招投递</h1>
+        </div>
+        <span class="version">V0.1</span>
+      </header>
+
+      <section class="profile-card" aria-labelledby="profile-title">
+        <div class="section-heading">
+          <div>
+            <p class="step">资料源</p>
+            <h2 id="profile-title">当前简历</h2>
+          </div>
+          <span id="profileState" class="state state-empty">未导入</span>
+        </div>
+        <p id="profileName" class="profile-name">导入 offer-resume-import.json 后开始使用</p>
+        <div class="button-row">
+          <label class="button button-secondary" for="profileFile">导入简历 JSON</label>
+          <input id="profileFile" type="file" accept="application/json,.json" hidden />
+          <button id="clearProfile" class="button button-quiet" type="button">清除</button>
+        </div>
+        <p class="privacy-note">资料只保存在本机 Edge 扩展存储中，首版不会发送给 AI。</p>
+      </section>
+
+      <section class="action-card" aria-labelledby="action-title">
+        <div class="section-heading">
+          <div>
+            <p class="step">当前网页</p>
+            <h2 id="action-title">填写控制台</h2>
+          </div>
+          <span id="pageState" class="state state-idle">等待扫描</span>
+        </div>
+
+        <div class="primary-actions">
+          <button id="scanPage" class="button button-secondary action-button" type="button">
+            <span class="action-index">01</span>
+            <span><strong>扫描页面</strong><small>识别可见字段，不写入内容</small></span>
+          </button>
+          <button id="fillPage" class="button button-primary action-button" type="button" disabled>
+            <span class="action-index">02</span>
+            <span><strong>极速填写</strong><small>仅写入高置信度普通字段</small></span>
+          </button>
+          <button class="button button-disabled action-button" type="button" disabled>
+            <span class="action-index">03</span>
+            <span><strong>AI 处理剩余字段</strong><small>第二版接入，当前不会上传数据</small></span>
+          </button>
+        </div>
+      </section>
+
+      <section class="result-card" aria-labelledby="result-title">
+        <div class="section-heading compact">
+          <div>
+            <p class="step">检查</p>
+            <h2 id="result-title">页面结果</h2>
+          </div>
+          <button id="exportReport" class="text-button" type="button" disabled>导出报告</button>
+        </div>
+
+        <div class="metrics" aria-live="polite">
+          <div><strong id="metricFound">0</strong><span>识别</span></div>
+          <div><strong id="metricReady">0</strong><span>可填写</span></div>
+          <div><strong id="metricFilled">0</strong><span>已填写</span></div>
+          <div><strong id="metricReview">0</strong><span>待确认</span></div>
+        </div>
+
+        <div id="emptyResult" class="empty-result">
+          <span class="empty-line"></span>
+          <p>先打开招聘网站的简历填写页，再点击“扫描页面”。</p>
+        </div>
+        <ol id="resultList" class="result-list" hidden></ol>
+      </section>
+
+      <footer>
+        <p><strong>不会自动提交。</strong> 登录、验证码、敏感声明、附件和最终提交仍由你确认。</p>
+      </footer>
+    </main>
+    <script src="sidepanel.js"></script>
+  </body>
+</html>

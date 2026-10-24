@@ -9,7 +9,7 @@ function plans(profile){
   ...v.internship.map(e=>({section:'实习/工作经历',identity:e.company,values:{'工作单位':e.company,'入职时间':e.startTime,'离职时间':e.endTime,'工作类型':'实习','职位月薪(税前)':s.internship_monthly_salary,'职务':e.position,'工作描述':e.description,'是否有证明人':s.internship_leader?'是':undefined,'证明人姓名':s.internship_leader,'证明人关系':s.internship_leader_relation,'证明人职务':s.internship_leader_position,'证明人单位':s.internship_leader_company,'证明人联系方式':s.internship_leader_phone}})),
   {section:'语言能力',identity:'英语',language:true,values:{'语种':'英语','听说能力':'良好','读写能力':'良好'}},
   ...(z.skills||[]).map(e=>({section:'专业技能',identity:e.name,skill:e.name,values:{'技能掌握程度':e.level}})),
-  ...v.awards.map(a=>{const grade=a.description.split('\n')[0],name=a.name.endsWith(grade)?a.name:a.name+' '+grade;return {section:'奖励荣誉',identity:name,values:{'奖励名称':name,'获得时间':a.date.slice(0,7),'颁奖机构':a.issuer==='示例大学研究生院、示例大学人文学院'?'示例大学（研究生院、人文学院）':a.issuer}}}),
+  ...v.awards.map(a=>{const grade=a.description.split('\n')[0],name=a.name.endsWith(grade)?a.name:a.name+' '+grade;return {section:'奖励荣誉',identity:name,values:{'奖励名称':name,'获得时间':a.date.slice(0,7),'颁奖机构':a.issuer==='北京邮电大学研究生院、北京邮电大学人文学院'?'北京邮电大学（研究生院、人文学院）':a.issuer}}}),
   {section:'其他信息',values:{'自我评价':v.evaluation[0].description}}
  ];
 }

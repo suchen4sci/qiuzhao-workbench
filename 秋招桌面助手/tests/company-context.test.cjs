@@ -1,0 +1,9 @@
+const test=require('node:test'),assert=require('node:assert/strict');const{parseContext,tenantKey}=require('../src/job-context.cjs');
+test('copyright footer does not require 招聘网站 suffix',()=>{const r=parseContext({title:'申请职位',text:'©2026 北京奕斯伟计算技术股份有限公司 京ICP备05051632号-16',url:'https://eswin.zhiye.com/Portal/Apply/Index'});assert.equal(r.company,'北京奕斯伟计算技术股份有限公司');assert.equal(r.companySource,'当前页面版权页脚');});
+test('hiring organization outranks ATS metadata and logo abbreviation',()=>{const r=parseContext({title:'Moka',text:'',organizations:[{name:'海光信息技术股份有限公司',hiring:true}],siteNames:['Moka'],brands:['HYGON'],url:'https://app.mokahr.com/campus-recruitment/hygon/1'});assert.equal(r.company,'海光信息技术股份有限公司');});
+test('ambiguous companies do not select an arbitrary employer',()=>{const r=parseContext({text:'公司名称：甲公司\n公司名称：乙公司',url:'https://example.test'});assert.equal(r.company,'');assert(r.companyReason.includes('多个'));});
+test('company introduction recognizes a full legal name before 成立',()=>assert.equal(parseContext({text:'  海光信息技术股份有限公司成立于2014年。',companyIntroduction:true,url:'https://example.test'}).company,'海光信息技术股份有限公司'));
+test('shared ATS domain cache is isolated by employer tenant',()=>{assert.notEqual(tenantKey('https://app.mokahr.com/campus-recruitment/hygon/1#/jobs'),tenantKey('https://app.mokahr.com/campus-recruitment/other/2#/jobs'));assert.equal(tenantKey('https://app.mokahr.com/campus-recruitment/hygon/1#/jobs'),tenantKey('https://app.mokahr.com/campus-recruitment/hygon/1#/about'));});
+
+test('a client name in job description is not treated as employer',()=>assert.equal(parseContext({text:'甲方科技有限公司成立于2014年。',url:'https://example.test'}).company,''));
+test('shared cloud ATS company keys do not share cache',()=>assert.notEqual(tenantKey('https://cloud.italent.cn/PageHome/Index?keyName=A'),tenantKey('https://cloud.italent.cn/PageHome/Index?keyName=B')));

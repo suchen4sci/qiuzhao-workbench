@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "秋招投递",
+  "description": "从本地结构化简历中读取已确认信息，扫描并半自动填写当前招聘页面。",
+  "version": "0.1.0",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "sidePanel",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_title": "打开秋招投递"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  }
+}

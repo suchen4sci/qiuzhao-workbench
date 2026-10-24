@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>秋招投递扩展测试表单</title>
+  <style>
+    body { max-width: 760px; margin: 40px auto; padding: 0 24px; font: 16px/1.5 "Microsoft YaHei UI", sans-serif; color: #172033; }
+    h1 { margin-bottom: 30px; }
+    form { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 24px; }
+    .form-item { display: grid; gap: 7px; }
+    label { font-weight: 700; }
+    input, textarea, select { width: 100%; padding: 10px; border: 1px solid #bdc5d1; border-radius: 8px; font: inherit; }
+    textarea { min-height: 100px; }
+    .wide { grid-column: 1 / -1; }
+  </style>
+</head>
+<body>
+  <h1>校园招聘申请表</h1>
+  <form>
+    <div class="form-item"><label for="name">姓名 *</label><input id="name" name="fullName" required /></div>
+    <div class="form-item"><label for="phone">手机号码 *</label><input id="phone" type="tel" required /></div>
+    <div class="form-item"><label for="email">电子邮箱 *</label><input id="email" type="email" required /></div>
+    <div class="form-item"><label for="school">毕业院校 *</label><input id="school" required /></div>
+    <div class="form-item"><label for="major">最高学历专业</label><input id="major" /></div>
+    <div class="form-item"><label for="education">最高学历</label><input id="education" /></div>
+    <div class="form-item"><label for="political">政治面貌 *</label><input id="political" required /></div>
+    <div class="form-item"><label for="city">期望城市 *</label><select id="city" required><option value="">请选择</option><option>北京</option><option>上海</option></select></div>
+    <div class="form-item wide"><label for="intro">自我评价</label><textarea id="intro"></textarea></div>
+  </form>
+</body>
+</html>

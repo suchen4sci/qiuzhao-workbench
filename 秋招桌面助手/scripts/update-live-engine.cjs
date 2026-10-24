@@ -7,9 +7,9 @@ const { fillPage, scanPage, report } = require('../src/engine.cjs');
 const { runtimeInfo, withRuntime } = require('../src/runtime-version.cjs');
 const { ensureRendering } = require('../src/render-health.cjs');
 const { execFile } = require('node:child_process');
-(async () => {
-  const { port, pid: appPid } = JSON.parse(fs.readFileSync(path.join(process.env.APPDATA,'QiuzhaoWorkbench/app-connection.json'),'utf8'));
-  const browser = await chromium.connectOverCDP(`http://127.0.0.1:${port}`);
+async function installLiveEngine(connectedBrowser, connection) {
+  const { port, pid: appPid } = connection || JSON.parse(fs.readFileSync(path.join(process.env.APPDATA,'QiuzhaoWorkbench/app-connection.json'),'utf8'));
+  const browser = connectedBrowser || await chromium.connectOverCDP(`http://127.0.0.1:${port}`, {timeout:15000});
   const ui = browser.contexts().flatMap(c=>c.pages()).find(p=>p.url().includes('/src/ui/index.html'));
   if (!ui) throw new Error('找不到填表助手窗口');
   let busy = false, cancelled = false;
@@ -25,17 +25,17 @@ const { execFile } = require('node:child_process');
     if (request.mode === 'stop') { cancelled = true; return; }
     if (busy || !['fill','inspect','draft','profile'].includes(request.mode)) throw new Error('请等待当前填写结束');
     if (request.mode === 'profile') {
-      const profile = loadProfile(path.resolve(__dirname, '../..'));
+      const profile = loadProfile((process.env.QIUZHAO_WORKSPACE || path.resolve(__dirname, '../../.local-workspace')));
       return { library: profile.library, sources: profile.sources, notes: profile.notes };
     }
     if ((await ui.evaluate(()=>window.desktop.call('teaching',{action:'status'}))).active) throw new Error('请先结束教学');
-    const pages = browser.contexts().flatMap(c=>c.pages()).filter(p=>p!==ui && !p.url().startsWith('http://127.0.0.1:33210'));
-    if (pages.length !== 1) throw new Error('无法唯一识别当前招聘页');
+    const pages = [await require('../src/active-page.cjs').resolveActivePage(browser,ui)];
     if(request.mode==='draft')return require('../src/job-context.cjs').readContext(pages[0]);
-    const profile = loadProfile(path.resolve(__dirname,'../..'));
-    profile.learnedFields = loadLearnedFields(path.resolve(__dirname,'../..'));
+    const profile = loadProfile((process.env.QIUZHAO_WORKSPACE || path.resolve(__dirname, '../../.local-workspace')));
+    profile.learnedFields = loadLearnedFields((process.env.QIUZHAO_WORKSPACE || path.resolve(__dirname, '../../.local-workspace')));
     busy = true; cancelled = false;
     const runId = bridge + ':' + Date.now();
+    await ui.evaluate(lease=>window.__hotRunLease=lease,{bridge,runId});
     let result, syncedBegin = false;
     try {
       if (hostSync) { await sync({ phase: 'begin', runId }); syncedBegin = true; }
@@ -53,6 +53,7 @@ const { execFile } = require('node:child_process');
         catch (error) { if (result) result.runtime.hostSync = 'failed'; console.error('Hot report could not synchronize to main: ' + error.message); }
       }
       busy = false;
+      await ui.evaluate(runId=>{if(window.__hotRunLease?.runId===runId)window.__hotRunLease=null;},runId).catch(()=>{});
     }
   };
   const session=await ui.context().newCDPSession(ui);
@@ -64,11 +65,7 @@ const { execFile } = require('node:child_process');
     try{const result=await execute(message.request);await session.send('Runtime.evaluate',{expression:'window['+JSON.stringify(bridge+'_settle')+']('+JSON.stringify({id:message.id,result})+')'});}
     catch(e){await session.send('Runtime.evaluate',{expression:'window['+JSON.stringify(bridge+'_settle')+']('+JSON.stringify({id:message.id,error:e.message})+')'}).catch(()=>{});}
   });
-  await ui.evaluate(({bridge,native})=>{
-    const pending=new Map();let id=0;
-    window[bridge]=request=>new Promise((resolve,reject)=>{pending.set(++id,{resolve,reject});window[native](JSON.stringify({id,request}));});
-    window[bridge+'_settle']=message=>{const p=pending.get(message.id);if(!p)return;pending.delete(message.id);message.error?p.reject(new Error(message.error)):p.resolve(message.result);};
-  },{bridge,native});
+  await ui.evaluate(require('../src/hot-transport.cjs').installHotTransport,{bridge,native});
   await ui.evaluate(bridge => {
     window.__jobDraft=()=>window[bridge]({mode:'draft'});
     run = async mode => {
@@ -85,7 +82,9 @@ const { execFile } = require('node:child_process');
   await ui.evaluate(info => window.showRuntimeStatus(info), runtimeInfo('hot', { hostSync: hostSync ? 'connected' : 'unavailable' }));
   console.log('Updated live quick-fill engine; recruitment page preserved.');
   ui.on('close',()=>process.exit(0)); browser.on('disconnected',()=>process.exit(0));
-  setInterval(()=>{},30000);
-})().catch(e=>{console.error(e.message);process.exitCode=1;});
+  setInterval(()=>ui.evaluate(bridge=>{if(window.__quickFillBridge===bridge)window.__quickFillHeartbeat=Date.now();},bridge).catch(()=>{}),1000);
+}
+module.exports={installLiveEngine};
+if(require.main===module)installLiveEngine().catch(e=>{console.error(e.message);process.exitCode=1;});
 
 

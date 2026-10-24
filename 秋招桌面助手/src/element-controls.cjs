@@ -1,5 +1,5 @@
 const escape=s=>String(s).replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
-async function fillElementSelect(frame,locator,value,{search=false}={}){
+async function fillElementSelect(frame,locator,value,{search=false,spec={}}={}){
  const title=locator.locator('xpath=ancestor::*[contains(concat(" ",normalize-space(@class)," ")," el-form-item ")][1]').locator('label').first();
  if(await title.count())await title.click({timeout:1500});
  await locator.click({timeout:1500});
@@ -8,6 +8,7 @@ async function fillElementSelect(frame,locator,value,{search=false}={}){
  await panel.waitFor({state:'visible',timeout:1500});
  const labels=await panel.locator('.el-select-dropdown__item:not(.is-disabled)').allTextContents();
  let expected=String(value);if(expected==='中共党员'&&labels.map(s=>s.trim()).includes('中共党员（含预备党员）'))expected='中共党员（含预备党员）';
+ if(spec.salaryBound&&!labels.map(s=>s.trim()).includes(expected)){const amount=require('./salary-bounds.cjs').amount,wanted=amount(value),matches=labels.map(s=>s.trim()).filter(s=>wanted!==null&&amount(s)===wanted);if(matches.length===1)expected=matches[0];}
  const option=panel.locator('.el-select-dropdown__item:not(.is-disabled)').filter({hasText:new RegExp('^'+escape(expected)+'$')});
  if(search&&!await option.count())await option.first().waitFor({timeout:1500}).catch(()=>{});
  if(await option.count()!==1){const n=await option.count();await locator.press('Escape');throw Error(n?'AMBIGUOUS':'OPTION');}
@@ -18,8 +19,9 @@ async function fillElementDate(frame,locator,value){
  const monthOnly=await locator.evaluate(e=>!!e.closest('.el-date-editor--month'));
  if(!(monthOnly?/^\d{4}-\d{2}(?:-\d{2})?$/:/^\d{4}-\d{2}-\d{2}$/).test(value))throw Error('DATE_PRECISION');
  const wrapper=locator.locator('xpath=ancestor::*[contains(concat(" ",normalize-space(@class)," ")," apply-form-date-now ")][1]');
- if(await wrapper.count()) {if(!await frame.locator('.el-date-picker:visible').count())await wrapper.locator('.apply-form-date-now__mask').click({timeout:1500});}
- else await locator.click({timeout:1500});const panel=frame.locator('.el-date-picker:visible');await panel.waitFor();
+ const activePanel='.el-date-picker:visible:not(.el-zoom-in-top-leave-active):not(.el-zoom-in-bottom-leave-active)';
+ if(await wrapper.count()) {if(!await frame.locator(activePanel).count())await wrapper.locator('.apply-form-date-now__mask').click({timeout:1500});}
+ else await locator.click({timeout:1500});const panel=frame.locator(activePanel);await panel.waitFor({timeout:2000});
  const [y,m,d]=value.split('-').map(Number);
  if(monthOnly){
  for(let i=0;i<130;i++){const cy=Number((await panel.locator('.el-date-picker__header').innerText()).match(/\d{4}/)?.[0]);if(cy===y)break;await panel.getByRole('button',{name:cy>y?'前一年':'后一年',exact:true}).click();if(i===129)throw Error('CALENDAR');}

@@ -1,0 +1,3 @@
+const test=require('node:test'),assert=require('node:assert/strict');const {parseContext}=require('../src/job-context.cjs');
+test('company footer and explicit role are extracted without leaking URL tokens',()=>{const d=parseContext({title:'校招职位',text:'你正在投递职位: 数字设计工程师\n©2026 北京超弦存储器研究院招聘网站京ICP备',url:'https://samt.zhiye.com/form?token=secret'});assert.equal(d.company,'北京超弦存储器研究院');assert.equal(d.role,'数字设计工程师');assert(!d.url.includes('secret'));});
+test('multiple job cards never pick an arbitrary role',()=>{const d=parseContext({title:'启元实验室招聘',text:'全部职位',headings:['工程师A','工程师B'],url:'https://qiyuanzp.zhiye.com/'});assert.equal(d.company,'启元实验室');assert.equal(d.role,'');});

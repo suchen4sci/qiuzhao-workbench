@@ -1,0 +1,6 @@
+interface:
+  display_name: "修补简历"
+  short_description: "补全当前招聘表单并修正规则，通过快速填写复测和旧网站兼容回归"
+  default_prompt: "使用 $repair-resume 补全并纠正当前招聘网页，将修复沉淀到快速填写，验证当前页面和已有网站适配不受影响。"
+policy:
+  allow_implicit_invocation: true

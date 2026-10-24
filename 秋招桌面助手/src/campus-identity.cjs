@@ -1,0 +1,1 @@
+const{normalize}=require('./rules.cjs');function normalizeCampusRole(s){return normalize(String(s||'').replace(/^曾任/,'').replace(/国旗护卫队队员$/,'国旗护卫队成员'));}function campusMatches(a,b){return !!a&&!!b&&normalizeCampusRole(a)===normalizeCampusRole(b);}module.exports={normalizeCampusRole,campusMatches};

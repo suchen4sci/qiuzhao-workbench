@@ -9,14 +9,17 @@ description: "Build and operate a privacy-first job-search workspace: onboard a 
 
 每次准备申请、保存草稿、确认提交或获知进展后，同步用户现有看板。记录公司、具体岗位、逐岗位状态、校招名额上限、核验日期、进度查询链接和登录后的查询路径。区分已上传、已保存、已预览与已成功提交；同一公司多岗位必须分别说明。仅凭预览、关闭标签页或名额减少不能推断具体岗位提交成功。查询菜单未经核验时标注待核实，保留已有记录与证据，不虚构提交时间。
 
-## 招聘类型与个人配置
+## 本地用户硬性限制：仅校园招聘
 
-先读取使用者在私人工作区确认的招聘类型、毕业窗口、岗位方向、城市排序和排除条件；未提供的偏好保持未知，不内置某个人的答案。
-- 用户选择仅校园招聘时，只处理已确认的校招岗位，核对毕业届别，不能用社会招聘替代失效入口。
-- 用户选择其他招聘类型时，按其授权范围核验岗位资格；企业同时有多类入口不代表当前岗位符合目标类型。
-- 招聘类型或届别不明确时，记录待核实并继续可独立完成的工作。
+本地用户最新岗位范围（2026-09-14）：优先数字前端（验证/设计），其次技术销售、现场应用工程师（FAE）。按岗位实际职责筛选，不把中端实现、DFX、后端等岗位自动归入数字前端。此前已准备或已投岗位不自动撤回；后续补名额遵循这三类范围。
 
-Community derivative of Job Application Copilot (https://github.com/cong1005/job-application-copilot). Preserve the upstream MIT license. This edition changes browser recovery guidance; the remaining job-search workflow and helpers are inherited.
+本地用户明确要求：只申请校园招聘，绝不申请社会招聘。此规则适用于这份个人安装的 skill，不作为面向其他用户的通用偏好。
+- 筛选与进入申请表前，核验目标岗位本身属于校园招聘，并核对毕业届别；企业同时提供社招与校招入口，不代表当前岗位属于校招。
+- 社会招聘、要求已有全职工作年限的岗位一律排除，不上传材料、不填写、不提交，也不能用社招入口替代失效的校招入口。
+- 招聘类型或应届届别无法确认时，记录待核实并继续其他已确认校招岗位，不猜测。
+- 操作记录必须保留岗位招聘类型及其页面依据。
+
+Personalized derivative of Job Application Copilot (https://github.com/cong1005/job-application-copilot). Preserve the upstream MIT license. This edition changes browser recovery guidance; the remaining job-search workflow and helpers are inherited.
 
 Turn a user's job-search materials into a reusable, auditable workflow. The skill is designed for public reuse: never assume a particular person's identity, vault path, employer list, resume, or preferences. Keep private job-search data in the user's selected local workspace; the skill package itself must remain free of personal data.
 
@@ -65,12 +68,12 @@ Use `scripts/init_job_workspace.py` when a new local Markdown workspace is reque
 
 ## Tool routing
 
-### 可配置的多岗位申请策略
+### 本地用户多岗位申请策略
 
-先查明企业当期允许申请的岗位上限。使用者可选择只准备一个岗位、准备多个匹配岗位，或在匹配充分时准备到上限；把选择保存在私人配置中，不默认所有人都需要投满。
+本地用户要求：每家公司先查明当期校园招聘允许申请的岗位上限，再按匹配度准备多个岗位，目标为达到已确认上限，而非默认每家公司一个岗位。
 - 阅读当期官网招聘须知、FAQ、岗位申请页或本人账户提示，记录总上限、剩余名额、已申请数量、志愿顺序、岗位互斥、跨批次或校招/实习共享名额、撤回后是否恢复名额，以及证据链接与日期。
 - 区分“可申请多个岗位”“多个城市”“顺序志愿”和“可同时进入多个流程”。不能根据招聘系统品牌推断企业配置；未查到上限时标为未知，不能假定无限制或通过实际提交试探。
-- 已知上限后，优先选择符合本人毕业届别、岗位方向、城市排序的不同岗位，按匹配度和使用者选择的申请策略准备岗位；没有足够合适岗位则如实说明，不为凑数选择不合适岗位、社招或重复岗位。
+- 已知上限后，优先选择符合本人毕业届别、岗位方向、城市排序的不同岗位，按匹配度排序补足剩余名额；没有足够合适岗位则如实说明，不为凑数选择不合适岗位、社招或重复岗位。
 - 遵循当前提交授权。仅准备阶段把每个岗位填至最终提交前，分别保存证据，不能把草稿数计为已投递；用户要求每家公司处理完再切换时，先完成该公司的上限核查和合适岗位准备。
 - 共享简历或申请页面可能互相覆盖；保留各岗位独立链接与字段快照，核验职位名、城市、志愿顺序及附件，不能以多个浏览器标签代替多个已保存申请。
 - 用户新提供的企业内推码写入私人知识库，并覆盖该企业尚未提交表单中旧链接自动带入的码；在最终预览核验实际码值。已提交申请是否可追溯修改须读官网或本人账户证据，不通过重复投递变更来源，也不把一家企业内推码复制给其他公司。
@@ -78,10 +81,14 @@ Use `scripts/init_job_workspace.py` when a new local Markdown workspace is reque
 
 ### 表单顺序与纠错记录
 
+- 简历解析结果只作草稿：逐条核对记录所属栏目。真实公司实习放实习经历，科研/个人项目放项目经历；先在正确栏目恢复名称、角色、日期、正文并核验，再移除错误栏目的重复项。职位名称和项目角色使用用户最新确认的原值，不自行增加“实习生”等后缀；没有项目角色字段时在项目描述中明确角色。
+- 不将另一项奖励填入当前奖励的描述，也不把多个奖项拼成一条。每个奖项独立填写名称、获奖级别及日期；区分县市级/学校级等范围与一等奖/二等奖等名次。网站映射遵循私人知识库最新确认，用户要求描述为空时保持为空。
+- 学历总览的毕业时间不能代替教育经历中的结束时间。两处均按确认日期填写；年月控件保留至月，私人事实保留精确日期。核验每条教育、实习、项目与奖项的栏目归属和独立字段后才报告准备完成。
+
 - 用户补充信息后，先更新私人知识库中对应字段及旧偏好，再逐项修正当前公司的表单。按当前公司的栏目顺序填写、校验、保存并复查，完成至最终确认前再切换下一家公司；若必填未知项确实阻断，记录具体字段后继续独立工作。
 - 区分籍贯、目前户口所在地和现居地；“户口同身份证”只映射到本人确认的身份证地址，不将籍贯当户籍。详细地址仅在目标字段需要时填写。
 - 区分排序志愿和岗位可选城市：多个志愿按用户最新优先级分别填写；单选城市选择岗位实际提供的最高优先城市，不继续沿用已被覆盖的“仅限某一城市”。
-- 排名分位按用户确认值映射到包含该值的现有档位，不得映射到更优排名。没有准确档位时优先“其他”并补充原值。
+- 排名分位按用户确认值映射到包含该值的现有档位；例如前40%可映射前50%，不可提升为前20%。没有准确档位时优先“其他”并补充原值。
 - 招聘方可见字段只填写该字段所需的本人信息。网站选项映射、工具限制、自动化过程、待办及核验说明仅写入私人操作日志；尤其不得把排名及“网站档位”等操作备注放入主修课程、工作职责或自我评价。最终预览前检查并清除这类误填。
 - 项目描述包含起止年月不代表独立日期控件已填写。逐条检查实习和项目的开始、结束日期；只读日期框通过日历选择。按私人知识库既定精度规则处理年月，不能把占位日当真实日期；保存并重新加载后，在新预览核对每条记录的起止日期。
 - 只读籍贯或地区输入框通常为级联选择器，点击后选择省、市、区县并复查；不移除readonly或强写DOM值。将已验证的页面问题与恢复方法记入私人知识库，skill只保留可复用操作规则。
@@ -93,13 +100,13 @@ Use `scripts/init_job_workspace.py` when a new local Markdown workspace is reque
 - For formal DOCX/PDF resume creation, route to a document/resume skill if available after producing the tailored content and audit map. Do not treat a Markdown draft as a verified PDF artifact without rendering or opening it.
 - For job-board research, prefer official employer pages or a purpose-built connector. If live access is unavailable, label the result as unverified and do not present it as an open application.
 
+## Completion report
+
 ## Mandatory attachment check before every save
 
 - Before every manual save or submission, inspect the actual resume attachment and every required supporting file. Confirm the intended filename, version, and its association with the current resume/application. Parsing success, populated fields, a local file path, and a 100% completeness score are not attachment evidence.
 - After saving, reopen the saved record and verify that the actual attachment remains available by its filename, preview/download link, or a persisted attachment record. Record the evidence in the private application log. Distinguish draft attachment persistence from attachment delivery with a submitted application.
 - If upload reparses or replaces fields, first back up the populated form, upload once, restore affected fields, and verify both fields and attachments. Do not repeatedly upload without investigating the concrete cause. An autosave that occurs before verification must remain marked unverified.
 - If an attachment is missing or its persistence cannot be verified, do not mark the application ready or complete and do not proceed to final submission. Report the precise unresolved attachment state and continue diagnosis within authorization.
-
-## Completion report
 
 End each run with a concise report containing: what was created or updated, what was screened or filled, the current evidence-backed status, unresolved fields or blockers, external actions still requiring the user, and the next recommended action. Never report “submitted” without explicit confirmation evidence.

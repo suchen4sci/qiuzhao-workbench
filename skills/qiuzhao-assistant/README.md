@@ -1,8 +1,10 @@
-# 秋招的仓库
+# 秋招助手（qiuzhao-assistant）
 
-秋招 Assistant · `qiuzhao-assistant`
+本目录是当前秋招工作台使用的技能。下文保留上游说明与许可证出处，实际技能入口见 [SKILL.md](SKILL.md)。
 
-`qiuzhao-assistant` is a portable Codex skill for turning a job search into a private, evidence-backed workflow.
+# Job Application Copilot
+
+`job-application-copilot` is a portable Codex skill for turning a job search into a private, evidence-backed workflow.
 
 It helps users:
 
@@ -24,13 +26,13 @@ The package contains workflow instructions and neutral templates only. It does n
 Copy this directory into the Codex skills directory used by your installation, for example:
 
 ```text
-~/.codex/skills/qiuzhao-assistant/
+~/.codex/skills/job-application-copilot/
 ```
 
 Then invoke it explicitly with:
 
 ```text
-Use $qiuzhao-assistant to onboard my job-search profile.
+Use $job-application-copilot to onboard my job-search profile.
 ```
 
 Automatic discovery is enabled by default. A host may expose the skill differently depending on its skill configuration.
@@ -88,13 +90,3 @@ Do not commit the generated private workspace to this repository. Keep resumes, 
 - Record what happened, what proves it, and what the next user action is.
 
 See `references/advanced-features.md` for the implemented versioning, attachment, portal-adapter, and interview-preparation workflows. See `references/extension-roadmap.md` for the next recommended additions, including answer governance, reminders, reconciliation, privacy-safe analytics, and anonymized public-progress export.
-
-## 通用功能与隐私边界
-
-支持先上传简历再核对表单、解析覆盖恢复、独立起止日期核验、多岗位名额核查和逐岗位进度看板。招聘类型、岗位排序、城市、薪资及申请数量策略均由使用者在私人工作区配置。
-
-浏览器工作流优先使用宿主提供的 Playwright 元素操作，结合键盘恢复、iframe 定位、文件选择器和必要的视觉核查。它是可移植的操作规范，不捆绑浏览器会话、Cookie、令牌或账号，也不假定每个宿主都提供相同的 Playwright API。
-
-公开包仅包含 skill 指令、空白模板和本地辅助脚本。个人知识库、简历、成绩单、身份证件、截图、内推码和真实投递记录必须放在公开仓库之外。发布前检查待提交文件及 Git 历史；`.gitignore` 不能清除已提交的数据。
-
-本项目衍生自 [Job Application Copilot](https://github.com/cong1005/job-application-copilot)，保留原作者 MIT 许可证。新增通用浏览器纠错、附件核验和投递追踪规范。
